@@ -1,0 +1,25 @@
+nohup: ignoring input
+W&B online. Running your script from this directory will now sync to the cloud.
+wandb: Appending key for api.wandb.ai to your netrc file: /home/nlplab/.netrc
+2025-07-30 15:57:38.109699: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-30 15:57:38.118829: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753858658.129075 2719074 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753858658.131946 2719074 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753858658.140188 2719074 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753858658.140220 2719074 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753858658.140222 2719074 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753858658.140223 2719074 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-30 15:57:38.143122: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Using quantization: 8bit
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.73s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.39s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:04<00:02,  1.29s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:05<00:01,  1.22s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:06<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:06<00:00,  1.21s/it]
+Using LoRA for training
+LoRA config: r=8, alpha=16, dropout=0.1, target_modules=['q_proj', 'v_proj', 'k_proj', 'o_proj']
+Traceback (most recent call last):
+  File "/media/nlplab/hdd1/juhyng/Korean_QA_RAG_2025/src/GRPO/src/train.py", line 230, in <module>
+    main()
+  File "/media/nlplab/hdd1/juhyng/Korean_QA_RAG_2025/src/GRPO/src/train.py", line 169, in main
+    grpo_config = GRPOConfig(
+                  ^^^^^^^^^^^
+TypeError: GRPOConfig.__init__() got an unexpected keyword argument 'do_sample'

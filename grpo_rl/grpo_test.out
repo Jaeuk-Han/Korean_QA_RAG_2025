@@ -1,0 +1,1091 @@
+nohup: ignoring input
+2025-07-30 12:59:48.782768: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-30 12:59:48.791257: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753847988.800911 2661835 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753847988.803746 2661835 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753847988.811608 2661835 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753847988.811638 2661835 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753847988.811640 2661835 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753847988.811641 2661835 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-30 12:59:48.814000: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:00<00:00,  4.42it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 22.07it/s]
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:02<00:10,  2.71s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:06<00:09,  3.21s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:10<00:07,  3.56s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:14<00:03,  3.76s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:16<00:00,  3.20s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:16<00:00,  3.30s/it]
+[DBG] Loading LoRA adapter from ./output/run_20250728_173846/epoch_1
+
+[DBG] ==== Example 0 Prompt (교정형) ====
+[SYSTEM]
+You are a helpful AI assistant. Please answer the user's questions kindly.
+당신은 한국의 전통 문화와 역사, 문법, 사회, 과학기술 등 다양한 분야에 대해 잘 알고 있는 유능한 AI 어시스턴트 입니다. 또한 당신은 문법 교정 전문가입니다. 사용자의 질문에 대해 친절하게 답변해주세요.
+단, 동일한 문장을 절대 반복하지 마시오. 답변은 올바른 문장 전체를 반드시 큰따옴표(" ")로 감싸고, "가 옳다" 형식으로 작성하시오. [답변]이나 줄바꿈을 절대 포함하지 마시오.
+
+[USER]
+[질문]을 잘 읽고 [답변]을 생성하시오. 문제를 그대로 출력하지 말고, [예시]에 해당하는 [답변]과 같이 경어체가 아닌 문어체로 답변하시오. 다음 [지침]에 따라 차례 차례 단계적으로 문장을 교정하시오.
+[지침]
+- 질문에서 다음 문장은 한국어 어문규범에 부합하지 않는 표현(맞춤법, 띄어쓰기, 문장 부호, 외래어 표기법)이 있는 문장입니다. 이를 다음 순서에 맞게 교정하고 설명하시오.
+  1. 질문 중 다음 문장에서 어문 규범에 부합하지 않는 부분을 판단하시오.
+  2. 문장 부호가 괄호( )로 제시된 경우, 해당 위치에 한국어 어문 규범에 부합하는 문장 부호를 채워 넣어 교정하시오.
+  3. 해당 부분과 관련된 규범을 한국어 어문 규범에서 유추하시오.
+  4. 유추한 규범을 바탕으로 지식 자료에서 참조할 정보를 검색하시오.
+  5. 유추한 규범에 의거하여 문장을 교정하고 예시와 같이 이유를 한국어 어문 규범에 의거하여 서술하시오.
+- 5번까지 문장을 교정했다면 지금까지 생성한 [답변]을 다음 순서에 맞춰 수정하시오.
+  6. 반드시 교정한 문장 전체를 처음부터 끝까지 완전하게 출력하시오. 문장을 요약하거나 일부만 발췌하지 마시오.
+  7. 경어체, "[답변]:", "정답은" 등의 표현은 사용하지 마시오.
+  8. 질문 문장을 답변에서 복사하거나 반복하지 마시오.
+  9. [답변]은 [예시]와 같이 [정답]에서 다음 문장에 해당하는 문장을 반드시 큰따옴표(" ")로 감싸고, "가 옳다" 형식으로 작성하시오.
+
+[USER]
+[질문]: 다음 문장에서 어문 규범에 부합하지 않는 부분을 찾아 고치고, 그 이유를 설명하세요.
+"부담없이 먹어라."
+
+[ASSISTANT]
+"부담 없이 먹어라."가 옳다. 명사 '부담'과 부사 '없이'는 별개의 단어이므로 띄어 쓴다. '부담없이'라는 말은 하나의 단어가 아니다. 한편 '어처구니없이', '경황없이'와 같이 '없이'가 다른 말과 결합하여 하나의 단어를 이룬 경우도 있으므로 주의해야 한다.
+
+[USER]
+[질문]: 다음 문장에서 어문 규범에 부합하지 않는 부분을 찾아 고치고, 그 이유를 설명하세요.
+"아가씨는 윗채에 계십니다."
+
+[ASSISTANT]
+"아가씨는 위채에 계십니다."가 옳다. '윗-'과 '웃-'은 명사 '위'에 맞추어 '윗-'으로 통일한 형태를 표준어로 쓰되, '아래, 위'의 대립이 없는 단어의 경우에는 '웃-'을 표준어로 삼는다. 단, 된소리나 거센소리 앞에서는 '윗-' 대신 '위-'를 쓴다. '위채'는 '아래채'와 같이 '아래, 위'의 대립이 존재하므로 '웃-'을 쓰지 않고, 거센소리인 'ㅊ' 앞에 붙기에 '윗-' 대신 '위-'를 쓴다. 따라서 '위채'로 적어야 한다.
+
+[USER]
+[질문]: 다음 문장에서 어문 규범에 부합하지 않는 부분을 찾아 고치고, 그 이유를 설명하세요.
+― 행정과-2330(2002.1.6)호
+
+[ASSISTANT]
+"행정과-2330(2002. 1. 6.)호"가 옳다. 아라비아 숫자만으로 연월일을 표시할 때 마침표를 쓴다. '일'을 나타내는 마침표를 생략하는 것은 글자로 치면 '일'을 쓰지 않는 것과 같다. 그러므로 '일'을 나타내는 마침표를 생략해서는 안 된다.
+
+[USER]
+[질문]: 다음 문장에서 어문 규범에 부합하지 않는 부분을 찾아 고치고, 그 이유를 설명하세요.
+"요청하신 대로 페이지당 내용을 늘였습니다."
+
+[ASSISTANT]
+"요청하신 대로 페이지당 내용을 늘렸습니다."가 옳다. '늘이다'는 '더 길어지게 하다'의 뜻을 나타내고, '늘리다'는 '더 커지거나 많아지게 하다'의 뜻을 나타낸다. 페이지당 내용의 분량을 더 많아지게 했다는 뜻이므로 '늘리다'를 써야 옳다.
+
+[USER]
+[질문]: 다음 문장에서 어문 규범에 부합하지 않는 부분을 찾아 고치고, 그 이유를 설명하세요.
+"청소년의 경우에는 담배를 끊거나 흡연양을 줄이는 효과 이외에 흡연 시작을 예방하는 효과도 있다."
+
+[ASSISTANT]
+"청소년의 경우에는 담배를 끊거나 흡연량을 줄이는 효과 이외에 흡연 시작을 예방하는 효과도 있다."가 옳다. '흡연량'은 한자어끼리 결합된 단어로, 이 경우 두음 법칙을 적용하지 않으므로 '량'이 옳다.
+
+[USER]
+[질문]: 다음 문장에서 어문 규범에 부합하지 않는 부분을 찾아 고치고, 그 이유를 설명하세요.
+"한 번만이라도 다시 볼 수 있다면 얼마나 좋으리요."
+
+[ASSISTANT]
+"한 번만이라도 다시 볼 수 있다면 얼마나 좋으리오."가 옳다. 종결 어미 '-으리오'는 혼잣말에 쓰이는 것으로, '-요'와는 형태가 다르다. '-으리오'가 표준이다.
+
+[USER]
+[질문]: 다음 문장이 어문 규범에 부합하도록 문장 부호를 추가하고, 그 이유를 설명하세요.
+― 우등생인 민수( )도, 까지, 조차, 마저( ) 불합격이라니 놀랍지 않을 수 없다.
+
+[ASSISTANT]
+"우등생인 민수{도, 까지, 조차, 마저} 불합격이라니 놀랍지 않을 수 없다."가 옳다. 열거된 항목 중에서 어느 하나가 자유롭게 선택될 수 있음을 나타낼 때는 중괄호를 사용한다.
+
+[USER]
+[질문]: 다음 중 어문 규범에 부합하는 것을 선택하고, 그 이유를 설명하세요.
+― 다시는 결혼하고 싶지 않아요, 
+― 다시는 결혼하고 싶지 않아요. 
+
+Generating...:   0%|          | 0/498 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+/home/nlplab/anaconda3/envs/juhyng/lib/python3.12/site-packages/bitsandbytes/autograd/_functions.py:185: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+Generating...:   0%|          | 1/498 [00:06<56:01,  6.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   0%|          | 2/498 [00:12<52:54,  6.40s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   1%|          | 3/498 [00:24<1:13:36,  8.92s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   1%|          | 4/498 [00:34<1:14:53,  9.10s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   1%|          | 5/498 [00:44<1:19:32,  9.68s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   1%|          | 6/498 [00:51<1:09:43,  8.50s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   1%|▏         | 7/498 [00:57<1:03:49,  7.80s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   2%|▏         | 8/498 [01:05<1:03:38,  7.79s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   2%|▏         | 9/498 [01:11<58:39,  7.20s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   2%|▏         | 10/498 [01:16<54:26,  6.69s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   2%|▏         | 11/498 [01:23<53:45,  6.62s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   2%|▏         | 12/498 [01:30<55:22,  6.84s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   3%|▎         | 13/498 [01:37<54:40,  6.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   3%|▎         | 14/498 [01:43<54:38,  6.77s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   3%|▎         | 15/498 [01:51<57:03,  7.09s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   3%|▎         | 16/498 [01:58<55:16,  6.88s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   3%|▎         | 17/498 [02:06<58:09,  7.25s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   4%|▎         | 18/498 [02:15<1:02:54,  7.86s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   4%|▍         | 19/498 [02:24<1:04:41,  8.10s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   4%|▍         | 20/498 [02:32<1:04:20,  8.08s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   4%|▍         | 21/498 [02:39<1:01:25,  7.73s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   4%|▍         | 22/498 [02:50<1:09:14,  8.73s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   5%|▍         | 23/498 [02:57<1:06:54,  8.45s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   5%|▍         | 24/498 [03:07<1:08:52,  8.72s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   5%|▌         | 25/498 [03:12<1:01:10,  7.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   5%|▌         | 26/498 [03:21<1:04:20,  8.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   5%|▌         | 27/498 [03:28<59:59,  7.64s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   6%|▌         | 28/498 [03:39<1:07:28,  8.61s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   6%|▌         | 29/498 [03:47<1:06:01,  8.45s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   6%|▌         | 30/498 [03:53<1:00:59,  7.82s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   6%|▌         | 31/498 [03:59<56:55,  7.31s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   6%|▋         | 32/498 [04:10<1:05:15,  8.40s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   7%|▋         | 33/498 [04:17<1:00:52,  7.86s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   7%|▋         | 34/498 [04:25<1:01:58,  8.01s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   7%|▋         | 35/498 [04:37<1:10:32,  9.14s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   7%|▋         | 36/498 [04:42<1:00:12,  7.82s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   7%|▋         | 37/498 [04:52<1:06:49,  8.70s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   8%|▊         | 38/498 [04:58<59:47,  7.80s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   8%|▊         | 39/498 [05:04<55:07,  7.21s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   8%|▊         | 40/498 [05:09<51:06,  6.70s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   8%|▊         | 41/498 [05:26<1:13:08,  9.60s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   8%|▊         | 42/498 [05:32<1:05:29,  8.62s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   9%|▊         | 43/498 [05:42<1:08:07,  8.98s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[DBG] idx: 0, output: "다시는 결혼하고 싶지 않아요."가 옳다. 문장의 끝에는 마침표를 찍는 것이 어문 규범에 부합한다.
+[DBG] idx: 1, output: "에스컬레이터 손잡이를 잡아야 한다."가 옳다. 외래어 표기법에 따라 'escalator'는 '에스컬레이터'로 적는다.
+[DBG] idx: 2, output: "그는 가끔 가만가만히 생각하는 버릇이 있다."가 옳다. '가만'은 '아무 움직임이 없이 조용히'라는 뜻의 부사이고, '가만히'는 '조용히'라는 뜻의 부사이다. 여기서는 '조용히'의 의미이므로 '가만가만히'가 옳다.
+[DBG] idx: 3, output: "이 글은 사회적 약자들의 목소리에 주목했다는 점에서 의의가 있다."가 옳다. '의의(意義)'는 '뜻이나 의의'를 뜻하는 표준어이고, '의이'는 표준어가 아니다.
+[DBG] idx: 4, output: "국가를 지도하는 이로서는 조치를 취할 수밖에 없다."가 옳다. '이로써'는 '그것으로써'의 뜻으로, 수단이나 방법을 나타낼 때 쓴다. 여기서는 '국가를 지도하는 사람으로서'라는 자격이나 신분을 나타내므로 '이로서는'이 옳다.
+[DBG] idx: 5, output: "신청 대상: 2021~2023년도 가입자"가 옳다. 항목이나 대상을 제시할 때는 콜론(:)을 사용한다.
+[DBG] idx: 6, output: "이 제품은 공식 사이트에서만 구매할 수 있다."가 옳다.'site'는 외래어 표기법에 따라 '사이트'로 적는다.
+[DBG] idx: 7, output: "막내가 빈대떡을 둥글넓적하게 만들었다."가 옳다. '빈대떡'이 표준어이며, '빈자떡'은 비표준어이다.
+[DBG] idx: 8, output: "점심으로는 짜장면 곱빼기를 먹었다."가 옳다. '곱빼기'가 표준어이며, '곱배기'는 비표준어이다.
+[DBG] idx: 9, output: "죽 한 사발을 먹었다."가 옳다. 단위를 나타내는 명사는 띄어 써야 한다.
+[DBG] idx: 10, output: "아이가 목걸이를 앓아서 말을 잘 못한다."가 옳다. '목걸이'가 표준어이며, '목거리'는 비표준어이다.
+[DBG] idx: 11, output: "오늘은 날도 춥지만 더욱이 비까지 내린다."가 옳다. '더욱이'는 '이미 있는 사실에 더하여'의 뜻을 나타내는 부사로, '더우기'보다 표준어이다.
+[DBG] idx: 12, output: "생일에는 케이크에 초를 꽂고 소원을 빌어야 한다."가 옳다. 'cake'는 외래어 표기법에 따라 '케이크'로 적는다.
+[DBG] idx: 13, output: "검·경찰"이 옳다. 두 가지 이상의 어구를 열거할 때에는 가운뎃점(·)을 쓴다.
+[DBG] idx: 14, output: "은주는 방에 들어가 문을 닫았다. 그러곤 한참 뒤에야 밖으로 나왔다."가 옳다. '그러곤'이 표준어이며, '그리곤'은 비표준어이다.
+[DBG] idx: 15, output: "연습을 열심히 하면 발표를 잘할 수 있다."가 옳다. '잘하다'는 '잘'과 '하다'가 결합한 합성어이므로 붙여 써야 한다.
+[DBG] idx: 16, output: "챌린저"가 옳다. 영어 단어 'challenger'는 외래어 표기법에 따라 '챌린저'로 적는다.
+[DBG] idx: 17, output: "\"12345\"처럼 5개의 숫자가 있을 때 네 번째로 큰 수는?"이라고 물어보는 질문."이 옳다. 직접 대화나 글을 인용할 때는 큰따옴표를 사용한다.
+[DBG] idx: 18, output: "서로 통했다!"라고 하며 부둥켜 안았다."가 옳다. 직접 인용을 할 때는 큰따옴표를 사용한다.
+[DBG] idx: 19, output: "물을 부어 두고 면이 붇기 전에 드세요."가 옳다. '부어'는 '붇다'의 어간 '붇-'에 '-어'가 결합한 활용형이므로 붙여 쓴다.
+[DBG] idx: 20, output: "접수증을 직접 드리거나 휴대 전화 문자 메시지 또는 전자 우편으로 보내드립니다."가 옳다.'message'는 외래어 표기법에 따라 '메시지'로 적어야 한다.
+[DBG] idx: 21, output: "간밤에 늦게 잤더니 아침 늦게 눈이 떠져 큰일 날 뻔했다."가 옳다. '뜨다'의 피동형은 '뜨이다'가 아니라 '뜨다'의 어간 '뜨-'에 피동 접미사 '-어지다'를 붙여 '떠지다'로 써야 한다.
+[DBG] idx: 22, output: "꼭 기억하십시오."가 옳다. '기억하십시오'는 '기억하다'의 어간 '기억하-'에 명령형 종결어미 '-십시오'가 붙은 형태이다.
+[DBG] idx: 23, output: "잎의 윗면은 녹갈색을 띠고, 아랫면은 연한 회녹색을 띤다."가 옳다. '회녹색'이 표준어이다. '회록색'은 비표준어이다.
+[DBG] idx: 24, output: "올 한해에도 고생 많으셨어요."가 옳다. '한해'는 '한 해'의 합성어로 붙여 쓴다.
+[DBG] idx: 25, output: "쌀을 얻어서 죽이라도 쑤어 먹어라."가 옳다. '쌀아기'는 표준어가 아니며, '쌀'이 옳다. '쌀아기'는 비표준어이므로 표준어인 '쌀'로 고쳐야 한다.
+[DBG] idx: 26, output: "바빠서 점심을 먹지 못했다."가 옳다. '못하다'는 '할 수 없다'는 뜻의 합성어이므로 붙여 쓴다.
+[DBG] idx: 27, output: "오늘은 볍씨를 논에 뿌릴 것이다."가 옳다. '볍씨'는 '벼'와 '씨'가 결합한 합성어로, 한글맞춤법 제30항에 따라 사이시옷을 받치어 '볍씨'로 적어야 한다.
+[DBG] idx: 28, output: "저희 회사가 자신 있게 선보이는 신제품입니다."가 옳다. '선 보이다'는 '선뵈다'의 비표준어이므로, 표준어인 '보이다'를 써야 한다.
+[DBG] idx: 29, output: "신선하다는 뜻의 프레시."가 옳다. 'fresh'의 발음 [fɹɛʃ]는 '프레시'로 적는다.
+[DBG] idx: 30, output: "이번 축구 경기에서 철수가 패스를 잘했다."가 옳다. '패스(pass)'는 외래어 표기법에 따라 '패스'로 적는다.
+[DBG] idx: 31, output: "내 고향은 서울에서 거리도 멀 뿐더러 교통편도 좋지 않다."가 옳다. '뿐더러'는 '뿐'과 '더러'가 합쳐진 말이므로 반드시 띄어 써야 한다.
+[DBG] idx: 32, output: "다이어트를 할 때는 운동과 식단의 밸런스가 중요하다."가 옳다. 영어 'balance'의 표준 외래어 표기는 '밸런스'이다.
+[DBG] idx: 33, output: "이번 전시회의 주제는 '어린 시절의 회상 - 함께 읽는 일기'이다."가 옳다. 제목이나 작품명 등은 큰따옴표가 아니라 작은따옴표(' ')로 묶는 것이 어문 규범에 맞다.
+[DBG] idx: 34, output: "저 산을 넘지 못해. 저 푯말에 "출입 금지"라고 되어 있는 걸."이 옳다. '못 해'는 '못하다'의 잘못된 형태로, '못하다'는 한 단어이므로 붙여 써야 한다.
+[DBG] idx: 35, output: "「한국수화언어법」 제4조 제1항"이 옳다.
+[DBG] idx: 36, output: "탕평채는 조선 시대의 궁중 요리인데, 영조가 탕평책을 논하는 자리에서 처음 등장했다는 데에서 이름이 유래했다."가 옳다. 앞의 내용이 뒤의 내용의 이유나 근거가 될 때에는 쉼표(,)를 쓴다.
+[DBG] idx: 37, output: "1919. 3. 1."이 옳다.
+[DBG] idx: 38, output: "안녕하세요, 과장님."이 옳다. 인사말 뒤에는 쉼표(,)를 쓰는 것이 어문 규범에 맞다.
+[DBG] idx: 39, output: "다큐멘터리를 만들다."가 옳다. 외래어 표기법에 따라 'documentary'는 '다큐멘터리'로 적는다.
+[DBG] idx: 40, output: "번번이 시험에서 떨어지는 것을 보면 아무래도 나랑은 안 맞는 길 같다."가 옳다. '번번이'는 '번번하다'의 부사형으로, '거듭거듭' 또는 '틀림없이'의 뜻을 나타낼 때 쓴다. '번번히'는 '번번하다'의 부사형이 아니라 '번번이'의 잘못된 표기이다.
+[DBG] idx: 41, output: "설명은 뒤 페이지를 참고하시오."가 옳다. '뒤'는 한 단어로 붙여 쓰고, '페이지'는 명사로 띄어 쓴다.
+[DBG] idx: 42, output: "지점장이 경찰서에 고소하자고 해서, 제가 {"일단 기다려봅시다. 누구 교도소에 보내면 쓰겠습니까?"}라고 말했습니다."가 옳다. 직접 인용한 말은 큰따옴표로 묶어야 한다.
+[DBG] idx: 43, output: "콩팥 기능이 정상인 경우 임신율은 일반인과 전혀 차이가 없습니다."가 옳다. '임신률'은 '임신하는 비율'을 뜻하는 표준어이므로, '임신률'로 적어야 한다. '임신율'은 잘못된 표기이다.Generating...:   9%|▉         | 44/498 [05:51<1:07:49,  8.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   9%|▉         | 45/498 [05:58<1:03:14,  8.38s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   9%|▉         | 46/498 [06:07<1:05:21,  8.68s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:   9%|▉         | 47/498 [06:16<1:04:29,  8.58s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  10%|▉         | 48/498 [06:23<1:01:57,  8.26s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  10%|▉         | 49/498 [06:29<56:22,  7.53s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  10%|█         | 50/498 [06:36<55:12,  7.39s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  10%|█         | 51/498 [06:43<53:41,  7.21s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  10%|█         | 52/498 [06:51<54:44,  7.36s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  11%|█         | 53/498 [06:57<52:31,  7.08s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  11%|█         | 54/498 [07:05<54:03,  7.31s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  11%|█         | 55/498 [07:10<49:54,  6.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  11%|█         | 56/498 [07:17<49:02,  6.66s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  11%|█▏        | 57/498 [07:28<58:25,  7.95s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  12%|█▏        | 58/498 [07:37<1:00:26,  8.24s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  12%|█▏        | 59/498 [07:43<55:35,  7.60s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  12%|█▏        | 60/498 [07:54<1:04:16,  8.80s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  12%|█▏        | 61/498 [08:03<1:03:17,  8.69s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  12%|█▏        | 62/498 [08:08<56:25,  7.76s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  13%|█▎        | 63/498 [08:14<52:37,  7.26s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  13%|█▎        | 64/498 [08:26<1:02:08,  8.59s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  13%|█▎        | 65/498 [08:37<1:07:10,  9.31s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  13%|█▎        | 66/498 [08:51<1:17:46, 10.80s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  13%|█▎        | 67/498 [09:03<1:19:44, 11.10s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  14%|█▎        | 68/498 [09:11<1:12:07, 10.06s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  14%|█▍        | 69/498 [09:26<1:22:41, 11.57s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  14%|█▍        | 70/498 [09:31<1:09:29,  9.74s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  14%|█▍        | 71/498 [09:41<1:09:04,  9.71s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  14%|█▍        | 72/498 [09:51<1:10:06,  9.87s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  15%|█▍        | 73/498 [09:58<1:02:37,  8.84s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  15%|█▍        | 74/498 [10:06<1:00:46,  8.60s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  15%|█▌        | 75/498 [10:19<1:10:14,  9.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  15%|█▌        | 76/498 [10:31<1:14:40, 10.62s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  15%|█▌        | 77/498 [10:38<1:07:12,  9.58s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  16%|█▌        | 78/498 [10:45<1:02:09,  8.88s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  16%|█▌        | 79/498 [10:55<1:03:38,  9.11s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  16%|█▌        | 80/498 [11:05<1:05:34,  9.41s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  16%|█▋        | 81/498 [11:15<1:05:36,  9.44s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 44, output: "공짜라길래 잔뜩 가져왔다."가 옳다. '잔득'은 '잔뜩'의 비표준어이며, 표준어는 '잔뜩'이다.
+[DBG] idx: 45, output: "초등학생, 중학생 등 미성년자는 보호자를 동반해야 입장 가능합니다."가 옳다. '등'은 앞말과 같은 종류의 것이 더 있음을 나타내는 의존 명사이므로, 앞말과 띄어 써야 한다.
+[DBG] idx: 46, output: "녀석은 탁자 위에 몸을 뉘인 채 있었다."가 옳다. '뉘다'의 어간 '뉘-' 뒤에는 모음으로 시작하는 어미가 오므로 '뉘인'으로 적어야 한다.
+[DBG] idx: 47, output: "해당 소문은 사실이 아닌 것으로 드러났습니다."가 옳다. '드러나다'가 표준어이며, '들어나다'는 비표준어이다.
+[DBG] idx: 48, output: "저는 이번 컨퍼런스에 참가할 거예요."가 옳다. 'conference'는 외래어 표기법에 따라 '컨퍼런스'로 적는다.
+[DBG] idx: 49, output: "워낙 구하기 힘든 물건이라 웃돈까지 주고 샀다."가 옳다. '웃돈'은 정가보다 더 얹어 주는 돈을 뜻하는 표준어이다. '윗돈'은 표준어가 아니다.
+[DBG] idx: 50, output: "남편은 백 리 길을 쌀을 지어 나르고 갔다."가 옳다. '백 리'는 두 단어이므로 띄어 써야 한다.
+[DBG] idx: 51, output: "국에 다진 마늘을 듬뿍 넣어라."가 옳다. '듬북'은 '듬뿍'의 비표준어이다. '듬뿍'이 표준어이므로 '듬뿍'으로 적어야 한다.
+[DBG] idx: 52, output: "왜 자꾸 쳐다보는 거야."가 옳다. '쳐다보다'는 한 단어이므로 붙여 쓴다.
+[DBG] idx: 53, output: "치수를 재 보자."가 옳다. '재다'는 '재다'의 활용형이므로 '재'가 맞다. '쟤'는 '자기'의 구어적 줄임말로, 여기서는 적절하지 않다.
+[DBG] idx: 54, output: "플래시를 터뜨리다."가 옳다. 'flash'는 외래어 표기법에 따라 '플래시'로 적는다.
+[DBG] idx: 55, output: "오늘 저녁은 다슬기국이다."가 옳다. '다슬기'는 표준어이고, '다슬깃굿'은 비표준어이다.
+[DBG] idx: 56, output: "너 그렇게 하다가 분명 후회할걸."이 옳다. '걸'은 '것'을 구어적으로 이르는 말로, 받침 없는 체언 뒤에는 '걸', 받침 있는 체언 뒤에는 '걸'을 붙여 쓴다. 따라서 '후회할껄'이 아니라 '후회할걸'이 옳다.
+[DBG] idx: 57, output: "월, 수, 금 모두 행사가 있다."가 옳다. 요일을 나열할 때는 쉼표(,)로 각 요일을 구분하고, 마지막 요일 뒤에는 '모두'와 같은 말을 넣어 전체를 아우르는 뜻을 나타내는 것이 자연스럽다.
+[DBG] idx: 58, output: "프라이팬을 사용해서 요리를 했다."가 옳다. 외래어 표기법에 따라 'frying pan'은 '프라이팬'으로 적는다.
+[DBG] idx: 59, output: "여기는 군사적인 시설로서 바깥쪽엔 해자가 있다."가 옳다. '시설로서'는 '자격'이나 '지위'를 나타내므로 조사 '로서'를 써야 한다.
+[DBG] idx: 60, output: "2023. 4.~9."가 옳다. 숫자와 숫자 사이에는 가운뎃점(·) 대신 물결표(~)를 쓰는 것이 어문 규범에 맞다.
+[DBG] idx: 61, output: "원가 계산을 합니까( ) 안 합니까?"가 옳다. 의문문의 끝에는 물음표를 붙인다.
+[DBG] idx: 62, output: "디렉터리 구조를 분석해 보자."가 옳다. 영어 'directory'는 외래어 표기법에 따라 '디렉터리'로 적는다.
+[DBG] idx: 63, output: "이번 박람회에서는 반드시 우리 회사의 신제품을 선뵈야 한다."가 옳다. '선뵈야'는 '선뵈다'의 어간 '선뵈-'에 연결어미 '-야'가 결합한 형태이다.
+[DBG] idx: 64, output: "어머니를 잃고 홀로 밭일을 하는 아버지의 마음도 얼마나 침울沈鬱하였으랴."가 옳다. '침울하다'의 어간 '침울하-' 뒤에 과거의 추측을 나타내는 연결어미 '-었으랴'를 붙여 '침울하였으랴'로 써야 어문 규범에 맞다.
+[DBG] idx: 65, output: "이전 확장 개업을 축하합니다."가 옳다. '이전(移轉)'은 '다른 데로 옮겨 감'을 뜻하고, '확장(擴張)'은 '넓히거나 크게 함'을 뜻하며, '개업(開業)'은 '장사나 사업을 시작함'을 뜻한다. 이 세 단어는 모두 명사로, 각각 띄어 써야 한다.
+[DBG] idx: 66, output: "그럼요. 지금 합니다. 해요."가 옳다. '해요'는 '하다'의 어간 '하-' 뒤에, 설명ᆞ의문ᆞ명령의 뜻을 나타내는 종결 어미 '-어요'가 붙은 형태로, 받침 없는 체언 뒤에서 '해요'로 줄여 쓸 수 있다. 따라서 '해요'가 옳다.
+[DBG] idx: 67, output: "그는 내 소설을 마음에 들어 했다."가 옳다. '마음에 들다'는 본용언과 보조용언의 구성이므로, 보조용언 앞에는 띄어쓰기를 해야 한다.
+[DBG] idx: 68, output: "머리가 희끗한 할머니께서 나오셨다."가 옳다. '희끄무레하다'의 어근 '희끄무레'에 접미사 '-하다'가 붙으면 '희끄무레하다'가 되고, '희끄무레하다'의 어간 '희끄무레하-'에 '-ᄂ'이 붙으면 '희끄무레한'이 된다. 따라서 '히끗한'이 아니라 '희끗한'이 옳다.
+[DBG] idx: 69, output: "계란프라이를 먹었다."가 옳다. 외래어 표기법에 따라 'fry'는 '프라이'로 적는다.
+[DBG] idx: 70, output: "1920년대에는 식민지 조선에도 신여성이 등장하기 시작했다."가 옳다. '신여성(新女性)'은 '새로울 신(新)'과 '여자 녀(女)', '성(性)'이 합쳐진 표준어이다. '신녀성'은 잘못된 표기이다.
+[DBG] idx: 71, output: "선생님 덕분에 병이 다 나았습니다."가 옳다. '낫다'는 '병이나 상처 따위의 증세가 없어지다'의 뜻으로, '병이 나다'가 아니라 '병이 낫다'로 써야 옳다.
+[DBG] idx: 72, output: "그 집은 부모 자식 간 정이 두터운 것 같더라."가 옳다. '간(間)'은 명사로서 앞말과 띄어 써야 한다.
+[DBG] idx: 73, output: "모두들 만나서 반갑습니다."가 옳다. '모두들'은 '모두'에 복수의 뜻을 더하는 접미사 '-들'이 붙은 형태로, 여러 사람을 강조할 때 쓴다.
+[DBG] idx: 74, output: "많은 양의 흰자위가 노른자위를 에워싸고 있음."이 옳다. '양(量)'은 '수량이나 분량'을 뜻할 때 쓰고, '흰자위', '노른자위'와 함께 쓸 때는 '양'이 옳다.
+[DBG] idx: 75, output: "그것으로부터 시작된 질문: 영혼은 찢어지는 물성인가, 금가고 깨어지는 물성인가 하는 물음 사이"가 옳다. 질문이나 명령을 나타내는 문장 뒤에는 '물음', '명령', '호소' 등의 뜻을 나타내는 '물음표(?)'를 붙인다. 따라서 '물음 사이' 앞에 물음표를 넣어야 한다.
+[DBG] idx: 76, output: "용의자가 실종된 그날은 비가 내렸다."가 옳다. '그날'은 한 단어로 붙여 써야 하므로, '그 날'로 띄어 쓰는 것은 어문 규범에 맞지 않다.
+[DBG] idx: 77, output: "그는 밥을 먹으면서까지도 연신 말을 해 댔다."가 옳다. '까지도'는 조사 '까지'와 보조사 '도'가 결합한 말이므로 붙여 쓴다.
+[DBG] idx: 78, output: "낮고 둥근 대좌는 연꽃잎이 돋을새김되어 있으며 아랫부분은 없어진 것으로 보인다."가 옳다. '아랫부분'은 '아래'와 '부분'이 결합된 단어이므로 붙여 써야 한다.
+[DBG] idx: 79, output: "짜장을 얼굴에 다 묻히면서 먹었다."가 옳다. '묻히다'는 '묻다'의 피동사로, 주어가 다른 것에 의해 묻히는 상황에 쓰인다. 주어인 '짜장'이 스스로 묻는 것이 아니라 짜장이 얼굴에 묻는 것이므로 '묻히다'가 옳다.
+[DBG] idx: 80, output: "씻고 준비하고 있으랬더니 이때 뭐 했어?"가 옳다. '이때'는 '바로 이때' 또는 '바로 이때쯤'의 뜻을 나타내는 표준어이다. '입때'는 '지금까지의 동안'을 뜻하므로 문맥에 맞지 않는다.
+[DBG] idx: 81, output: "모든 서류가 다 있는데도 통과되지 못했다."가 옳다. '데'는 '곳'이나 '곳으로'의 뜻을 나타내는 의존명사이므로, 뒤에 조사가 붙을 때는 '데'로 적어야 한다. 따라서 '데도'가 옳다.Generating...:  16%|█▋        | 82/498 [11:24<1:05:25,  9.44s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  17%|█▋        | 83/498 [11:30<58:19,  8.43s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  17%|█▋        | 84/498 [11:40<1:00:19,  8.74s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  17%|█▋        | 85/498 [11:46<54:57,  7.98s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  17%|█▋        | 86/498 [11:55<56:30,  8.23s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  17%|█▋        | 87/498 [12:06<1:02:59,  9.20s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  18%|█▊        | 88/498 [12:18<1:07:22,  9.86s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  18%|█▊        | 89/498 [12:26<1:03:30,  9.32s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  18%|█▊        | 90/498 [12:34<1:01:34,  9.05s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  18%|█▊        | 91/498 [12:41<56:44,  8.36s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  18%|█▊        | 92/498 [14:49<4:59:00, 44.19s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  19%|█▊        | 93/498 [14:56<3:42:57, 33.03s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  19%|█▉        | 94/498 [15:02<2:48:01, 24.95s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  19%|█▉        | 95/498 [15:08<2:10:48, 19.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  19%|█▉        | 96/498 [15:18<1:51:26, 16.63s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  19%|█▉        | 97/498 [15:26<1:32:42, 13.87s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  20%|█▉        | 98/498 [15:40<1:32:47, 13.92s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  20%|█▉        | 99/498 [15:55<1:34:40, 14.24s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  20%|██        | 100/498 [16:04<1:25:03, 12.82s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  20%|██        | 101/498 [16:14<1:18:09, 11.81s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  20%|██        | 102/498 [16:21<1:07:44, 10.26s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  21%|██        | 103/498 [16:32<1:10:26, 10.70s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  21%|██        | 104/498 [16:39<1:02:03,  9.45s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  21%|██        | 105/498 [16:45<54:43,  8.36s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 82, output: "내 사촌 동생은 엄청난 개구장이다."가 옳다. '개구쟁이'가 표준어이며, '개구장이'는 비표준어이다.
+[DBG] idx: 83, output: "제가 잘못 들었나 봐요."가 옳다. '잘못'은 '옳지 않게' 또는 '틀리게'라는 뜻의 합성어이므로 붙여 쓴다.
+[DBG] idx: 84, output: "옛 몸은 땅에 묻혀 잠들어 있다."가 옳다. '옛'은 관형사이므로 '몸'과 띄어 써야 한다.
+[DBG] idx: 85, output: "이번 사업의 성공률은 상당히 높다."가 옳다. '성공률'은 '비율'의 뜻을 더하는 접미사 '-률(率)'을 붙여 적는 것이 옳다.
+[DBG] idx: 86, output: "이 냄비는 열 보존율이 높지 않다."가 옳다. '열 보존률'은 '율(率)'이 '비율'의 뜻을 나타내는 접미사이므로, 한자어와 한자어가 결합할 때에는 사이시옷을 넣지 않는다. 따라서 '열보존률'이 아니라 '열보존율'로 적어야 한다.
+[DBG] idx: 87, output: "지원: [놀란 표정을 지으며] "벌써 역에 도착했다고?""가 옳다. 직접 인용을 할 때는 큰따옴표가 아니라 작은따옴표를 써야 한다.
+[DBG] idx: 88, output: "접때 얘기했던 그 사람이 드디어 왔다."가 옳다. '접때'는 '얼마 안 된 과거의 어떤 때'를 뜻하는 표준어이고, '저때'는 표준어가 아니다.
+[DBG] idx: 89, output: "잘 사는 사람들은 더 잘 살고, 상대적으로 못 사는 사람들은 더 못 살게 느껴진다는 것이다."가 옳다. 앞 문장과 뒤 문장이 대등하게 이어질 때는 쉼표(,)를 넣어 구분한다.
+[DBG] idx: 90, output: "해당 사업은 아직 진행 중입니다."가 옳다. '진행중'은 한 단어가 아니라 '진행'과 '중'이 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 91, output: "육십갑자: 갑자, 을축, 병인, 정묘, 무진, 기사, 경오, 신미......신유, 임술, 계해"가 옳다. '육십갑자'는 '갑자, 을축, 병인, 정묘, 무진, 기사, 경오, 신미, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인, 신묘, 임신, 계유, 갑술, 을해, 병자, 정축, 무인, 기묘, 경진, 신사, 임오, 계미, 갑신, 을유, 병술, 정해, 무자, 기축, 경인
+[DBG] idx: 92, output: "손으로 만지지 마. 짜지도 말고.( )"가 옳다. 명령이나 금지의 뜻을 나타내는 문장 뒤에는 마침표를 찍는 것이 어문 규범에 맞다.
+[DBG] idx: 93, output: "내레이션이 나오기 시작했다."가 옳다. 영어 'narration'은 외래어 표기법에 따라 '내레이션'으로 적는다.
+[DBG] idx: 94, output: "토끼가 깡충깡충 뛰어갔다."가 옳다. '깡충깡충'이 표준어이며, '깡총깡총'은 비표준어이다.
+[DBG] idx: 95, output: "탑신 각 면에는 양쪽 귀퉁이에 널찍한 우주를 두드러지게 본떠 새겨 둔중한 느낌이 난다."가 옳다. '널찍하다'는 표준어이고, '넓직하다'는 비표준어이다.
+[DBG] idx: 96, output: "수업 시간에 샤프를 사용해서 공책에 문제를 풀었다."가 옳다. '샤프(sharp)'는 외래어 표기법에 따라 '샤프'로 적어야 한다.
+[DBG] idx: 97, output: "아직 한국말에 서툴러서 잘 알아듣지 못해도 이해해 줘."가 옳다. '서툴러서'는 '서툴다'의 어간 '서툴-' 뒤에, '앞말이 관형어 구실을 하게 하고 추측, 예정, 의지, 가능성 등 확정된 현실이 아님을 나타내는' 연결어미 '-어서'가 붙은 형태이다. 따라서 '서툴어서'가 아니라 '서툴러서'로 적어야 한다.
+[DBG] idx: 98, output: "아기가 엄마 품속에서 잠들 듯이 강아지도 어미에게 안겨 잠이 든다."가 옳다. '잠들다'와 '잠이 들다'는 모두 쓸 수 있으나, '잠들다'는 '잠이 들다'의 준말이다. '잠이 들다'는 '잠'과 '들다'가 각각의 단어이므로 띄어 써야 하고, 준말인 '잠들다'는 붙여 쓴다. 따라서 '잠이 든다'로 띄어 쓰는 것이 옳다.
+[DBG] idx: 99, output: "시원한 물소리가 가슴을 틔워 주는 듯했다."가 옳다. '트다'의 어간 '뜨-'에 '-어'가 결합하면 '띄다'가 아니라 '틔다'가 되므로, '틔워'가 아니라 '틔워'로 적어야 한다.
+[DBG] idx: 100, output: "할머니 집에 계신가요?"가 옳다. '계시다'는 '있다'의 높임말로, 어간 '있-'에 높임 선어말어미 '-시-'가 결합한 형태이다. 따라서 '게신가요'가 아니라 '계시나요'로 적어야 한다.
+[DBG] idx: 101, output: "그 투수는 직구도 마다하지 않는 열정을 보였다."가 옳다. '마다하다'는 한 단어이므로 붙여 쓴다.
+[DBG] idx: 102, output: "내가 생각건대 이 집은 터가 영 좋지 못하다."가 옳다. '생각컨대'는 '생각하건대'의 준말이다. '생각하다'의 어간 '생각하-' 뒤에는 '-건대'가 붙어 '생각건대'가 되고, 이를 줄여 '생각건대'로 쓸 수 있다. '생각컨대'는 표준어가 아니다.
+[DBG] idx: 103, output: "무거운 액세서리는 오래 착용하기 힘들다."가 옳다. '액세서리(accessory)'는 외래어 표기법에 따라 '액세서리'로 적는다.
+[DBG] idx: 104, output: "감기를 예방하기 위해 마스크를 쓰다."가 옳다.'mask'의 표준 외래어 표기는 '마스크'이다.
+[DBG] idx: 105, output: "이 일은 내가 처리할게."가 옳다. '처리하다'의 어간 '처리하-' 뒤에, 해할 자리에 쓰여 '앞말이 관형어 구실을 하게 하고, 사건이나 행위가 완료되어 그 상태가 유지되고 있음'을 나타내는 종결 어미 '-ᄅ게'를 붙여 '처리할게'로 적어야 한다.Generating...:  21%|██▏       | 106/498 [16:58<1:04:14,  9.83s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  21%|██▏       | 107/498 [17:05<59:09,  9.08s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  22%|██▏       | 108/498 [17:13<56:18,  8.66s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  22%|██▏       | 109/498 [17:22<57:59,  8.94s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  22%|██▏       | 110/498 [17:34<1:02:22,  9.65s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  22%|██▏       | 111/498 [17:39<54:33,  8.46s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  22%|██▏       | 112/498 [17:54<1:06:50, 10.39s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  23%|██▎       | 113/498 [18:01<1:00:11,  9.38s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  23%|██▎       | 114/498 [18:09<55:44,  8.71s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  23%|██▎       | 115/498 [18:19<59:56,  9.39s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  23%|██▎       | 116/498 [18:26<54:05,  8.50s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  23%|██▎       | 117/498 [18:37<58:12,  9.17s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  24%|██▎       | 118/498 [18:46<58:45,  9.28s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  24%|██▍       | 119/498 [18:53<54:02,  8.56s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  24%|██▍       | 120/498 [19:00<50:44,  8.05s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  24%|██▍       | 121/498 [19:06<47:30,  7.56s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  24%|██▍       | 122/498 [19:12<44:32,  7.11s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  25%|██▍       | 123/498 [19:22<48:39,  7.78s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  25%|██▍       | 124/498 [19:28<45:45,  7.34s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  25%|██▌       | 125/498 [19:34<42:39,  6.86s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  25%|██▌       | 126/498 [19:45<50:00,  8.07s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  26%|██▌       | 127/498 [19:52<48:15,  7.80s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  26%|██▌       | 128/498 [19:59<46:06,  7.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  26%|██▌       | 129/498 [20:05<44:28,  7.23s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  26%|██▌       | 130/498 [20:14<46:50,  7.64s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  26%|██▋       | 131/498 [20:23<49:03,  8.02s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  27%|██▋       | 132/498 [20:31<49:09,  8.06s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  27%|██▋       | 133/498 [20:39<48:43,  8.01s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  27%|██▋       | 134/498 [20:45<45:23,  7.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  27%|██▋       | 135/498 [20:54<48:40,  8.04s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  27%|██▋       | 136/498 [21:01<46:49,  7.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  28%|██▊       | 137/498 [21:14<55:55,  9.29s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  28%|██▊       | 138/498 [21:27<1:02:11, 10.37s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  28%|██▊       | 139/498 [21:35<57:50,  9.67s/it]  The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  28%|██▊       | 140/498 [21:46<59:11,  9.92s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  28%|██▊       | 141/498 [21:55<56:57,  9.57s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  29%|██▊       | 142/498 [22:04<57:30,  9.69s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  29%|██▊       | 143/498 [22:12<52:43,  8.91s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  29%|██▉       | 144/498 [22:21<52:55,  8.97s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  29%|██▉       | 145/498 [22:27<48:15,  8.20s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  29%|██▉       | 146/498 [22:36<49:27,  8.43s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  30%|██▉       | 147/498 [22:44<48:53,  8.36s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 106, output: "억울하면 너도 큰 소리로 말해!"가 옳다. '큰 소리'는 두 단어이므로 띄어 써야 한다.
+[DBG] idx: 107, output: "유엔[United Nations]"이 옳다. 외래어 표기법에 따라 'nation'은 '네이션'으로 적어야 한다.
+[DBG] idx: 108, output: "네 옷은 흙이 많이 묻었다. 라는 문장에서, '네 옷'은 주어로도 볼 수 있고, 부사어로도 볼 수 있지 않을까요?"가 옳다. 인용문 뒤에는 쉼표(,)를 넣어 앞 문장과 구분한다.
+[DBG] idx: 109, output: "하얀 옷이 필요하다."가 옳다. '샛'은 '매우' 또는 '아주'의 뜻을 더하는 접두사로, '샛노랗다', '샛별' 등과 같이 쓰이나, '샛하얀'은 표준어가 아니다. '하얀'이 표준어이므로 '하얀'으로 적어야 한다.
+[DBG] idx: 110, output: "윈도우 설치 후 보안 설정이 필요하다."가 옳다. 외래어 표기법에 따라 'window'는 '윈도우'로 적는다.
+[DBG] idx: 111, output: "노을이 참 아름다웠다."가 옳다. '아름다웠다'는 '아름답다'의 어간 '아름다우-'에 과거를 나타내는 선어말어미 '-었-'과, 'ᄅ'을 제외한 받침 있는 용언의 어간 뒤에 붙는 어미 '-다'가 결합한 형태이다. 따라서 '아름다왔다'가 아니라 '아름다웠다'로 적어야 한다.
+[DBG] idx: 112, output: "물고기치고 아주 작아요."가 옳다. '치고'는 조사로서 앞말에 붙여 써야 하므로, '물고기 치고'가 아니라 '물고기치고'로 적어야 한다.
+[DBG] idx: 113, output: "위쪽에 무언가가 있다."가 옳다. '위쪽'은 한 단어로 붙여 써야 한다.
+[DBG] idx: 114, output: "까치살무사는 살무사과의 뱀이다."가 옳다. '까치살무사'는 합성어이므로 사이시옷을 넣어 '까치살무사'로 적어야 한다.
+[DBG] idx: 115, output: "삼백사십 번 고객님은 창구로 오세요."가 옳다. 숫자를 한글로 적을 때는 '삼백사십'과 같이 띄어 쓴다.
+[DBG] idx: 116, output: "어이쿠!"가 옳다. 감탄사 '어이쿠' 뒤에는 느낌표를 쓰는 것이 어문 규범에 부합한다. 감탄사는 감정이나 놀람을 나타내므로 문장 끝에 느낌표를 붙인다. '어이쿠~'처럼 물결표(~)를 쓰는 것은 적절하지 않다.
+[DBG] idx: 117, output: "가슴이 처져서 고민이다."가 옳다. '처지다'는 '위에서 아래로 늘어지거나 내려앉다'의 뜻을 가진 표준어이고, '쳐지다'는 '처지다'의 비표준어이다. 따라서 '처져서'로 고쳐야 한다.
+[DBG] idx: 118, output: "다코야키를 먹었다."가 옳다. 일본어 'たこやき(다코야키)'는 외래어 표기법에 따라 '다코야키'로 적는다.
+[DBG] idx: 119, output: "장갑 끼거나 빨래할 때는 안 건드려."가 옳다. 문장의 끝에는 마침표를 찍어야 한다.
+[DBG] idx: 120, output: "나는 말티즈를 한 마리 키운다."가 옳다. 외래어 표기에서 'Maltese'는 '말티즈'로 적는다.
+[DBG] idx: 121, output: "주스는 과일의 신선한 맛을 담고 있다."가 옳다. 'juice'는 외래어 표기법에 따라 '주스'로 적는다.
+[DBG] idx: 122, output: "숫사자는 머리에 갈기가 있다."가 옳다. '숫-'은 '수컷'의 뜻을 더하는 접두사이므로, '숫사자'와 같이 붙여 써야 한다. '숫'과 '사자'를 띄어 쓰는 것은 어문 규범에 맞지 않는다.
+[DBG] idx: 123, output: "황사가 심할 때에는 마스크를 쓰는 것이 좋다."가 옳다.'mask'는 외래어 표기법에 따라 '마스크'로 적는다.
+[DBG] idx: 124, output: "시험 잘 보고 와!"가 옳다. '잘'과 '보다'는 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 125, output: "위반 내용(도로교통법 위반(음주 운전))"이 옳다. 괄호 안에서 다시 괄호를 쓸 때는 바깥의 것은 큰따옴표(" ")로, 안쪽의 것은 작은따옴표(' ')로 쓰는 것이 어문 규범에 맞다.
+[DBG] idx: 126, output: "그는 우의정이라는 높은 벼슬에도 올랐다고 합니다."가 옳다. '오르다'의 과거형은 '올랐다'가 표준어이다.
+[DBG] idx: 127, output: "이상한 데서 고집을 부리네."가 옳다. '이상하다'의 관형사형 '이상한' 뒤에는 명사 '데'를 띄어 써야 한다.
+[DBG] idx: 128, output: "매트리스를 교체했다."가 옳다.'mattress'는 '매트리스'로 적는 것이 외래어 표기법에 맞다.
+[DBG] idx: 129, output: "꼭 그렇다기보다는 그냥 네가 해줬으면 좋겠다는 거지."가 옳다. 조사 '보다는'은 한 단어이므로 붙여 써야 한다.
+[DBG] idx: 130, output: "피로가 싹 풀리는 것처럼 너무 좋아요."가 옳다. '것 같다'는 '것처럼'으로 줄여 쓸 수 있다.
+[DBG] idx: 131, output: "살구빛 파스텔을 흠뻑 갈아 넣은 듯하다."가 옳다. '살구빛'은 '살구'와 '빛'이 결합한 합성어로, 사이시옷을 붙여 '살구빛'으로 적어야 한다.
+[DBG] idx: 132, output: "할아버지가 돌아가셔서 주말에 장례를 치렀다."가 옳다. '치르다'는 어간 '치르-'에 모음 어미 '-었-'이 결합하면 'ᅳ'가 탈락하여 '치렀다'로 적는다.
+[DBG] idx: 133, output: "그 점쟁이가 꿈 해몽을 참 잘하더라."가 옳다. 표준어는 '점쟁이'이며, '점장이'는 비표준어이다.
+[DBG] idx: 134, output: "얼마나 많은 거예요?"가 옳다. '많다'의 관형사형 '많은' 뒤에는 서술격 조사 '이다'의 관형사형 'ᄂ'이 붙어 '많은 거예요'로 적어야 한다.
+[DBG] idx: 135, output: "표가 매진되어 웃돈을 주고서야 겨우 구할 수 있었다."가 옳다. '웃돈'이 표준어이며, '윗돈'은 비표준어이다.
+[DBG] idx: 136, output: "각각의 몸돌에는 모서리 기둥을 조각하였으며, 지붕돌을 받치는 받침돌은 체감률에 따라 4단으로 처리하였다."가 옳다. '체감률'은 '체감(體感)'과 '률(率)'이 합쳐진 말로, '비율'을 뜻하므로 '체감률'이 표준어이다. '체감율'은 잘못된 표기이다.
+[DBG] idx: 137, output: "그가 나를 탐탁지 않은 눈으로 바라보았다."가 옳다. '탐탁지 않다'는 '마음에 들지 않다'는 뜻의 관용적 표현이므로, '탐탁지 않은'으로 써야 옳다. '탐탁찮다'는 '마음에 들지 않다'는 뜻이지만, '탐탁지 않다'가 표준어이다.
+[DBG] idx: 138, output: "처음 뵙겠습니다. 홍길동입니다."가 옳다. 인사말이나 감탄문, 명령문 뒤에는 마침표를 찍는 것이 어문 규범에 맞다.
+[DBG] idx: 139, output: "내가 지껄였던 악담이, 너를 죽을지도 모를 위험 속으로 내몬 것이냐."가 옳다. '지껄이다'는 '지껄이다'로 적는 것이 표준어이다. '지꺼리다'는 표준어가 아니다.
+[DBG] idx: 140, output: "변변찮은 음식이지만 많이 먹어라."가 옳다. '변변찮다'는 '변변하지 않다'의 준말로, '변변챦은'이 아니라 '변변찮은'이 표준어이다.
+[DBG] idx: 141, output: "예를 들어서 빌 게이츠(Bill Gates), 마이크로소프트(Microsoft)와 같이 괄호 안에 영어를 넣어서 병기를 한다든지요?"가 옳다. 외래어의 한글 표기와 원어를 병기할 때는 쉼표(,)를 넣어 구분한다.
+[DBG] idx: 142, output: "첨에 한 갈등 상황이 벌어지고 있다."가 옳다. '첨에'는 '처음에'의 비표준어이므로, 표준어인 '처음에'로 고쳐 써야 한다.
+[DBG] idx: 143, output: "프랑스어로'septembre'는 '셉탕브르'로 적는다."가 옳다. 프랑스어'septembre'의 발음은 [sɛptɑ̃bʁ]로, '셉탕브르'가 표준 외래어 표기법에 맞다.
+[DBG] idx: 144, output: "너는 '따위' 같은 게 아니야."가 옳다. 조사 '따위'는 의존 명사이므로 작은따옴표로 묶어야 한다.
+[DBG] idx: 145, output: "그럼, 그럼! 실패는 성공의 어머니, 라는 말도 있잖아."가 옳다. 인용된 문장의 끝에는 마침표를 찍지 않는 것이 어문 규범에 맞다.
+[DBG] idx: 146, output: "그는 동틀 녘에 돌아왔다."가 옳다. '동틀 녘'이 표준어이며, '동틀녘'은 비표준어이다.
+[DBG] idx: 147, output: "이번 겨울은 너무 추웠어." 영희는 며칠 전 철수가 한 말을 떠올렸다."가 옳다. 직접 인용문은 큰따옴표로 묶어야 한다.Generating...:  30%|██▉       | 148/498 [22:53<48:58,  8.40s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  30%|██▉       | 149/498 [23:05<55:11,  9.49s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  30%|███       | 150/498 [23:11<48:45,  8.41s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  30%|███       | 151/498 [23:20<49:52,  8.62s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  31%|███       | 152/498 [23:29<49:54,  8.65s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  31%|███       | 153/498 [23:38<50:40,  8.81s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  31%|███       | 154/498 [23:49<55:10,  9.62s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  31%|███       | 155/498 [23:59<55:52,  9.77s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  31%|███▏      | 156/498 [24:06<50:33,  8.87s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  32%|███▏      | 157/498 [24:15<49:39,  8.74s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  32%|███▏      | 158/498 [24:21<44:59,  7.94s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  32%|███▏      | 159/498 [24:29<45:07,  7.99s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  32%|███▏      | 160/498 [24:35<41:42,  7.40s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  32%|███▏      | 161/498 [24:41<39:15,  6.99s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  33%|███▎      | 162/498 [24:49<41:38,  7.43s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  33%|███▎      | 163/498 [24:56<40:18,  7.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  33%|███▎      | 164/498 [25:04<42:20,  7.61s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  33%|███▎      | 165/498 [25:11<40:29,  7.30s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  33%|███▎      | 166/498 [25:21<45:15,  8.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  34%|███▎      | 167/498 [25:31<46:51,  8.49s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  34%|███▎      | 168/498 [25:38<45:11,  8.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  34%|███▍      | 169/498 [25:46<44:00,  8.03s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  34%|███▍      | 170/498 [25:53<42:33,  7.78s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  34%|███▍      | 171/498 [26:00<41:46,  7.66s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  35%|███▍      | 172/498 [26:06<38:40,  7.12s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  35%|███▍      | 173/498 [26:14<40:02,  7.39s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  35%|███▍      | 174/498 [26:20<37:35,  6.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  35%|███▌      | 175/498 [26:27<37:18,  6.93s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  35%|███▌      | 176/498 [26:36<39:50,  7.42s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  36%|███▌      | 177/498 [26:45<43:45,  8.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  36%|███▌      | 178/498 [26:54<44:34,  8.36s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  36%|███▌      | 179/498 [27:01<41:42,  7.84s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  36%|███▌      | 180/498 [27:13<48:48,  9.21s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  36%|███▋      | 181/498 [27:20<44:44,  8.47s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  37%|███▋      | 182/498 [27:28<43:08,  8.19s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  37%|███▋      | 183/498 [27:35<41:32,  7.91s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  37%|███▋      | 184/498 [27:41<38:41,  7.39s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  37%|███▋      | 185/498 [27:47<36:36,  7.02s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  37%|███▋      | 186/498 [28:00<45:27,  8.74s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  38%|███▊      | 187/498 [28:07<42:46,  8.25s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  38%|███▊      | 188/498 [28:18<46:14,  8.95s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  38%|███▊      | 189/498 [28:25<43:15,  8.40s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  38%|███▊      | 190/498 [28:42<56:04, 10.92s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 148, output: "아기가 오뚝이를 갖고 놀고 있다."가 옳다. '오뚝이'는 '오똑이'가 아니라 '오뚝이'로 적는 것이 표준어이다.
+[DBG] idx: 149, output: "프라이팬을 사야 한다."가 옳다. 외래어 표기법에 따라 'frying pan'은 '프라이팬'으로 적는다.
+[DBG] idx: 150, output: "저희 며칠 전에 뵀지요?"가 옳다. '뵈다'의 어간 '뵈-'에 '-었-'과 '-지요'가 결합하면 '뵀지요'로 줄여 쓸 수 있다.
+[DBG] idx: 151, output: "커다란 구렁이가 또아리를 틀고 있었다."가 옳다. '또아리'는 '똬리'의 비표준어이므로, 표준어인 '똬리'로 고쳐 써야 한다.
+[DBG] idx: 152, output: "이튿날 다시 전화가 왔다."가 옳다. '이틀날'은 '이틀'에 접미사 '-날'을 붙여 만든 말이지만, 표준어는 '이튿날'이다. 따라서 '이튿날'로 적어야 한다.
+[DBG] idx: 153, output: "그 부부는 사사건건 부딪치더니 결국 이혼하고 말았다."가 옳다. '부딪치다'는 '서로 맞부딪다'의 뜻으로 '부딪다'보다 센 느낌을 주는 표준어이다. '부딪히다'는 '부딪다'의 피동형이므로, 여기서는 능동 의미의 '부딪치다'가 알맞다.
+[DBG] idx: 154, output: "말(馬)과 말(言) 가운데 어느 것이 장음이냐?"가 옳다. 장음임을 물을 때는 의문문이므로 물음표를 붙여야 한다.
+[DBG] idx: 155, output: "어린 시절부터 함께한 충청북도 충주는 내 고향이나 다름없다."가 옳다. '어린 시절'은 두 단어이므로 띄어 써야 한다.
+[DBG] idx: 156, output: "된장, 감자 등을 바르는 등의 잘못된 민간요법을 사용하면 안 돼요."가 옳다. '안 되다'의 '안'은 앞말과 띄어 써야 하므로, '안 되요'가 아니라 '안 돼요'로 적어야 한다.
+[DBG] idx: 157, output: "아침엔 달걀프라이와 빵을 먹습니다."가 옳다. 외래어 표기법에 따라 'fry'는 '프라이'로 적는다.
+[DBG] idx: 158, output: "시월은 단풍 구경을 가기가 좋다."가 옳다. '시월'이 표준어이며, '십월'은 비표준어이다.
+[DBG] idx: 159, output: "우리는 야간산행에 나섰다."가 옳다. '야간산행'은 합성어이므로 붙여 쓴다.
+[DBG] idx: 160, output: "당신의 품 안에서 살아가도록 할게요."가 옳다. '품 안'은 합성어가 아니므로 띄어 써야 한다.
+[DBG] idx: 161, output: "자동차 원자재가 비싸져서 차 값도 덩달아 올랐다."가 옳다. '차값'은 한 단어가 아니라 '차'와 '값'이 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 162, output: "귀한 손님이니 섭섭지 않게 대접해야 한다."가 옳다. '섭섭지 않다'가 표준어이며, '섭섭치 않다'는 비표준어이다.
+[DBG] idx: 163, output: "바닥에 기름기가 있다."가 옳다. '기름기'는 한 단어로 굳어져 표준어로 인정되므로, '기름 기'처럼 띄어 쓰지 않는다.
+[DBG] idx: 164, output: "그 역시 내가 이곳에 머물기를 바란다는 소리인 걸까?"가 옳다. 의존명사는 앞말과 띄어 써야 한다.
+[DBG] idx: 165, output: "각자의 답을 정답과 맞춰 볼 것."이 옳다. '맞추다'는 '서로 어긋나지 않게 하다'의 뜻으로, 답과 정답을 견주어 보는 상황에는 '맞추다'를 써야 한다.
+[DBG] idx: 166, output: "이거는 먼지털이인데요."가 옳다. '먼지털이'는 합성어이므로 사이시옷을 넣어 '먼지털이'로 적어야 한다.
+[DBG] idx: 167, output: "낫토가 발효되어 점액질의 실이 끈적끈적 늘어지다."가 옳다. 일본어 '納豆(なっとう)'는 외래어 표기법에 따라 '낫토'로 적는다.
+[DBG] idx: 168, output: "안 돼! ..."가 옳다. 감탄문이나 명령문 뒤에는 마침표(.)를 쓰는 것이 어문 규범에 맞다. 마침표를 생략하면 문장이 완결되지 않은 느낌을 줄 수 있다.
+[DBG] idx: 169, output: "아침으로 스크램블드에그를 먹고 왔다."가 옳다.'scrambled egg'는 외래어 표기법에 따라 '스크램블드에그'로 적는다.
+[DBG] idx: 170, output: "집 앞 마트는 매달 둘째 주 일요일이 휴무일이다."가 옳다. '둘째'는 '두 번째'를 뜻하므로 '둘째 주'가 옳다. '두째'는 잘못된 표기이다.
+[DBG] idx: 171, output: "꼭 멸망 직전 같은 날씨다."가 옳다. 관형사 '직전' 뒤에 조사 '같은'이 올 때는 띄어 써야 한다.
+[DBG] idx: 172, output: "인간(C100) - 남자(C1001) - 아버지(C10011)"가 옳다. 항목을 구분할 때는 쉼표(,) 대신 가운뎃점(·)을 쓰는 것이 어문 규범에 맞다.
+[DBG] idx: 173, output: "남원에 가면 광한루는 봐야지."가 옳다. '광한루'는 고유명사이므로 붙여 쓴다.
+[DBG] idx: 174, output: "원하시는 일들이 모두 이뤄지길 바랍니다."가 옳다. '일들'은 복수형 접미사 '-들'이 붙어 붙여 써야 한다.
+[DBG] idx: 175, output: "태조의 두터운 신임을 받았던 대경 대사의 업적을 새겨 놓은 탑비예요."가 옳다. '탑비' 뒤에 서술격 조사 '이다'의 줄임말 '예요'를 붙여 써야 한다.
+[DBG] idx: 176, output: "하느라고 했는데 네 마음에 들지 모르겠다."가 옳다. '하느라고'는 '하다'의 어간 '하-'에 연결어미 '-느라고'가 붙은 형태이다.
+[DBG] idx: 177, output: "야. 그러면 돼, 안 돼?"가 옳다. '돼'는 '되다'의 준말이고, '안 돼'는 '안 되다'의 준말이므로, 두 단어 모두 띄어 써야 한다.
+[DBG] idx: 178, output: "미술관에 가면 전시 팸플릿이 있다."가 옳다. 'pamphlet'은 외래어 표기법에 따라 '팸플릿'으로 적는다.
+[DBG] idx: 179, output: "숙제 해야지. 우리야."가 옳다. '우리야'는 '우리가'의 줄임말로, 받침이 있는 체언 뒤에는 조사 '가'가 붙고, 받침이 없는 체언 뒤에는 조사 '야'가 붙는다. '우리'는 받침이 있으므로 '우리가'가 맞지만, 구어체에서는 '우리야'로 줄여 쓸 수 있다.
+[DBG] idx: 180, output: "초속 100m"가 옳다.
+[DBG] idx: 181, output: "박달나무 품에 안겨 담쟁이덩굴은 눈을 뜬다."가 옳다. '박달나무'가 표준어이며, '배달나무'는 표준어가 아니다.
+[DBG] idx: 182, output: "구독을 신청하면 매달 잡지를 보내 준다."가 옳다. '달달이'는 '달마다'의 비표준어이므로, 표준어인 '매달'로 고쳐 써야 한다.
+[DBG] idx: 183, output: "그 동안 잘 지내셨어요?"가 옳다. '그'와 '동안'은 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 184, output: "훌륭한 리더가 되고 싶다."가 옳다. '리더(leader)'는 외래어이므로 띄어 써야 한다.
+[DBG] idx: 185, output: "숫병아리는 쓸모가 없다는 이유로 버려진다."가 옳다. '숫병아리'는 '암탉이 낳은 병아리'를 뜻하므로, 수컷 병아리를 가리킬 때에는 '수컷 병아리' 또는 '수병아리'로 써야 한다. '숫병아리'는 '암탉이 낳은 병아리'만을 의미하므로, 수컷 병아리를 뜻할 때에는 적절하지 않다.
+[DBG] idx: 186, output: "2023. 3. 2."가 옳다.
+[DBG] idx: 187, output: "산꼭대기에 누각이 하나 보인다."가 옳다. '누각'은 '누각(樓閣)'의 준말 '루각'이 아니라, '누각(樓閣)'이 표준어이다. '루각'은 비표준어이므로 '누각'으로 적어야 한다.
+[DBG] idx: 188, output: "희진이는 우리 반에서 독서왕이다."가 옳다. '독서왕'은 '독서'와 '왕'이 결합하여 한 단어로 굳어진 합성어이므로 붙여 써야 한다.
+[DBG] idx: 189, output: "부산의 자치구: 중구, 서구, 동구, 영도구, 부산진구, ......"가 옳다. '중구, 서구, 동구, 영도구, 부산진구, ......'에서 '중구, 서구, 동구, 영도구'와 '부산진구, ......' 사이에 쉼표(,)를 넣는 것이 어문 규범에 부합한다. 같은 자격의 어구를 열거할 때는 각 어구 사이에 쉼표를 넣어야 하므로, '중구, 서구, 동구, 영도구'와 '부산진구, ......' 사이에도 쉼표를 넣어야 한다.
+[DBG] idx: 190, output: "남존여비가 구닥다리 사상에 불과하다."가 옳다. '남존여비(男尊女卑)'는 '남자를 높이고 여자를 낮춤'을 뜻하는 표준어이다. '남존녀비'는 잘못된 표기이다.Generating...:  38%|███▊      | 191/498 [28:51<53:04, 10.37s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  39%|███▊      | 192/498 [29:00<51:55, 10.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  39%|███▉      | 193/498 [29:08<47:21,  9.32s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  39%|███▉      | 194/498 [29:15<43:51,  8.66s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  39%|███▉      | 195/498 [29:21<40:34,  8.03s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  39%|███▉      | 196/498 [29:31<42:30,  8.45s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  40%|███▉      | 197/498 [29:40<43:44,  8.72s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  40%|███▉      | 198/498 [29:52<48:30,  9.70s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  40%|███▉      | 199/498 [29:58<42:42,  8.57s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  40%|████      | 200/498 [30:05<40:34,  8.17s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  40%|████      | 201/498 [30:14<40:55,  8.27s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  41%|████      | 202/498 [30:25<45:19,  9.19s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  41%|████      | 203/498 [30:35<46:01,  9.36s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  41%|████      | 204/498 [30:41<41:34,  8.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  41%|████      | 205/498 [30:50<42:00,  8.60s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  41%|████▏     | 206/498 [31:02<46:28,  9.55s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  42%|████▏     | 207/498 [31:13<48:10,  9.93s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  42%|████▏     | 208/498 [31:19<43:12,  8.94s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  42%|████▏     | 209/498 [31:31<46:57,  9.75s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  42%|████▏     | 210/498 [31:42<49:03, 10.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  42%|████▏     | 211/498 [31:48<42:53,  8.97s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  43%|████▎     | 212/498 [31:55<39:15,  8.24s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  43%|████▎     | 213/498 [32:01<36:01,  7.58s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  43%|████▎     | 214/498 [32:08<35:25,  7.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  43%|████▎     | 215/498 [32:24<47:04,  9.98s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  43%|████▎     | 216/498 [32:32<44:33,  9.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  44%|████▎     | 217/498 [32:39<40:52,  8.73s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  44%|████▍     | 218/498 [32:51<44:17,  9.49s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  44%|████▍     | 219/498 [33:02<46:42, 10.05s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  44%|████▍     | 220/498 [33:13<48:22, 10.44s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  44%|████▍     | 221/498 [33:22<45:35,  9.87s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  45%|████▍     | 222/498 [33:30<43:17,  9.41s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  45%|████▍     | 223/498 [33:42<46:07, 10.06s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  45%|████▍     | 224/498 [33:48<41:16,  9.04s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  45%|████▌     | 225/498 [33:58<41:58,  9.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  45%|████▌     | 226/498 [34:06<39:29,  8.71s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  46%|████▌     | 227/498 [34:13<37:05,  8.21s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  46%|████▌     | 228/498 [34:20<35:16,  7.84s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  46%|████▌     | 229/498 [34:29<36:54,  8.23s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  46%|████▌     | 230/498 [34:35<33:31,  7.51s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  46%|████▋     | 231/498 [34:41<31:19,  7.04s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 191, output: "얘는 어디로 갔는지 코빼기(도) 안 보인다."가 옳다. '코빼기'는 '코의 맨 앞부분'을 뜻하는 표준어이다. '콧배기'는 '코빼기'의 비표준어이므로, 표준어인 '코빼기'로 고쳐야 한다.
+[DBG] idx: 192, output: "한눈에 봐도 글씨가 잘 보인다."가 옳다. '한눈에'는 합성어이므로 붙여 써야 한다.
+[DBG] idx: 193, output: "그렇다면 디저트가 빵과 아이스크림, 슬러시 따위를 포괄하는 단어가 될 수 있나요?"가 옳다. 외래어 표기법에 따라'slush'는 '슬러시'로 적는다.
+[DBG] idx: 194, output: "다 같이 있을 거야."가 옳다. '있을 거야'는 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 195, output: "이번 행사 불참자(박성진(인천), 이서화(부산))에게는 추후 자료집을 우편으로 보내기로 했습니다."가 옳다. 괄호 안의 이름과 지명 사이에는 쉼표(,)를 넣어 구분한다.
+[DBG] idx: 196, output: "총비용에서 비룟값은 제했다."가 옳다. '비룟값'은 '비료'의 어간 '비룟-'에 접미사 '-값'이 결합한 형태로, 사이시옷을 넣어 '비룟값'으로 적는다.
+[DBG] idx: 197, output: "'연인[戀人]'에는 '서로 연애하는 관계에 있는 두 사람'이라는 뜻이 포함돼 있습니다."가 옳다. '연인'의 원어 표기는 '戀人'이 아니라 '戀人'이다.
+[DBG] idx: 198, output: "다시 만날 때까지 잘 지내."가 옳다. '때까지'는 합성어이므로 붙여 쓴다.
+[DBG] idx: 199, output: "온데간데없이 사라졌다."가 옳다. '온데간데없다'는 '온 데 간 데 없다'가 줄어든 말로, 한 단어처럼 붙여 쓴다.
+[DBG] idx: 200, output: "쓸데없는 걱정할 시간에 잠이나 자라."가 옳다. 명령문이나 청유문에서는 종결 어미 뒤에 '요'를 붙이지 않는다. 따라서 '자' 뒤에 '요'를 붙여야 한다.
+[DBG] idx: 201, output: "초팔일은 부처님 오신 날을 달리 이르는 말이다."가 옳다. '초팔일'은 한 단어가 아니므로 '초팔 일'로 띄어 써야 한다.
+[DBG] idx: 202, output: "오늘은 휴일이 아니에요."가 옳다. '아니다'의 어간 '아니-' 뒤에는 '-에요'가 붙으므로 '아니에요'로 적는다.
+[DBG] idx: 203, output: "측정 가능한가요?"가 옳다. '측정'과 '가능'은 별개의 단어이므로 띄어 써야 한다.
+[DBG] idx: 204, output: "얇은 빙판 위에서 스케이트를 타기가 영 불안했다."가 옳다. '얇다'는 '얇-'에 모음 어미 '-은'이 결합한 형태이므로, '얇은'으로 붙여 써야 한다.
+[DBG] idx: 205, output: "우정마을 행복학습관은 아파트 내 경로당을 학습관으로 재단장하여 주민들과 사할린 동포 어르신들과 함께 평생교육을 할 예정이다."가 옳다. '경노당'은 '경로당'의 비표준어이므로 '경로당'으로 고쳐야 한다.
+[DBG] idx: 206, output: "네가 말도 못 하게 미웠어."가 옳다. '못하다'는 '못 하다'로 띄어 써야 옳다. 여기서 '못 하다'는 '어떤 일을 일정한 수준에 못 미치게 하거나, 그 일을 할 능력이 없다'는 뜻이므로 띄어 써야 한다.
+[DBG] idx: 207, output: "들었던 대로 정말 크긴 크다."가 옳다. '들었던 대로'에서 '대로'는 조사이므로 앞말과 띄어 써야 한다.
+[DBG] idx: 208, output: "계속 흘끔대는 게 굉장히 신경 쓰인다."가 옳다. '흘끔대다'는 '흘끔거리다'의 비표준어이므로, 표준어인 '흘끔거리다' 또는 '흘끔대다' 대신 '신경 쓰이다'로 고쳐 써야 한다.
+[DBG] idx: 209, output: "이 조례에 대하여 찬성 발언하실 의원님 계십니까?"가 옳다. '발언하다'의 어간 '발언하-'에 높임을 나타내는 '-시-'를 붙여 '발언하실'로 써야 옳다.
+[DBG] idx: 210, output: "음식점과 의류 회사의 컬래버레이션"이 옳다. 외래어 표기법에 따라 'collaboration'은 '컬래버레이션'으로 적는다.
+[DBG] idx: 211, output: "그의 열두째 생일이 곧 다가온다."가 옳다. 순서를 나타내는 수 관형사 뒤에는 '째'를 붙여 '열두째'로 적는다.
+[DBG] idx: 212, output: "저기 커피숍이 새로 생겼다고 해요."가 옳다. 외래어 'coffee shop'은 '커피숍'으로 붙여 쓴다.
+[DBG] idx: 213, output: ""놀고 있어~"가 옳다. 직접 인용할 때는 큰따옴표가 아니라 작은따옴표를 써야 한다.
+[DBG] idx: 214, output: "화이트 데이에는 사탕을 준다고 하던데."가 옳다. '주다'의 어간 '주-' 뒤에는 연결어미 '-ᄂ데'가 와야 하므로, '준다든데'를 '준다고 하던데'로 고쳐야 한다. '-ᄂ데'는 '이다'의 어간, 받침 없는 형용사 어간, 'ᄅ' 받침인 형용사 어간 뒤에 붙어 뒤 절에서 어떤 일을 설명하거나 묻거나 시키거나 제안하기 위하여 그 대상과 상관되는 상황을 미리 말할 때 쓰인다.
+[DBG] idx: 215, output: "이 공장은 설립된 지 10년도 넘었다."가 옳다. '설립된지'에서 '지'는 의존명사이므로 앞말과 띄어 써야 한다.
+[DBG] idx: 216, output: "옷걸이가 좋으니 대충 입어도 예뻐 보인다."가 옳다. '옷걸이'는 옷을 거는 도구를 뜻하는 표준어이고, '옷거리'는 표준어가 아니다.
+[DBG] idx: 217, output: "어서 돌아가렴. 여긴 네가 있을 곳이 아니란다."가 옳다. 큰따옴표는 겹낫표(『』) 또는 작은따옴표('' 또는 "")를 써야 하며, 큰따옴표(" ")는 어문 규범에 맞지 않는다.
+[DBG] idx: 218, output: "발표자를 맡으려면 말을 잘하든지 해야지."가 옳다. '-든지'는 '-던지'의 표준어이다. '-던지'는 '-든지'의 비표준어이므로, 표준어 규정에 따라 '-든지'로 적어야 한다.
+[DBG] idx: 219, output: "스포츠에서는 협동 정신. 즉, 서로 마음과 힘을 하나로 합하는 것이 필요하다."가 옳다. '즉' 앞에 쉼표(,)를 넣어야 한다. '즉'은 앞의 내용을 풀어서 설명하거나 같은 뜻의 다른 말로 바꿀 때 쓰이므로, 앞 문장과의 연결을 명확히 하기 위해 쉼표를 찍어야 한다.
+[DBG] idx: 220, output: "2022. 1. 3.~2022. 3. 5."가 옳다. 기간을 나타낼 때는 물결표(~)를 사용한다.
+[DBG] idx: 221, output: "내가 온 그 다음 주에 진수가 왔다."가 옳다. '다음 주'는 한 단어가 아니므로 띄어 써야 한다.
+[DBG] idx: 222, output: "이번 추석 연휴(9월 16일(월)~9월 18일(수))에는 기숙사가 휴관합니다."가 옳다. 날짜를 표기할 때는 '연-월-일' 순서로 쓰고, 월과 일 앞에는 쉼표(,) 대신 마침표(.)를 쓰는 것이 어문 규범에 맞다.
+[DBG] idx: 223, output: "논문 등재 시 저작권료가 지급됩니다."가 옳다. '등재 시'는 합성어가 아니므로 띄어 써야 한다.
+[DBG] idx: 224, output: "김치의 수출 그래프가 상승하고 있는 것을 보아 하니 해외에서도 한국 식품에 관심을 가지게 된 것 같습니다."가 옳다. '그래프(graph)'는 외래어 표기법에 따라 '그래프'로 적어야 한다.
+[DBG] idx: 225, output: "뒤에 절이 오니(쉼표) 3.1절로 해야 하나요?"가 옳다. 뒤에 절이 올 때는 쉼표를 쓴다.
+[DBG] idx: 226, output: "하루빨리 강의를 들을걸."이 옳다. '들을걸'은 '듣다'의 어간 '듣-'에 '-ᄅ걸'이 결합한 형태로, 붙여 써야 한다.
+[DBG] idx: 227, output: "여기 사인 좀 해 주시겠어요?"가 옳다. '사인(sign)'은 외래어 표기법에 따라 '사인'으로 적는다.
+[DBG] idx: 228, output: "수캐가 한 마리 더 있었으면 좋겠다."가 옳다. '수강아지'는 '수컷 강아지'를 뜻하지만, '수컷'을 뜻하는 표준어는 '수캐'이다. 따라서 '수강아지' 대신 '수캐'를 써야 한다.
+[DBG] idx: 229, output: "보우타이를 하다."가 옳다. 외래어 표기법에 따라 'bowtie'는 '보우타이'로 적는다.
+[DBG] idx: 230, output: "댑싸리에 꽃이 폈다."가 옳다. '댑싸리'가 표준어이며, '대싸리'는 비표준어이다.
+[DBG] idx: 231, output: "그때는 공무원 시험을 보려고 공부를 했었다."가 옳다. '-었었-'은 '-었-'보다 더 과거의 일을 나타내거나, 과거의 상태가 현재와 다름을 강조할 때 쓰이나, 단순히 과거의 일을 나타낼 때는 '-었었-' 대신 '-었-'을 쓴다. 따라서 '공부를 했었었다'는 '공부를 했었다'로 고치는 것이 옳다.Generating...:  47%|████▋     | 232/498 [34:54<40:02,  9.03s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  47%|████▋     | 233/498 [35:00<35:30,  8.04s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  47%|████▋     | 234/498 [35:10<38:04,  8.65s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  47%|████▋     | 235/498 [35:19<37:52,  8.64s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  47%|████▋     | 236/498 [35:25<35:06,  8.04s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  48%|████▊     | 237/498 [35:35<37:47,  8.69s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  48%|████▊     | 238/498 [35:41<33:32,  7.74s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  48%|████▊     | 239/498 [35:51<36:06,  8.37s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  48%|████▊     | 240/498 [36:02<40:03,  9.31s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  48%|████▊     | 241/498 [36:09<36:04,  8.42s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  49%|████▊     | 242/498 [36:22<42:30,  9.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  49%|████▉     | 243/498 [36:30<39:08,  9.21s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  49%|████▉     | 244/498 [36:36<34:55,  8.25s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  49%|████▉     | 245/498 [36:43<33:00,  7.83s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  49%|████▉     | 246/498 [36:50<32:57,  7.85s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  50%|████▉     | 247/498 [36:57<31:42,  7.58s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  50%|████▉     | 248/498 [37:06<33:26,  8.02s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  50%|█████     | 249/498 [37:12<30:34,  7.37s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  50%|█████     | 250/498 [37:22<32:50,  7.94s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  50%|█████     | 251/498 [37:30<33:18,  8.09s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  51%|█████     | 252/498 [37:39<34:39,  8.45s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  51%|█████     | 253/498 [37:45<31:41,  7.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  51%|█████     | 254/498 [37:55<33:42,  8.29s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  51%|█████     | 255/498 [38:03<33:44,  8.33s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  51%|█████▏    | 256/498 [38:14<35:45,  8.87s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  52%|█████▏    | 257/498 [38:20<33:18,  8.29s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  52%|█████▏    | 258/498 [38:31<35:43,  8.93s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  52%|█████▏    | 259/498 [38:44<40:04, 10.06s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  52%|█████▏    | 260/498 [38:52<37:47,  9.53s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  52%|█████▏    | 261/498 [39:02<38:40,  9.79s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  53%|█████▎    | 262/498 [39:13<39:06,  9.94s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  53%|█████▎    | 263/498 [39:18<33:56,  8.67s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  53%|█████▎    | 264/498 [39:30<36:57,  9.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  53%|█████▎    | 265/498 [39:36<32:39,  8.41s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  53%|█████▎    | 266/498 [39:46<34:38,  8.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  54%|█████▎    | 267/498 [39:56<35:58,  9.34s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  54%|█████▍    | 268/498 [40:05<35:30,  9.26s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  54%|█████▍    | 269/498 [40:18<39:36, 10.38s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  54%|█████▍    | 270/498 [40:24<33:48,  8.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  54%|█████▍    | 271/498 [40:31<32:17,  8.54s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  55%|█████▍    | 272/498 [40:41<33:47,  8.97s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 232, output: "형제끼리 싸우면 안 되지."가 옳다. '안 되다'는 본용언과 보조용언의 구성이므로 띄어 써야 한다.
+[DBG] idx: 233, output: "그때 그 사람 병원에서 일한다고 했든가?"가 옳다. '했든가'는 '하다'의 어간 '하-' 뒤에, 과거의 어떤 사실에 대한 물음을 나타내는 종결 어미 '-었-'과 '-든가'가 결합한 형태로, 어문 규범에 부합한다.
+[DBG] idx: 234, output: "담벼락의 낙서가 지워졌다."가 옳다. '지우다'의 과거형은 '지워졌다'로 붙여 쓴다.
+[DBG] idx: 235, output: "그는 갓 태어난 병아리 중 암병아리만 골라 냈다."가 옳다. '암병아리'가 표준어이며, '암평아리'는 비표준어이다.
+[DBG] idx: 236, output: "이 사탕은 딸기 맛이 난다."가 옳다. '맛'은 한 단어로 붙여 쓰지 않고, '맛이 난다'와 같이 띄어 써야 한다.
+[DBG] idx: 237, output: "이상한 핑계 대지 마."가 옳다. '핑계'가 표준어이며, '핑게'는 비표준어이다.
+[DBG] idx: 238, output: "남자 친구랑 얼마나 만났어요?"가 옳다. '하고'는 '함께'의 뜻으로 쓰일 때만 '하고'로 적고, '함께'의 뜻이 아닐 때는 '랑'으로 적는다. 여기서는 '함께'의 뜻이 아니므로 '랑'이 옳다.
+[DBG] idx: 239, output: "이제는 김 선생네 쪽하고만 이야기하면 된다."가 옳다. '하고'는 '누구누구와'의 뜻을 나타내는 조사로, 앞말이 받침 없이 끝날 때에는 '하고', 받침이 있을 때에는 '하고'로 적는다. '김 선생네 쪽'은 받침이 있으므로 '하고'로 적어야 한다.
+[DBG] idx: 240, output: "엄마는 늘 내게 "이거 해라 저거 해라" 시킨다."가 옳다. 직접 인용한 말은 큰따옴표로 묶어야 한다.
+[DBG] idx: 241, output: "그 사람이 잠시 머물렀던 곳이 바로 여기다."가 옳다. '머물다'의 과거형은 '머물렀던'이다. '머물다'의 어간 '머물-' 뒤에, 과거의 사건이나 행위임을 나타내는 선어말어미 '-었-'과, 그 말이 명사 구실을 하게 하는 어미 '-던'을 붙여 '머물렀던'으로 적어야 한다.
+[DBG] idx: 242, output: "2개 이상에 해당할 경우 사후 관리 대상으로 한다."가 옳다. 조사는 앞말에 붙여 써야 하므로, '에'를 앞말에 붙여 적어야 한다.
+[DBG] idx: 243, output: "보디로션을 발랐다."가 옳다. 'body lotion'은 외래어 표기법에 따라 '보디로션'으로 적는다.
+[DBG] idx: 244, output: "끝없는 싸움이야. 영희야."가 옳다. 감탄문이나 명령문, 청유문 뒤에는 마침표를 찍는 것이 어문 규범에 맞다.
+[DBG] idx: 245, output: "부모님 돌아가심에 통곡치 않을 자 있으랴."가 옳다. '통곡하다'의 어간 '통곡하-'에 연결어미 '-지'가 붙으면 '통곡치'로 적는다.
+[DBG] idx: 246, output: "남편이 손으로 가리킨 옷은 옆이 살짝 트인 스커트이다."가 옳다.'skirt'의 표준어 표기는 '스커트'이다.
+[DBG] idx: 247, output: "우리는 자랑스러운 우리나라의 명예를 위해 최선을 다할 것을 다짐했다."가 옳다. '자랑스럽다'의 어간 '자랑스럽-'에 '-은'이 붙으면 '자랑스러운'이 되고, '자랑스런'은 비표준어이다.
+[DBG] idx: 248, output: "언제든지 말해줄 수 있어요."가 옳다. '말해줄 수'는 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 249, output: "가위바위보를 4번 한 후, 각자 색칠한 칸 수를 곱셈으로 나타내고 계산한다."가 옳다. '칸수'는 '칸'과 '수'가 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 250, output: "조금 뜬 기다란 눈, 짧고 넓적한 코에 입가에는 미소를 띤 온화한 인상이다."가 옳다. '길다'의 활용형은 '기다란'이 표준어이다. '길다란'은 비표준어이다.
+[DBG] idx: 251, output: "뒤쪽 언덕배기에 장말손의 위패를 모시는 사당을 두었다."가 옳다. '언덕배기'가 표준어이며, '언덕빼기'는 비표준어이다.
+[DBG] idx: 252, output: "이럴 줄 알았으면 그때 끝낼걸."이 옳다. '걸'은 의존명사이므로 앞말과 띄어 써야 한다.
+[DBG] idx: 253, output: "외적의 침입에 잘 대비토록 하시오."가 옳다. '하시오'는 '하다'의 어간 '하-'에 명령형 종결어미 '-시오'가 붙은 형태이다. '하시요'는 비표준어이다.
+[DBG] idx: 254, output: "지금은 통화 못 한다고 해서 문자를 보냈어."가 옳다. '못하다'는 '못'과 '하다'가 결합한 보조용언으로, 앞말과 띄어 써야 한다.
+[DBG] idx: 255, output: "예상치 못한 상황에 모두들 당황했다."가 옳다. '예상하다'의 어간 '예상하-'에 '-지 못하다'가 결합하면 '예상하지 못하다'가 되므로, '예상지 못한'은 '예상하지 못한'으로 고쳐야 한다.
+[DBG] idx: 256, output: "하루 벌어 하루 먹고사는 그림쟁이일 뿐이다."가 옳다. '그림쟁이'가 표준어이며, '그림장이'는 비표준어이다.
+[DBG] idx: 257, output: "그럼 나중에 봬요."가 옳다. '뵈다'의 어간 '뵈-'에 '-어요'가 붙으면 '봬요'로 줄여 쓴다.
+[DBG] idx: 258, output: "이 문제는 고법인 <경제육전>과 모순되는 내용을 삭제하는 것으로 해결하였다."가 옳다. '고법인'은 '고법(古法)인'으로 고쳐 써야 한다. '고법(古法)'은 '옛 법'이라는 뜻의 합성어이므로, 관형격 조사 '-인'을 붙여 '고법인'이 아니라 '고법인'으로 적어야 한다.
+[DBG] idx: 259, output: "네가 내 입장이 돼 봐라."가 옳다. '되다'의 어간 '되-' 뒤에는 '-어'가 결합하므로 '돼'로 줄여 쓴다.
+[DBG] idx: 260, output: "벽을 따라 담장이 덩굴이 촘촘하게도 자랐다."가 옳다. '담쟁이덩굴'은 '담쟁이'와 '덩굴'이 합쳐진 합성어이므로 붙여 써야 한다.
+[DBG] idx: 261, output: "노고에 깊이 감사 드립니다."가 옳다. '깊히'는 '깊이'의 잘못된 표기이다. '깊다'의 어간 '깊-'에 부사형 어미 '-이'가 붙으면 '깊이'로 적어야 한다.
+[DBG] idx: 262, output: "바야흐로 한국 문화 부흥의 시기가 왔다."가 옳다. '부흥(復興)'은 한 단어이므로 붙여 써야 한다.
+[DBG] idx: 263, output: "누나인 네가 참아라."가 옳다. '누나인'과 '네가'는 별개의 단어이므로 띄어 써야 한다. '누나인'은 '누나'에 관형사형 어미 '-ᄂ'이 붙은 말이고, '네가'는 대명사 '네'와 주격조사 '가'가 결합된 말이므로 각각 띄어 써야 한다.
+[DBG] idx: 264, output: "티타임을 가졌다."가 옳다. '티타임(tea time)'은 외래어 표기법에 따라 '티타임'으로 적는다.
+[DBG] idx: 265, output: "아까 강의를 듣다 놀라서 멈췄는데 그 교수님이 '벼락치기로만 하면 안 된다'고 하셨어."가 옳다. 직접 인용한 말은 큰따옴표로 묶어야 한다.
+[DBG] idx: 266, output: "욕을 하지를 않나, 발로 차지를 않나( )."가 옳다. '않다' 앞에 '-지 못하다'나 '-지 않다'가 올 때는 '-지를'로 줄여 쓸 수 있다. 따라서 '않지를'은 '않지를'이 규범에 맞다.
+[DBG] idx: 267, output: "해님이 벌써 중천에 떠 있다."가 옳다. '해님'은 '해'와 '님'이 결합된 말이지만, '해님'보다는 '해'가 표준어이므로 '해님'을 '해'로 고쳐 써야 한다.
+[DBG] idx: 268, output: "암덩어리가 없어져야 할 텐데."가 옳다. '암덩어리'는 합성어이므로 사이시옷을 붙여 '암덩어리'로 적어야 한다.
+[DBG] idx: 269, output: "그 학생은 엄청난 과학광이다."가 옳다. '과학광'은 합성어이므로 붙여 쓴다.
+[DBG] idx: 270, output: "5년이라는 시간은 길다면 길고 짧다면 짧다."가 옳다. 숫자와 단위를 나타내는 명사는 띄어 써야 하므로 '5년'으로 띄어 써야 한다.
+[DBG] idx: 271, output: "놀기만 하니까 성적이 뚝 떨어지잖니."가 옳다. '-쟎다'는 '-잖다'의 비표준어이므로, 표준어인 '-잖다'로 적어야 한다.
+[DBG] idx: 272, output: "이렇게 멋진 일은 당장 알려 줘야지."가 옳다. '이러케'는 '이렇게'의 잘못된 표기이다. '이'와 '렇게'가 결합할 때는 사이시옷을 넣어 '이렇게'로 적어야 한다.Generating...:  55%|█████▍    | 273/498 [40:53<36:38,  9.77s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  55%|█████▌    | 274/498 [41:01<34:17,  9.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  55%|█████▌    | 275/498 [41:09<33:24,  8.99s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  55%|█████▌    | 276/498 [41:19<33:42,  9.11s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  56%|█████▌    | 277/498 [41:27<32:26,  8.81s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  56%|█████▌    | 278/498 [41:32<28:46,  7.85s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  56%|█████▌    | 279/498 [41:44<33:16,  9.12s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  56%|█████▌    | 280/498 [41:49<28:32,  7.86s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  56%|█████▋    | 281/498 [41:58<29:15,  8.09s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  57%|█████▋    | 282/498 [42:07<30:01,  8.34s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  57%|█████▋    | 283/498 [42:14<28:22,  7.92s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  57%|█████▋    | 284/498 [42:20<26:11,  7.34s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  57%|█████▋    | 285/498 [42:27<25:33,  7.20s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  57%|█████▋    | 286/498 [42:39<30:34,  8.65s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  58%|█████▊    | 287/498 [42:46<28:34,  8.13s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  58%|█████▊    | 288/498 [42:53<28:08,  8.04s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  58%|█████▊    | 289/498 [43:06<32:15,  9.26s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  58%|█████▊    | 290/498 [43:12<29:32,  8.52s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  58%|█████▊    | 291/498 [43:26<34:19,  9.95s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  59%|█████▊    | 292/498 [43:31<29:10,  8.50s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  59%|█████▉    | 293/498 [43:39<28:27,  8.33s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  59%|█████▉    | 294/498 [43:46<26:57,  7.93s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  59%|█████▉    | 295/498 [43:52<25:14,  7.46s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  59%|█████▉    | 296/498 [44:07<32:19,  9.60s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  60%|█████▉    | 297/498 [44:19<35:19, 10.54s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  60%|█████▉    | 298/498 [44:29<33:49, 10.15s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  60%|██████    | 299/498 [44:38<32:55,  9.93s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  60%|██████    | 300/498 [44:50<34:17, 10.39s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  60%|██████    | 301/498 [44:55<29:18,  8.93s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  61%|██████    | 302/498 [45:07<32:02,  9.81s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  61%|██████    | 303/498 [45:17<32:00,  9.85s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  61%|██████    | 304/498 [45:26<31:25,  9.72s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  61%|██████    | 305/498 [45:33<28:35,  8.89s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  61%|██████▏   | 306/498 [45:42<28:29,  8.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  62%|██████▏   | 307/498 [45:48<25:36,  8.04s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  62%|██████▏   | 308/498 [45:55<24:12,  7.65s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  62%|██████▏   | 309/498 [46:08<28:58,  9.20s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 273, output: "좋은 하루 되세요."가 옳다. '되다'의 어간 '되-' 뒤에는 '-세요'가 붙으므로 '되세요'가 맞다.
+[DBG] idx: 274, output: "지난주 노동량이 많았던 탓인지 몸살에 걸리고 말았다."가 옳다. '노동량(勞動量)'은 '일의 분량'을 뜻하므로 '량(量)'이 맞다. '노동양'은 잘못된 표기이다.
+[DBG] idx: 275, output: "오늘 밥이 잘 되었다."가 옳다. '되다'는 타동사로, 목적어가 필요할 때에는 반드시 목적어와 함께 써야 한다. 따라서 '밥이 잘 됐다'가 아니라 '밥이 잘 되었다'로 고쳐 써야 한다.
+[DBG] idx: 276, output: "성탄절 런던도, 눈 오는 삿포로도 내 처음을 함께하는 거야."가 옳다. 일본의 지명 '삿포로'는 외래어 표기법에 따라 '삿포로'로 적어야 한다. '사포로'는 잘못된 표기이다.
+[DBG] idx: 277, output: "어제 올라온 콘텐츠 기획안 보셨나요?"가 옳다. 'content'는 '콘텐츠'로 적는 것이 표준 외래어 표기이다.
+[DBG] idx: 278, output: "2023. 4. 17.(월)"이 옳다. 연월일을 표시할 때는 마침표를 찍는 것이 어문 규범에 맞으며, 마침표 앞뒤에는 한 칸의 공백을 두는 것이 원칙이다. 반면, 마침표 앞뒤에 공백이 없는 "2023. 4. 17(월)"은 어문 규범에 부합하지 않는다.
+[DBG] idx: 279, output: "뭐부터 먹어 볼까?"가 옳다. 부사 '뭐'와 조사 '부터'는 띄어 써야 한다.
+[DBG] idx: 280, output: "무슨 말인지 한번에 파악하지 못했다."가 옳다. '한 번'은 횟수를 나타낼 때 띄어 쓰고, '한번'은 어떤 일을 시험 삼아 시도함을 나타낼 때 붙여 쓴다. 여기서는 '한 번'이 옳다.
+[DBG] idx: 281, output: "단언컨대 오늘이 올 여름 가장 더운 날인 것 같다."가 옳다. '단언컨대'는 '단언하건대'의 준말이다.
+[DBG] idx: 282, output: "사진 뒷면에 무언가가 쓰여 있다."가 옳다. '쓰다'의 피동형은 '쓰이다'이므로 '쓰여'로 적어야 한다.
+[DBG] idx: 283, output: "디지털 시대는 정보의 정확성이 중요하다."가 옳다. 외래어 표기법에 따라 'digital'은 '디지털'로 적는다.
+[DBG] idx: 284, output: "빨리빨리 해."가 옳다. '빨리빨리'는 한 단어가 아니므로 띄어 써야 한다.
+[DBG] idx: 285, output: "표준 저항기는 다른 저항기의 비교 기준을 위한 표준기로서 사용된다."가 옳다. '로서'는 '지위나 신분 또는 자격'을 나타내는 격조사이고, '로써'는 '수단'이나 '방법'을 나타내는 격조사이다. 여기서는 '기준이 되는 자격'을 나타내므로 '로서'가 옳다.
+[DBG] idx: 286, output: "산타 할아버지께 편지 써야지."가 옳다. '산타할아버지'는 한 단어가 아니므로 '산타'와 '할아버지'를 띄어 써야 한다.
+[DBG] idx: 287, output: "그는 그 소식을 듣고도 탄식지 않았다."가 옳다. '탄식하다'의 어간 '탄식하-'에 '-지'가 붙어 '탄식지'가 된다.
+[DBG] idx: 288, output: "국립국어원 관계자님{께, 에} 이런 서비스를 제공해주셔서 감사합니다."가 옳다. '께'는 높임을 나타내는 조사이고, '에'는 간접 인용을 나타내는 조사이다. 문장의 맥락에 따라 높임을 나타낼 때는 '께', 감사의 뜻을 전할 때는 '에'를 쓸 수 있다. 둘 다 어문 규범에 부합한다.
+[DBG] idx: 289, output: "저는 무슨 일이 났구나 하고 생각했어요."가 옳다. '뭔'은 '무슨'의 비표준어이므로, 표준어인 '무슨'으로 고쳐 써야 한다.
+[DBG] idx: 290, output: "그 치는 속아지가 영 불퉁스럽다."가 옳다. '불퉁스럽다'는 '불퉁하다'의 어간 '불퉁하-'에, 'ᄅ'을 제외한 받침 있는 용언의 어간 뒤에 붙어 '못마땅하거나 언짢은 데가 있다'의 뜻을 더하는 접미사 '-스럽다'를 붙여 '불퉁스럽다'로 써야 옳다. '불퉁스럽다'가 표준어이다.
+[DBG] idx: 291, output: "합병을 위한 물밑 작업에 들어갔다."가 옳다. '물밑'은 합성어이므로 붙여 쓴다.
+[DBG] idx: 292, output: "지진이 해일을 일으켰다."가 옳다. '일으키다'는 '일으키다'로 적는 것이 표준어이다. '이르키다'는 '일으키다'의 비표준어이다.
+[DBG] idx: 293, output: "첫째, 일찍 자고 일찍 일어난다."가 옳다. 항목을 열거할 때는 쉼표(,)를 써야 한다.
+[DBG] idx: 294, output: "화려한 블라우스는 단순한 하의와 잘 어울린다."가 옳다. '블라우스'가 표준어이며, '브라우스'는 비표준어이다.
+[DBG] idx: 295, output: "해당 조각은 다른 곳에서는 그 유래를 찾아볼 수 없는 희귀한 것이어서 매우 주목된다."가 옳다. '-어서'는 이유나 원인을 나타내는 연결어미로, 앞말이 체언이나 부사어일 때에는 '-어서', 용언의 어간일 때에는 '-어서' 또는 '-어서'를 쓴다. '희귀한'은 용언의 어간이므로 '-어서'가 옳다.
+[DBG] idx: 296, output: "일(자녀 교육, 성장, 글로벌 환경(일본, 이스라엘, 독일 등))"이 옳다. 괄호 안의 내용이 여러 개일 때는 각 항목을 쉼표로 구분하고, 마지막 항목 앞에는 '및' 또는 '등'을 쓰는 것이 어문 규범에 맞다. 따라서 "일(자녀 교육, 성장, 글로벌 환경(일본, 이스라엘, 독일 등))"이 옳다.
+[DBG] idx: 297, output: "하니바람이 불고 있다."가 옳다. '하니바람'은 '하늬바람'의 비표준어이다. '하늬바람'은 서북쪽에서 부는 바람을 뜻하는 표준어이므로, '하니바람' 대신 '하늬바람'으로 적어야 한다.
+[DBG] idx: 298, output: "아마 민서가 세윤이보다 학교에 먼저 올 걸요."가 옳다. '올걸요'는 '올 것이다'의 줄임말로 붙여 쓴다.
+[DBG] idx: 299, output: "손을 잡아 줄게요."가 옳다. '줄게요'는 '주다'의 어간 '주-'에, 해요할 자리에 쓰여, 설명·의문·명령의 뜻을 나타내는 종결어미 '-ᄅ게'가 결합한 형태이다. 따라서 '줄께요'가 아니라 '줄게요'로 적어야 한다.
+[DBG] idx: 300, output: "카디건"이 옳다. 영어 'cardigan'은 외래어 표기법에 따라 '카디건'으로 적는다.
+[DBG] idx: 301, output: "두 사람의 손은 그들 사이의 거리를 보여주듯 닿을락말락한 상태였다."가 옳다. '보여주다'는 '보여 주다'로 띄어 써야 한다.
+[DBG] idx: 302, output: "현재 입헌군주제를 채택하고 있는 나라로는 영국 내지 일본이 있겠다."가 옳다. '내지'는 '안' 또는 '내부'의 뜻으로, 앞말과 띄어 쓴다. 따라서 '영국 내지 일본'과 같이 띄어 써야 한다.
+[DBG] idx: 303, output: "그 잡지는 월간지이다."가 옳다. '월간지'는 한 단어로 붙여 써야 한다. '월간'과 '지'가 합쳐져 하나의 명사를 이루므로 띄어 쓰지 않는다.
+[DBG] idx: 304, output: "내일은 해돋이를 보러 갈 계획이다."가 옳다. '해돋이'가 표준어이며, '해도지'는 비표준어이다.
+[DBG] idx: 305, output: "7월밖에 안 되었지만 벌써 이번 연도 목표를 달성했다."가 옳다. '연도(年度)'는 해의 차례나 기간을 뜻하며, '년도(年度)'도 같은 뜻이지만 '연도'가 표준어이다.
+[DBG] idx: 306, output: "아무도 날 기억하지 못한다고 해도 괜찮아."가 옳다. '못하다'는 '못'과 '하다'가 결합한 합성어이므로 붙여 쓴다.
+[DBG] idx: 307, output: "그 사람은 호피무늬 상의를 입고 있었어요."가 옳다. '호피무늬'는 합성어이므로 붙여 쓴다.
+[DBG] idx: 308, output: "그 문제는 찍어서 맞혔다."가 옳다. '맞히다'는 '정답을 맞히다', '목표물을 맞히다'처럼 맞히는 대상이 따로 있을 때 쓰는 동사이고, '맞추다'는 '시간을 맞추다', '옷을 맞추다'처럼 맞히는 대상이 따로 없는 경우에 쓴다. 문제의 정답을 맞혔다는 뜻이므로 '맞히다'가 옳다.
+[DBG] idx: 309, output: "방 안은 숨소리가 들릴 만큼 조용했다."가 옳다. 단위 명사 '만큼'은 앞말과 띄어 써야 한다.Generating...:  62%|██████▏   | 310/498 [46:15<26:46,  8.55s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  62%|██████▏   | 311/498 [46:24<26:51,  8.62s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  63%|██████▎   | 312/498 [46:34<28:49,  9.30s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  63%|██████▎   | 313/498 [46:43<27:38,  8.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  63%|██████▎   | 314/498 [46:49<24:55,  8.13s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  63%|██████▎   | 315/498 [46:56<23:55,  7.84s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  63%|██████▎   | 316/498 [47:04<23:48,  7.85s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  64%|██████▎   | 317/498 [47:11<22:59,  7.62s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  64%|██████▍   | 318/498 [47:17<21:34,  7.19s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  64%|██████▍   | 319/498 [47:30<26:31,  8.89s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  64%|██████▍   | 320/498 [47:36<23:38,  7.97s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  64%|██████▍   | 321/498 [47:40<20:38,  6.99s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  65%|██████▍   | 322/498 [47:51<23:20,  7.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  65%|██████▍   | 323/498 [48:00<24:48,  8.50s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  65%|██████▌   | 324/498 [48:08<24:05,  8.31s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  65%|██████▌   | 325/498 [48:17<24:11,  8.39s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  65%|██████▌   | 326/498 [48:26<24:56,  8.70s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  66%|██████▌   | 327/498 [48:31<21:38,  7.59s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  66%|██████▌   | 328/498 [48:39<21:20,  7.53s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  66%|██████▌   | 329/498 [48:45<20:14,  7.19s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  66%|██████▋   | 330/498 [48:52<19:39,  7.02s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  66%|██████▋   | 331/498 [48:58<18:33,  6.67s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  67%|██████▋   | 332/498 [49:08<21:38,  7.82s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  67%|██████▋   | 333/498 [49:19<24:00,  8.73s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  67%|██████▋   | 334/498 [49:30<25:42,  9.41s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  67%|██████▋   | 335/498 [49:35<22:23,  8.24s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  67%|██████▋   | 336/498 [49:44<22:37,  8.38s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  68%|██████▊   | 337/498 [49:58<27:08, 10.12s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  68%|██████▊   | 338/498 [50:10<28:01, 10.51s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  68%|██████▊   | 339/498 [50:20<27:16, 10.29s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  68%|██████▊   | 340/498 [50:28<25:53,  9.83s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  68%|██████▊   | 341/498 [50:35<23:08,  8.85s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  69%|██████▊   | 342/498 [50:41<21:13,  8.17s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  69%|██████▉   | 343/498 [50:55<25:00,  9.68s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  69%|██████▉   | 344/498 [51:02<23:21,  9.10s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  69%|██████▉   | 345/498 [51:09<20:57,  8.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  69%|██████▉   | 346/498 [51:15<19:11,  7.58s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  70%|██████▉   | 347/498 [51:23<19:19,  7.68s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  70%|██████▉   | 348/498 [51:31<19:37,  7.85s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  70%|███████   | 349/498 [51:37<18:34,  7.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  70%|███████   | 350/498 [51:43<16:52,  6.84s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  70%|███████   | 351/498 [51:51<17:28,  7.13s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 310, output: "이 집은 마당이 넓다랗다."가 옳다. '넓다랗다'가 표준어이며, '널따랗다'는 비표준어이다.
+[DBG] idx: 311, output: "요즘 들어 형의 행동이 눈에 띄게 달라졌다."가 옳다. '띄게'는 '띄다'의 어간 '띄-'에 '-게'가 결합한 형태로, '띠게'는 잘못된 표기이다.
+[DBG] idx: 312, output: "녹록지 않은 상대를 만났다."가 옳다. '녹록지 않다'는 표준어이며, '녹녹지 않다'는 표준어가 아니다.
+[DBG] idx: 313, output: "곧바로 전화가 걸려 왔다."가 옳다. '걸려 오다'는 본용언과 본용언의 구성이므로 띄어 써야 한다.
+[DBG] idx: 314, output: "내년에 뿌릴 씨앗은 뒤웅박에 담아 두었다."가 옳다. '뒤웅박'이 표준어이며, '뒝박'은 비표준어이다.
+[DBG] idx: 315, output: "활주로에서뿐만 아니라 항공 모함에서도 날아오를 수 있다."가 옳다. '뿐만'은 조사 '뿐'과 보조사 '만'이 결합한 말로, 앞말에 붙여 쓴다.
+[DBG] idx: 316, output: "대학에 가더니 아주 멋쟁이가 되어서 왔어."가 옳다. '멋쟁이'가 표준어이며, '멋장이'는 비표준어이다.
+[DBG] idx: 317, output: "자주 가던 자기만의 스폿 같은 데 있잖아요."가 옳다. 영어'spot'은 외래어 표기법에 따라 '스폿'으로 적는다.
+[DBG] idx: 318, output: "그것은 내가 읽었던 것과 같은 책이었다."가 옳다. 서술격 조사 '이다'의 어간 '이-' 뒤에는 '다'만 붙으므로, '이였다'가 아니라 '이었다'로 적어야 한다.
+[DBG] idx: 319, output: "아스팔트 위로 아지랑이가 피어올랐다."가 옳다. '아지랑이'가 표준어이며, '아지랭이'는 비표준어이다.
+[DBG] idx: 320, output: "나는 열여덟 살이다."가 옳다. 두 자리 수 이상의 수는 붙여 쓴다.
+[DBG] idx: 321, output: "혹시라도 아기가 깰까 봐 조심해서 옮겼다."가 옳다. '조심이'는 잘못된 표현이고, '조심해서'가 옳다. '조심하다'의 어간 '조심하-'에 부사형 어미 '-어서'를 붙여 '조심해서'로 써야 한다.
+[DBG] idx: 322, output: "무엇이 잘못되었는지 곰곰이 생각해 보았다."가 옳다. '곰곰이'는 '곰곰하다'의 어근 '곰곰'에 부사형 어미 '-이'가 붙은 형태로, '곰곰히'가 아니라 '곰곰이'로 적어야 한다.
+[DBG] idx: 323, output: "할머니는 꽃무늬 조끼를 입고 계셨다."가 옳다. '꽃무늬'는 '꽃'과 '무늬'가 결합한 합성명사이므로 붙여 써야 한다.
+[DBG] idx: 324, output: "인생은 성실로써 이루어지는 것이다."가 옳다. '성실로써'는 '수단'이나 '방법'의 뜻을 나타내므로 조사 '로써'를 써야 한다.
+[DBG] idx: 325, output: "이후(以後)의 사전적 의미는 '기준이 되는 때를 포함하여 그보다 뒤.'로 되어 있습니다."가 옳다. '이후'는 한자어이므로 뒤에 쉼표(,)를 붙여 쓴다.
+[DBG] idx: 326, output: "오후 7시 19분"이 옳다.
+[DBG] idx: 327, output: "그냥 제가 서 있을게요."가 옳다. '있다'의 어간 '있-' 뒤에는 '-을게'가 붙으므로 '있을게요'가 맞다. '있을께요'는 잘못된 표현이다.
+[DBG] idx: 328, output: "영국 스트리트를 걸으면 영국 사람이 된 것 같은 기분이 든다."가 옳다.'street'는 외래어 표기법에 따라 '스트리트'로 적는다.
+[DBG] idx: 329, output: "오늘도 열심히 운동해야지."가 옳다. '열심히'는 '열심'에 부사형 어미 '-이'가 붙은 형태이다.
+[DBG] idx: 330, output: "그 나무는 여름쯤에 잎이 초록색으로 변해요."가 옳다. '쯤'은 의존명사이므로 앞말과 띄어 써야 한다.
+[DBG] idx: 331, output: "와편 담장은 수막새와 암키와를 반복하여 장식한 흙담이다."가 옳다. '암기와'는 '암키와'의 잘못된 표기이다. 기와의 종류를 나타낼 때는 '암키와'가 옳다.
+[DBG] idx: 332, output: "오랜만에 바깥 공기를 쐬었다."가 옳다. '쐬다'는 자동사이므로 목적어 없이 '쐬었다'로 써야 한다. '쐬였다'는 잘못된 표현이다.
+[DBG] idx: 333, output: "이번에 바뀐 업무 진행 순서도 일하는 방식의 하나로서 좋은 것 같습니다."가 옳다. '하나로서'는 '지위나 신분 또는 자격'을 나타낼 때 쓰이며, '하나로써'는 '수단이나 방법'을 나타낼 때 쓰이므로, 여기서는 '자격'의 의미이므로 '하나로서'가 옳다.
+[DBG] idx: 334, output: "supermarket의 슈퍼마켓"이 옳다. 외래어 표기법에 따라'supermarket'은 '슈퍼마켓'으로 적는다.
+[DBG] idx: 335, output: "이 사람들은 제 친구들이에요."가 옳다. 받침 있는 체언 뒤에는 조사 '이'를 붙이고, 받침 없는 체언 뒤에는 조사 '가'를 붙인다. '사람들'은 받침이 있으므로 '이'를 써야 한다.
+[DBG] idx: 336, output: "무릎을 꿇은 채 [다급하게] 외쳤다."가 옳다. '다급하다'의 어간 '다급하-'에 '-게'가 붙으면 '다급하게'가 되고, '다급하다'의 어근 '다급-'에 '-게'가 붙으면 '다급히'가 된다. 여기서는 '다급하다'의 어간에 '-게'가 붙은 '다급하게'가 옳다.
+[DBG] idx: 337, output: "내 딱지로 친구의 딱지를 맞춰서 뒤집었다."가 옳다. '딱지로 딱지를 맞추다'는 의미상 자연스럽지 않으므로, '내 딱지로 친구의 딱지를 쳐서 뒤집었다.' 또는 '내 딱지로 친구의 딱지를 뒤집었다.'로 고치는 것이 옳다. '딱지로 딱지를 맞추다'는 관용적으로 잘 쓰이지 않는 표현이다.
+[DBG] idx: 338, output: "안개가 거친 마을은 덜 을씨년스러웠다."가 옳다. '을씨년스럽다'는 한 단어로 붙여 써야 한다. '을씨년스럽다'는 '쓸쓸하고 적막한 느낌이 있다'는 뜻의 표준어이다.
+[DBG] idx: 339, output: "2023. 4. 14. ~ 4. 28."가 옳다. 기간을 나타낼 때는 날짜와 날짜 사이에 가운뎃점(·) 대신 물결표(~)를 쓰는 것이 어문 규범에 맞다.
+[DBG] idx: 340, output: "페어플레이를 했다."가 옳다. '페어플레이(fair play)'는 외래어 표기법에 따라 '페어플레이'로 적어야 한다.
+[DBG] idx: 341, output: "동·식물성 단백질"이 옳다. 명사와 명사가 대등하게 연결될 때에는 가운뎃점(·)을 쓴다.
+[DBG] idx: 342, output: "특히 잠을 자는 동안에는 세균의 활동이 활발해지기 때문에 잠자기 전에 반드시 칫솔질을 합니다."가 옳다. '반듯이'는 '반듯하게'의 잘못된 표기이다. '반드시'가 옳다.
+[DBG] idx: 343, output: "2022. 1. 2.~2022. 1. 3."이 옳다. 기간을 나타낼 때는 물결표(~)를 사용한다.
+[DBG] idx: 344, output: "셰이커에 담긴 음료가 쏟아진다."가 옳다.'shaker'는 외래어 표기법에 따라 '셰이커'로 적는다.
+[DBG] idx: 345, output: "비행기 좌석 중 퍼스트 클래스에 앉는 것이 소원이다."가 옳다. 'class'는 외래어 표기법에 따라 '클래스'로 적어야 한다.
+[DBG] idx: 346, output: "입사 연도가 서류에 적힌 것과 다릅니다."가 옳다. '연도(年度)'는 해의 차례나 기간을 뜻하므로, '년도'가 아니라 '연도'로 적어야 한다.
+[DBG] idx: 347, output: "아무도 말을 안 해주든?"이 옳다. '안 해주다'는 본용언과 보조용언의 결합이므로, 보조용언 앞에는 띄어 써야 한다. 따라서 '안 해 주다'로 띄어 써야 한다.
+[DBG] idx: 348, output: "주말엔 청소를 해야 하며 당번은 제비뽑기로 정한다."가 옳다. '해야 하며'는 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 349, output: "엔진을 켜 두었다."가 옳다. 'engine'은 외래어 표기법에 따라 '엔진'으로 적는다.
+[DBG] idx: 350, output: "벌써 스위스라고? 하고 생각하였다."가 옳다. 의문문이나 감탄문 뒤에는 마침표 대신 물음표나 느낌표를 써야 한다. '벌써 스위스라고?'는 의문문이므로 물음표를 써야 한다.
+[DBG] idx: 351, output: "요즘 사람들이 레티놀이 들어간 화장품을 많이 찾는다."가 옳다.'retinol'은 외래어 표기법에 따라 '레티놀'로 적는다.Generating...:  71%|███████   | 352/498 [51:57<16:50,  6.92s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  71%|███████   | 353/498 [52:06<17:58,  7.43s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  71%|███████   | 354/498 [52:11<16:18,  6.80s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  71%|███████▏  | 355/498 [52:17<15:28,  6.49s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  71%|███████▏  | 356/498 [52:23<15:03,  6.36s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  72%|███████▏  | 357/498 [52:29<15:04,  6.41s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  72%|███████▏  | 358/498 [52:37<15:39,  6.71s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  72%|███████▏  | 359/498 [52:45<16:27,  7.10s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  72%|███████▏  | 360/498 [52:50<15:05,  6.56s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  72%|███████▏  | 361/498 [52:58<16:02,  7.03s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  73%|███████▎  | 362/498 [53:06<16:15,  7.17s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  73%|███████▎  | 363/498 [53:12<15:19,  6.81s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  73%|███████▎  | 364/498 [53:25<19:53,  8.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  73%|███████▎  | 365/498 [53:35<20:17,  9.15s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  73%|███████▎  | 366/498 [53:44<20:03,  9.12s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  74%|███████▎  | 367/498 [53:50<17:56,  8.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  74%|███████▍  | 368/498 [53:58<17:26,  8.05s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  74%|███████▍  | 369/498 [54:06<17:12,  8.01s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  74%|███████▍  | 370/498 [54:12<16:10,  7.58s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  74%|███████▍  | 371/498 [54:19<15:04,  7.12s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  75%|███████▍  | 372/498 [54:26<15:18,  7.29s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  75%|███████▍  | 373/498 [54:33<14:45,  7.08s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  75%|███████▌  | 374/498 [54:39<14:09,  6.85s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  75%|███████▌  | 375/498 [54:47<14:35,  7.12s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  76%|███████▌  | 376/498 [54:55<14:54,  7.33s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  76%|███████▌  | 377/498 [55:05<16:29,  8.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  76%|███████▌  | 378/498 [55:12<15:30,  7.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  76%|███████▌  | 379/498 [55:21<16:36,  8.38s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  76%|███████▋  | 380/498 [55:28<15:31,  7.89s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  77%|███████▋  | 381/498 [55:38<16:20,  8.38s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  77%|███████▋  | 382/498 [55:47<16:34,  8.58s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  77%|███████▋  | 383/498 [55:53<15:18,  7.98s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  77%|███████▋  | 384/498 [56:01<14:52,  7.83s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  77%|███████▋  | 385/498 [56:24<23:32, 12.50s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  78%|███████▊  | 386/498 [56:30<19:28, 10.43s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  78%|███████▊  | 387/498 [56:37<17:28,  9.45s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  78%|███████▊  | 388/498 [56:47<17:48,  9.72s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  78%|███████▊  | 389/498 [57:02<20:22, 11.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  78%|███████▊  | 390/498 [57:15<21:16, 11.82s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 352, output: "우리가 해 주면 되지."가 옳다. '돼지'는 '되다'의 비표준어이므로, 표준어인 '되다'를 써야 한다.
+[DBG] idx: 353, output: "보트를 탔다."가 옳다. 'boat'는 외래어 표기법에 따라 '보트'로 적는다.
+[DBG] idx: 354, output: "잔디밭에다 돗자리를 펴자."가 옳다. '돗자리'가 표준어이며, '돋자리'는 비표준어이다.
+[DBG] idx: 355, output: "스폰서를 새로 구했다."가 옳다.'sponsor'는 외래어 표기법에 따라 '스폰서'로 적는다.
+[DBG] idx: 356, output: "매달 드는 분유 값이 얼마인지 알아?"가 옳다. '분유 값'은 '분유'와 '값'이 각각 독립된 단어이므로 띄어 써야 한다.
+[DBG] idx: 357, output: "이 옷은 너무 빨개서 같이 입기가 부담스럽다."가 옳다. '빨갛다'의 어간 '빨갛-'에 '-아서'가 결합하므로 '빨개서'가 맞다.
+[DBG] idx: 358, output: "다시 생각해 보렴."이 옳다. 명령이나 권유의 뜻을 나타내는 종결 어미 '-아라', '-어라', '-으렴' 등은 앞말과 띄어 써야 한다.
+[DBG] idx: 359, output: "대리님(?) 점심은요?"가 옳다. 의문을 나타낼 때는 물음표를 사용한다.
+[DBG] idx: 360, output: "맛의 고장 전주인 만큼, 전통 맛집 및 빵지순례 등 타깃의 흥미와 트렌드에 맞춰 사진과 맛을 표현"이 옳다. 영어 단어 'target'은 외래어 표기법에 따라 '타깃'으로 적는다.
+[DBG] idx: 361, output: "이 하천에는 개구리가 많이 산다."가 옳다. '개구리'는 표준어이고, '개굴이'는 표준어가 아니다. 표준어 규정에 따라 '개구리'로 적어야 한다.
+[DBG] idx: 362, output: "그 아이는 밤톨 같은 머리를 하고 있었다."가 옳다. 관형격 조사 '같은'은 앞말과 띄어 쓴다.
+[DBG] idx: 363, output: "단, 현직교에서 받은 표창은 종류 및 회수에 상관없이 모두 인정하되 유예 기간 중 받은 것은 제외한다."가 옳다. '현임교'는 '현직교'로 고쳐야 한다. '현직'은 '현직(現職)'과 같이 '현직(現職)'으로 적어야 하며, '현임'은 표준어가 아니다.
+[DBG] idx: 364, output: "쌀의 자급을 달성한 통일벼 개발을 기념하기 위하여 통일벼 알 모양을 본떠서 기념비를 세웠다."가 옳다. '본뜨다'는 한 단어이므로 붙여 쓴다.
+[DBG] idx: 365, output: "추가적으로 고객님{차량탑승운전자}에게 \"고객님이 진입하는 곳\"이라는 언어 사용이 반말인지 문의드립니다."가 옳다. 직접 인용하는 말은 큰따옴표로 묶어야 하므로, 작은따옴표 대신 큰따옴표를 써야 한다.
+[DBG] idx: 366, output: "로브스터는 조리법에 따라 맛이 달라진다."가 옳다. 외래어 표기법에 따라 'lobster'는 '로브스터'로 적는다.
+[DBG] idx: 367, output: "옛날엔 시를 읽다가 인상 깊은 시구가 나오면 외워 뒀는데."가 옳다. '시구(詩句)'는 시의 한 구절을 뜻하는 표준어이고, '시귀'는 비표준어이다.
+[DBG] idx: 368, output: "추사 김정희의 〈세한도〉는 절세의 명작이다."가 옳다. 예술작품의 제목은 큰따옴표로 표기하는 것이 어문 규범에 부합한다.
+[DBG] idx: 369, output: "닁큼 이리로 와라."가 옳다. '닁큼'이 표준어이고, '닝큼'은 비표준어이다.
+[DBG] idx: 370, output: "카메라의 초점이 맞질 않는다."가 옳다. '초점(焦點)'이 표준어이며, '촛점'은 잘못된 표기이다.
+[DBG] idx: 371, output: "그날 일에 대해 경위서 쓸 준비하세요."가 옳다. '경위서'는 한 단어이므로 띄어 쓰지 않고 붙여 써야 한다.
+[DBG] idx: 372, output: "믹서로 과일을 갈아 마시다."가 옳다.'mixer'는 외래어 표기법에 따라 '믹서'로 적는다.
+[DBG] idx: 373, output: "10월 31일은 할로윈 파티를 하는 날이다."가 옳다. 외래어 표기법에 따라 'Halloween'은 '할로윈'으로 적는다.
+[DBG] idx: 374, output: "가벼운 읽을거리도 마다하지 않았다."가 옳다. '읽을거리'는 한 단어로 붙여 써야 하며, '꺼리'는 표준어가 아니므로 '거리'로 고쳐야 한다.
+[DBG] idx: 375, output: "오늘은 고기를 구워 먹을 거에요." 은희가 말했다."가 옳다. 인용하는 말의 끝에는 큰따옴표를 붙인다.
+[DBG] idx: 376, output: "그는 슬그머니 방으로 들어갔다. (거기에는 뭔가 의심스러운 것이 있었다)"가 옳다. 앞 문장이 끝난 뒤, 뒤 문장이 앞 문장의 내용을 설명하거나 부연할 때에는 앞 문장 끝에 마침표를 찍고, 뒤 문장 앞에 쉼표를 찍어야 한다.
+[DBG] idx: 377, output: "퀵서비스를 이용해서 물건을 보냈다."가 옳다. '퀵서비스(quick service)'는 외래어 표기법에 따라 '퀵'으로 적어야 한다.
+[DBG] idx: 378, output: "'어떤 시설(곳)을 닫다'라는 의미로 '폐쇄'라는 말을 사용하는데요."가 옳다. '시설' 뒤에 '곳'을 넣어 뜻을 분명히 해야 하므로 쉼표를 쓴다.
+[DBG] idx: 379, output: "그냥 한 번 뒤집어봤어."가 옳다. 관형사 '한'과 명사 '번'은 별개의 단어이므로 띄어 써야 한다.
+[DBG] idx: 380, output: "에라, 모르겠다 하고 도망가고 싶은 마음이 굴뚝이지만, 그랬다가 선생님이 집에 전화하기라도 하면 더 복잡해진다."가 옳다. 앞의 절과 뒤의 절이 대등하게 이어질 때는 쉼표(,)를 넣어 두 문장을 구분한다.
+[DBG] idx: 381, output: "움푹 팬 해골 같은 몰골이었다."가 옳다. '움푹 팬'은 '움푹 파이다'의 뜻이므로 '팬'이 맞다.
+[DBG] idx: 382, output: "푸시 알림을 통해 실시간으로 소식을 받아볼 수 있다."가 옳다. 외래어 표기법에 따라 'push'는 '푸시'로 적는다.
+[DBG] idx: 383, output: "우리 앞에는 무지갯빛 미래가 펼쳐져 있다."가 옳다. '무지갯빛'은 합성어이므로 붙여 쓴다.
+[DBG] idx: 384, output: "좋은 성적을 받아서 그것을 얻어 냈던 것이든 아니던 널 그 학교에 보내는 일은 절대 없다."가 옳다. - '얻어 냈던'은 '얻다'의 과거형 관형사형이므로 '얻어냈던'이 아니라 '얻어냈던'으로 띄어 써야 한다. - '이든'은 '이거나'의 준말이고, '이던'은 '이었다'의 준말이다. 여기서는 '이거나'의 뜻이므로 '얻어냈던 것이든'이 옳다. - '아니던'은 '아니었다'의 준말이고, '아니던'은 '아니다'의 준말이다. 여기서는 '아니었다'의 뜻이므로 '아니던'이 옳다. - 따라서 전체 문장은 "좋은 성적을 받아서 그것을 얻어냈던 것이든 아니던 널 그 학교에 보내는 일은 절대 없다."가 옳다.
+[DBG] idx: 385, output: "챔피언으로 등극하다."가 옳다. 영어 'champion'은 외래어 표기법에 따라 '챔피언'으로 적는다.
+[DBG] idx: 386, output: "정치면이라면 몰라도 문화면에서는 그다지 좋은 방법이 아니다."가 옳다. '문화면'은 '문화'와 '면'이 결합한 합성어이므로 붙여 써야 한다.
+[DBG] idx: 387, output: "'시험을 칠 때 감독자 몰래 미리 준비한 답을 보고 쓰거나 남의 것을 베끼는 일'을 뜻하는 말은 '컨닝'입니다."가 옳다. 외래어 표기법에 따라 'conning'은 '컨닝'으로 적는다.
+[DBG] idx: 388, output: "다시는 너한테 상처 주지 않을게."가 옳다. '않을게'는 '않다'의 어간 '않-' 뒤에, 받침 없는 용언의 어간이나 'ᄅ' 받침인 용언의 어간 뒤에 붙어 '앞말이 관형어 구실을 하게 하고 추측, 예정, 의지, 가능성 등 확정된 현실이 아님'을 나타내는 어미 '-ᄅ게'를 붙여 적어야 하므로, '께'가 아니라 '게'가 옳다.
+[DBG] idx: 389, output: "내일 오후에 뵙겠습니다."가 옳다. '뵈면'은 '뵈다'의 어간 '뵈-'에 연결어미 '-면'이 붙은 형태이고, '뵙겠습니다'는 '뵙다'의 어간 '뵙-'에 공손한 종결어미 '-겠습니다'가 붙은 형태이다. 상대에게 정중하게 말할 때는 '뵙겠습니다'를 써야 옳다.
+[DBG] idx: 390, output: "교통사고 났을 때 구조해 주는 레커를 말하는 겁니다."가 옳다. 'wrecker'는 외래어 표기법에 따라 '레커'로 적는다.Generating...:  79%|███████▊  | 391/498 [57:22<18:14, 10.23s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  79%|███████▊  | 392/498 [57:30<17:00,  9.62s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  79%|███████▉  | 393/498 [57:43<18:29, 10.56s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  79%|███████▉  | 394/498 [57:48<15:47,  9.11s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  79%|███████▉  | 395/498 [57:56<14:58,  8.72s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  80%|███████▉  | 396/498 [58:07<15:36,  9.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  80%|███████▉  | 397/498 [58:15<15:10,  9.01s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  80%|███████▉  | 398/498 [58:24<15:06,  9.07s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  80%|████████  | 399/498 [58:36<16:20,  9.91s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  80%|████████  | 400/498 [58:46<16:21, 10.02s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  81%|████████  | 401/498 [58:56<15:52,  9.82s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  81%|████████  | 402/498 [59:03<14:26,  9.03s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  81%|████████  | 403/498 [59:09<12:36,  7.97s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  81%|████████  | 404/498 [59:19<13:49,  8.82s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  81%|████████▏ | 405/498 [59:29<13:52,  8.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  82%|████████▏ | 406/498 [59:35<12:36,  8.23s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  82%|████████▏ | 407/498 [59:41<11:32,  7.61s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  82%|████████▏ | 408/498 [59:51<12:12,  8.14s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  82%|████████▏ | 409/498 [59:56<10:50,  7.31s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  82%|████████▏ | 410/498 [1:00:01<09:48,  6.68s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  83%|████████▎ | 411/498 [1:00:10<10:42,  7.38s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  83%|████████▎ | 412/498 [1:00:16<09:39,  6.73s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  83%|████████▎ | 413/498 [1:00:22<09:18,  6.57s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  83%|████████▎ | 414/498 [1:00:38<13:26,  9.61s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  83%|████████▎ | 415/498 [1:00:47<12:44,  9.21s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  84%|████████▎ | 416/498 [1:00:55<12:14,  8.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  84%|████████▎ | 417/498 [1:01:03<11:41,  8.66s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  84%|████████▍ | 418/498 [1:01:12<11:46,  8.83s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  84%|████████▍ | 419/498 [1:01:20<11:02,  8.39s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  84%|████████▍ | 420/498 [1:01:25<09:51,  7.58s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  85%|████████▍ | 421/498 [1:01:33<09:35,  7.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  85%|████████▍ | 422/498 [1:01:39<08:56,  7.06s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  85%|████████▍ | 423/498 [1:01:44<08:21,  6.69s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  85%|████████▌ | 424/498 [1:01:52<08:30,  6.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  85%|████████▌ | 425/498 [1:01:59<08:20,  6.85s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  86%|████████▌ | 426/498 [1:02:06<08:24,  7.00s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  86%|████████▌ | 427/498 [1:02:13<08:23,  7.09s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  86%|████████▌ | 428/498 [1:02:23<09:12,  7.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  86%|████████▌ | 429/498 [1:02:30<08:41,  7.56s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  86%|████████▋ | 430/498 [1:02:43<10:19,  9.12s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  87%|████████▋ | 431/498 [1:02:50<09:30,  8.52s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  87%|████████▋ | 432/498 [1:03:01<10:16,  9.34s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 391, output: "떠나야만 하는 이 내 마음을 누가 알아줄까?"가 옳다. '떠나야만 하다'에서 '만'은 의존 명사로, 앞말과 띄어 써야 한다.
+[DBG] idx: 392, output: "탄탄한 기반과 경쟁력으로 많은 나라가 닮고 싶어 하는 자랑스러운 대한민국이 되었습니다."가 옳다. '자랑스러운'은 '자랑스럽다'의 어간 '자랑스럽-' 뒤에, 모음 어미 '-은'이 붙을 때 'ᄅ'이 탈락하여 '자랑스러운'이 된다. 따라서 '자랑스런'이 아니라 '자랑스러운'으로 적어야 한다.
+[DBG] idx: 393, output: "우주 관측 센터를 운영하고 있습니다."가 옳다. '센터'는 외래어이므로 띄어 써야 한다.
+[DBG] idx: 394, output: "올해로 한글 반포 578주년을 맞았다."가 옳다. '돐'은 '돌'의 비표준어이므로, 표준어인 '주년'을 써야 한다.
+[DBG] idx: 395, output: "너희에게 축복이 있을지어다."가 옳다. 'ᄅ' 받침인 용언의 어간 뒤에는 'ᄅ'을 제외한 받침 있는 어미가 올 때 'ᄅ'이 탈락하므로, '있을찌어다'에서 'ᄅ'이 탈락하여 '있을지어다'로 적어야 한다.
+[DBG] idx: 396, output: "그는 얼굴이 잘생겨서 뭇사람들의 부러움을 샀다."가 옳다. '뭇사람'은 '많은 사람'을 뜻하는 표준어이고, '묻사람'은 표준어가 아니다.
+[DBG] idx: 397, output: "봄이 되어 나무에도 새 잎사귀가 돋았다."가 옳다. '잎사귀'는 '잎'과 '사귀'가 결합한 표준어이고, '잎아리'는 표준어가 아니다.
+[DBG] idx: 398, output: "형이 되어서 그렇게 굴면 안 돼."가 옳다. '되다'의 어간 '되-' 뒤에는 '-어'가 붙으므로, '되'가 아니라 '돼'로 적어야 한다.
+[DBG] idx: 399, output: "나무가지에 연이 걸렸다."가 옳다. '걸리다'는 자동사이므로 목적어 뒤에는 '걸렸다'와 같이 자동사의 과거형을 써야 한다. '걸다'는 타동사이므로 목적어 뒤에는 '걸었다'와 같이 타동사의 과거형을 쓴다.
+[DBG] idx: 400, output: "이번 행사는 시민들에게 2014 인천 아시아 경기 대회가 진정한 화합의 장이었음을 알리는 계기가 되었다."가 옳다. '인천 아시아 경기 대회'가 공식 명칭이므로 '인천'을 붙여 써야 한다.
+[DBG] idx: 401, output: "날씨가 추우니 웃옷을 겹쳐 입어라."가 옳다. '웃옷'이 표준어이며, '윗옷'은 비표준어이다.
+[DBG] idx: 402, output: "다행입니다. 감사합니다."가 옳다. 서술어나 감탄문 뒤에는 마침표를 찍어야 한다.
+[DBG] idx: 403, output: "일시: 10월 9일(월) 15시 30분 ~ 20시 30분"이 옳다. 날짜와 요일은 한글로 쓰고, 시간은 24시간제로 표기하는 것이 어문 규범에 맞다.
+[DBG] idx: 404, output: "기름을 짤지라도 조금은 남겨 두어야 한다."가 옳다. '~ᄅ찌라도'는 '~할지라도'의 비표준어이므로, 표준어인 '~할지라도' 또는 '~할지라도'의 준말 '~지라도'를 써야 한다.
+[DBG] idx: 405, output: "제가 매니큐어를 바를 때 그가 왔습니다."가 옳다.'manicure'는 외래어 표기법에 따라 '매니큐어'로 적는다.
+[DBG] idx: 406, output: "판교는 벤처 기업의 강력한 허브로 성장 중이다."가 옳다. 영어'venture'는 외래어 표기법에 따라 '벤처'로 적는다.
+[DBG] idx: 407, output: "거긴 주말엔 사람이 많을걸."이 옳다. '많을걸'은 '많을 것이다'의 줄임말이므로 붙여 쓴다.
+[DBG] idx: 408, output: "해당 지침을 문서화해놓은 것입니다."가 옳다. '문서화해놓다'는 한 단어로 붙여 쓴다.
+[DBG] idx: 409, output: "잘 먹겠습니다."가 옳다. '잘'과 '먹겠습니다'는 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 410, output: "그냥 흔하디흔한 가게일 뿐이다."가 옳다. '흔하다'는 한 단어이므로 '흔하디흔한'으로 붙여 써야 한다.
+[DBG] idx: 411, output: "솔루션을 찾았다."가 옳다. 외래어 표기법에 따라'solution'은 '솔루션'으로 적는다.
+[DBG] idx: 412, output: "요즘은 정보지식을 갖추는 것이 곧 경쟁력이다."가 옳다. '정보지식'은 합성어이므로 붙여 쓴다.
+[DBG] idx: 413, output: "나는 그녀의 등을 가볍게 토닥여 주었다."가 옳다. '토닥이다'는 한 단어로 붙여 쓰지만, '토닥여 주었다'는 '토닥이다'의 어간 '토닥이-'에 사동접사 '-어', 보조동사 '주다'의 어간 '주-', 연결어미 '-었-', 보조동사 '주다'의 어간 '주-', 종결어미 '-다'가 차례로 결합한 형태이므로, 각 단어를 띄어 '토닥여 주었다'로 적어야 한다.
+[DBG] idx: 414, output: "그쪽이 먼저 선수를 쳐서 돈을 지불했다."가 옳다. '치어서'는 '치다'의 어간 '치-'에 연결어미 '-어서'가 결합한 형태이다.
+[DBG] idx: 415, output: "문방사우(종이, 붓, 먹, 벼루)를 다 가져왔으니 이제 글만 쓰면 되겠다."가 옳다. 괄호 안의 내용이 하나의 단위임을 나타낼 때는 소괄호를 사용한다.
+[DBG] idx: 416, output: "제 실력을 확인해 보려고 합니다."가 옳다. '확인해보다'는 '확인해 보다'로 띄어 써야 한다. '보다'는 보조 용언이므로 앞말과 띄어 쓰는 것이 어문 규범에 맞다.
+[DBG] idx: 417, output: "이번 여름엔 순천만에서 하는 축제에 가보려고."가 옳다. '순천만'은 '순천만(順天灣)'의 줄임말로, 고유명사이므로 띄어 쓰지 않고 붙여 써야 한다.
+[DBG] idx: 418, output: "항상 윗사람을 공경해야 한다."가 옳다. '윗사람'이 표준어이다. '윗어른'은 비표준어이므로 '윗사람'으로 적어야 한다.
+[DBG] idx: 419, output: "그러면 혹시 추천하시는 애플리케이션은 없나요?"가 옳다. 외래어 표기법에 따라 'application'은 '애플리케이션'으로 적는다.
+[DBG] idx: 420, output: "1장. 연구 목적 및 필요성"이 옳다. 장(章), 절(節), 항(項) 등의 제목 뒤에는 마침표를 찍는 것이 어문 규범에 맞다.
+[DBG] idx: 421, output: "남산 타워에 올라가다."가 옳다. 'Tower'는 외래어 표기법에 따라 '타워'로 적는다.
+[DBG] idx: 422, output: "카메라로 사진을 찍어요"가 옳다. 'camera'는 외래어 표기법에 따라 '카메라'로 적는다.
+[DBG] idx: 423, output: "미국에 가면 뒷마당에 칩멍크가 많다."가 옳다. 영어 'chipmunk'는 외래어 표기법에 따라 '칩멍크'로 적는다.
+[DBG] idx: 424, output: "철수야, 나랑 놀자!"가 옳다. 호칭 뒤에는 쉼표(,)를 쓰는 것이 어문 규범에 맞다.
+[DBG] idx: 425, output: "대추를 서른두 번째 먹었다."가 옳다. 숫자와 단위를 나타내는 명사는 띄어 써야 하므로, '서른두째'가 아니라 '서른두 번째'로 적어야 한다.
+[DBG] idx: 426, output: "그럴 수 있어요. 하지만 저는 그렇게 생각하지 않아요."가 옳다. 앞 문장이 끝나고 뒤 문장이 새로 시작될 때는 마침표를 찍어야 한다.
+[DBG] idx: 427, output: "솔직히 나라면 그 사람 결혼식에 갈 것 같진 않다."가 옳다. '솔직이'는 '솔직하게'의 비표준어이므로, 표준어인 '솔직히'로 고쳐야 한다.
+[DBG] idx: 428, output: "어서 쾌차하시길 바랍니다."가 옳다. '바래다'는 '바라다'의 비표준어이므로, 표준어인 '바라다'를 써야 한다.
+[DBG] idx: 429, output: "창호에 설치된 철물(돌쩌귀, 삼베목, 문고리/등자쇠 등)에 손상은 없는가?"가 옳다. '등자쇠 등'에서 '등'과 '등자쇠' 사이에 쉼표(,)를 넣어, '등'이 '등자쇠'까지 포괄함을 명확히 해야 한다.
+[DBG] idx: 430, output: "사장 딸이라고 특혜를 받으면 안 되지."가 옳다. '특혜(特惠)'는 표준어이며, '특헤'는 잘못된 표기이다.
+[DBG] idx: 431, output: "아래의 시계에 내가 저녁 식사하는 시간을 시침과 분침으로 그려 보세요."가 옳다. '저녁 식사'는 한 단어로 붙여 써야 하며, '푼침'은 '분침'의 잘못된 표기이므로 '분침'으로 고쳐야 한다.
+[DBG] idx: 432, output: "우리 장모님은 프라이드 치킨을 별로 좋아하지 않는다."가 옳다. 외래어 표기법에 따라 'fried chicken'은 '프라이드 치킨'으로 적는다.Generating...:  87%|████████▋ | 433/498 [1:03:07<09:11,  8.49s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  87%|████████▋ | 434/498 [1:03:14<08:21,  7.83s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  87%|████████▋ | 435/498 [1:03:23<08:39,  8.25s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  88%|████████▊ | 436/498 [1:03:29<07:56,  7.69s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  88%|████████▊ | 437/498 [1:03:37<07:44,  7.62s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  88%|████████▊ | 438/498 [1:03:48<08:38,  8.64s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  88%|████████▊ | 439/498 [1:03:58<08:50,  8.99s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  88%|████████▊ | 440/498 [1:04:06<08:24,  8.71s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  89%|████████▊ | 441/498 [1:04:15<08:35,  9.05s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  89%|████████▉ | 442/498 [1:04:23<07:59,  8.56s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  89%|████████▉ | 443/498 [1:04:29<07:17,  7.95s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  89%|████████▉ | 444/498 [1:04:35<06:38,  7.39s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  89%|████████▉ | 445/498 [1:04:48<07:54,  8.95s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  90%|████████▉ | 446/498 [1:04:57<07:42,  8.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  90%|████████▉ | 447/498 [1:05:05<07:16,  8.55s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  90%|████████▉ | 448/498 [1:05:16<07:47,  9.35s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  90%|█████████ | 449/498 [1:05:22<06:48,  8.33s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  90%|█████████ | 450/498 [1:05:31<06:59,  8.74s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  91%|█████████ | 451/498 [1:05:35<05:42,  7.30s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  91%|█████████ | 452/498 [1:05:44<05:59,  7.81s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  91%|█████████ | 453/498 [1:05:55<06:35,  8.78s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  91%|█████████ | 454/498 [1:06:05<06:42,  9.14s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  91%|█████████▏| 455/498 [1:06:17<07:02,  9.83s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  92%|█████████▏| 456/498 [1:06:24<06:15,  8.93s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  92%|█████████▏| 457/498 [1:06:32<05:53,  8.63s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  92%|█████████▏| 458/498 [1:06:37<05:10,  7.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  92%|█████████▏| 459/498 [1:06:47<05:29,  8.46s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  92%|█████████▏| 460/498 [1:06:54<04:57,  7.83s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  93%|█████████▎| 461/498 [1:07:03<05:01,  8.15s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  93%|█████████▎| 462/498 [1:07:10<04:48,  8.00s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  93%|█████████▎| 463/498 [1:07:16<04:13,  7.25s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  93%|█████████▎| 464/498 [1:07:25<04:20,  7.67s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  93%|█████████▎| 465/498 [1:07:37<05:02,  9.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  94%|█████████▎| 466/498 [1:07:49<05:16,  9.89s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  94%|█████████▍| 467/498 [1:07:54<04:22,  8.47s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  94%|█████████▍| 468/498 [1:08:02<04:13,  8.46s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  94%|█████████▍| 469/498 [1:08:11<04:06,  8.50s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  94%|█████████▍| 470/498 [1:08:20<03:59,  8.55s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  95%|█████████▍| 471/498 [1:08:29<04:00,  8.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  95%|█████████▍| 472/498 [1:08:35<03:23,  7.82s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  95%|█████████▍| 473/498 [1:08:43<03:17,  7.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  95%|█████████▌| 474/498 [1:08:51<03:12,  8.02s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  95%|█████████▌| 475/498 [1:09:02<03:27,  9.01s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+
+[DBG] idx: 433, output: "올해는 텃밭에 강낭콩을 심었다."가 옳다. '강낭콩'이 표준어이며, '강남콩'은 비표준어이다.
+[DBG] idx: 434, output: "다음 달 사흘 날이면 완성될 것이다."가 옳다. '사흘'과 '날'은 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 435, output: "태평양은 세계 바다 면적의 반 정도를 차지한다."가 옳다. '태평양(Pacific Ocean)'은 외래어 표기법에 따라 '태평양'으로 붙여 쓴다.
+[DBG] idx: 436, output: "비가 올때, 우리는 백화점에서 쇼핑을 하고 있었다."가 옳다.'shopping'의 발음 [ʃɒpiŋ]은 '쇼핑'으로 적는다.
+[DBG] idx: 437, output: "아무 데나 앉으면 안 된다."가 옳다. '안'과 '되다'는 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 438, output: "아범아, 내일은 어미와 처가에 다녀와라."가 옳다. '어미(魚尾)'는 물고기의 꼬리를 뜻하고, '에미'는 '어머니'의 비속어이다. 여기서는 '어머니'를 뜻하므로 '어미'가 옳다.
+[DBG] idx: 439, output: "그런 건 하면 안 돼."가 옳다. '그런'과 '건'은 별개의 단어이므로 띄어 써야 한다.
+[DBG] idx: 440, output: "이모작 작부 체계는 다음과 같다."가 옳다. '체게'는 '체계'의 비표준어이므로 '체계'로 고쳐 써야 한다.
+[DBG] idx: 441, output: "개업 후 첫 손님이다."가 옳다. '첫'은 한 단어로 붙여 써야 하며, '첟'은 '첫'의 잘못된 표기이다.
+[DBG] idx: 442, output: "스킨십은 천천히 하는 게 좋다."가 옳다. '스킨십'은 합성어이므로 붙여 쓴다.
+[DBG] idx: 443, output: "여자친구에게 프러포즈를 하려고 한다."가 옳다. 'proposal'은 외래어표기법에 따라 '프러포즈'로 적는다.
+[DBG] idx: 444, output: "나는 마라탕을 한 번도 먹어본 적 없다."가 옳다. '한 번도'는 '한'과 '번도'가 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 445, output: "이 문장은 중의적 의미를 담고 있다."가 옳다. '중이적'은 잘못된 표기이고, 표준어는 '중의적'이다.
+[DBG] idx: 446, output: "이야기거리가 이제 다 떨어졌다."가 옳다. '이야기거리'는 한 단어로 붙여 써야 한다. '이야기'와 '거리'가 합쳐져 하나의 명사를 이루기 때문이다.
+[DBG] idx: 447, output: "나중에 사람들이 미추왕릉 앞에 대나무 잎이 수북이 쌓여 있는 것을 보고 적을 물리친 것이 선왕의 음덕임을 깨달았다."가 옳다. '수북이'가 표준어이며, '수북히'는 비표준어이다.
+[DBG] idx: 448, output: "그럼 코코넛 껍질도 껍질인 것이지요?"가 옳다. 'coconut'은 외래어 표기법에 따라 '코코넛'으로 적는다.
+[DBG] idx: 449, output: "여러 전시회에 출품할 만한 작품이었다."가 옳다. '출품할 만한'은 '출품하다'의 어간 '출품하-'에 관형사형 어미 '-ᄅ'이 붙고, 뒤에 관형사형 어미 '-ᄂ'이 오는 구조이므로 띄어 써야 한다.
+[DBG] idx: 450, output: "1 : 1 대응 관계"가 옳다.
+[DBG] idx: 451, output: "흠뻑 젖은 머리는 밖에 비가 오고 있음을 짐작게 했다."가 옳다. '짐작하다'의 어간 '짐작하-'에 '-게'가 붙으면 '짐작게'로 적는다.
+[DBG] idx: 452, output: "신규 채용 여부는 신규 채용인 경우와 기존인 경우로 표기한다."가 옳다. '신규 채용인 경우'와 '기존인 경우'에서 '인'은 '사람'의 뜻을 나타내는 의존 명사로, 앞말과 띄어 써야 한다.
+[DBG] idx: 453, output: "2024년 1월 1일 이후에 실시하는 입원 진료부터 본인 부담률 감면이 적용될 예정이다."가 옳다. '부담률'은 '부담'과 '률'이 결합한 합성어로, 사이시옷을 붙여 '부담률'로 적어야 한다.
+[DBG] idx: 454, output: "금액: 25,000원"이 옳다. 한글맞춤법 제43항에 따르면, 단위를 나타내는 명사는 앞말과 띄어 쓴다. 따라서 '25,000원'은 '25,000'과 '원'을 띄어 써야 한다.
+[DBG] idx: 455, output: "기술이 나날이 발전하고 있다."가 옳다. '나날이'는 '날마다'의 뜻을 가진 합성어이므로 붙여 쓴다.
+[DBG] idx: 456, output: "'너 어디 사니?' 하고 물어보려다가 입을 다물었어요."가 옳다. 직접 인용하는 말은 큰따옴표로 묶어야 한다.
+[DBG] idx: 457, output: "어제 공원에서 재즈 밴드가 공연을 했다."가 옳다. 외래어 'band'는 '밴드'로 적는 것이 옳다.
+[DBG] idx: 458, output: "왼쪽에서 열세 번째 그림은 합격이다."가 옳다. '열세째'는 '열세'에 접미사 '-째'를 붙여 '순서가 열두 다음인 차례'의 뜻을 나타내야 하므로, '열세'와 '째'를 띄어 '열세 번째'로 적어야 한다.
+[DBG] idx: 459, output: "올해 캘린더를 샀다."가 옳다. 'calendar'는 외래어 표기법에 따라 '캘린더'로 적는다.
+[DBG] idx: 460, output: "알수록 더 좋게 느껴지는 사람이었다."가 옳다. '알다'의 활용형 '알수록'은 한 단어로 붙여 써야 한다.
+[DBG] idx: 461, output: "장애인뿐만 아니라 비장애인도 이용할 수 있다."가 옳다. '뿐만'은 의존명사이므로 앞말과 띄어 써야 한다.
+[DBG] idx: 462, output: "크레디트 카드"가 옳다. 'credit'은 외래어 표기법에 따라 '크레디트'로 적는다.
+[DBG] idx: 463, output: "여기는 모두 2014년도 졸업식에 참가한 사람들이다."가 옳다. '연도'는 '연도(年度)'와 같이 '도'를 붙여 써야 표준어이다.
+[DBG] idx: 464, output: "그런 녹록치 않은 상황 속에서도 조국과 국민을 위해 헌신했던 그분들의 생애는 어릴 적 읽었던 위인전처럼 이 시대의 후배 경찰들에게 벅찬 감동과 큰 가르침을 주는 고마운 선물이 아닐 수 없다."가 옳다. '녹록치 않다'의 표준어는 '녹록지 않다'이므로, '녹록치 않은'을 '녹록지 않은'으로 고쳐야 한다.
+[DBG] idx: 465, output: "카드를 뒤집어엎어 보기까지는 누가 이겼는지 모른다."가 옳다. '뒤집어엎다'는 '뒤집다'와 '엎다'가 결합한 말로, 합성어가 아니므로 '뒤집어엎다'가 아니라 '뒤집어 엎다'로 띄어 써야 한다.
+[DBG] idx: 466, output: "바나나"가 옳다. 외래어 표기법에 따라 'banana'는 '바나나'로 적는다.
+[DBG] idx: 467, output: "주책이 없어 자꾸 남의 말에 흔들리게 된다."가 옳다. '주책'은 '줏대 없이 되는대로 하는 짓'을 뜻하는 표준어이고, '주착'은 '주책'의 비표준어이다.
+[DBG] idx: 468, output: "이번에 새로 나온 브랜드예요."가 옳다. '이에요'는 '이다'의 준말로, 받침 없는 체언 뒤에서는 '예요'로 줄여 쓴다. '브랜드'는 받침이 없으므로 '에요'로 적어야 한다.
+[DBG] idx: 469, output: "오늘 총 15만 7천 명이 모였다."가 옳다. 만 단위 이상의 숫자는 '만', '억', '조' 등의 단위를 붙여 쓰고, 각 단위 사이에는 쉼표(,)를 넣어 구분한다.
+[DBG] idx: 470, output: "네? 의... 의사라고요?"가 옳다. 의문문이나 감탄문 뒤에 쉼표(,)를 쓰는 것은 어문 규범에 어긋난다. 의문문이나 감탄문 뒤에는 쉼표를 붙이지 않는다.
+[DBG] idx: 471, output: "알아서 좀 해."가 옳다. '알아서'와 '좀'은 각각의 단어이므로 띄어 써야 한다.
+[DBG] idx: 472, output: "2023. 4. 17.(월)"이 옳다. 월과 일 사이에는 쉼표(,)를 넣어 구분한다.
+[DBG] idx: 473, output: "너무 쩨쩨한 것 같아. 네 번으로 하자."가 옳다. 앞 문장이 끝나고 뒤 문장이 새로 시작될 때는 마침표를 찍어야 한다.
+[DBG] idx: 474, output: "모차르트<오스트리아의 작곡가>는 고전파의 양식을 확립하였다."가 옳다. < >(소괄호)는 설명이나 보충이 필요한 내용을 넣을 때 사용하며, 쉼표(,) 대신 쓸 수 있다. 따라서 '모차르트(오스트리아의 작곡가)'에서 쉼표 대신 < >를 쓰는 것이 어문 규범에 맞다.
+[DBG] idx: 475, output: "다음 주에 시험을 볼 테니 그리 알고 열심히 공부하세요."가 옳다. '볼 테니'는 '보다'의 어간 '보-' 뒤에, 앞말이 뜻하는 행동을 할 것임을 나타내는 종결어미 '-ᄅ 테니'가 붙은 형태로, 반드시 띄어 써야 한다.Generating...:  96%|█████████▌| 476/498 [1:09:12<03:21,  9.16s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  96%|█████████▌| 477/498 [1:09:20<03:04,  8.80s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  96%|█████████▌| 478/498 [1:09:31<03:09,  9.49s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  96%|█████████▌| 479/498 [1:09:37<02:41,  8.50s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  96%|█████████▋| 480/498 [1:09:45<02:28,  8.25s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  97%|█████████▋| 481/498 [1:09:54<02:23,  8.46s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  97%|█████████▋| 482/498 [1:10:00<02:06,  7.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  97%|█████████▋| 483/498 [1:10:07<01:51,  7.43s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  97%|█████████▋| 484/498 [1:10:32<02:58, 12.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  97%|█████████▋| 485/498 [1:10:38<02:20, 10.78s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  98%|█████████▊| 486/498 [1:10:47<02:03, 10.27s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  98%|█████████▊| 487/498 [1:10:57<01:51, 10.12s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  98%|█████████▊| 488/498 [1:11:02<01:26,  8.66s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  98%|█████████▊| 489/498 [1:11:09<01:12,  8.11s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  98%|█████████▊| 490/498 [1:11:16<01:03,  7.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  99%|█████████▊| 491/498 [1:11:29<01:05,  9.32s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  99%|█████████▉| 492/498 [1:11:39<00:57,  9.59s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  99%|█████████▉| 493/498 [1:11:50<00:49,  9.84s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  99%|█████████▉| 494/498 [1:11:58<00:37,  9.31s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...:  99%|█████████▉| 495/498 [1:12:05<00:26,  8.72s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...: 100%|█████████▉| 496/498 [1:12:13<00:16,  8.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...: 100%|█████████▉| 497/498 [1:12:19<00:07,  7.74s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Generating...: 100%|██████████| 498/498 [1:12:26<00:00,  7.56s/it]Generating...: 100%|██████████| 498/498 [1:12:26<00:00,  8.73s/it]
+
+[DBG] idx: 476, output: "그는 여전히 미심쩍어하는 눈치였다."가 옳다. '미심쩍어하다'는 한 단어이므로 붙여 쓴다.
+[DBG] idx: 477, output: "오늘은 무슨 일이 있어도 반드시 이 일을 끝내고야 말겠다."가 옳다. '반드시'는 '틀림없이' 또는 '확실히'의 뜻을 나타내는 부사이고, '반듯이'는 '바르게', '똑바로'의 뜻을 나타내므로, '틀림없이'의 뜻으로는 '반드시'를 써야 옳다.
+[DBG] idx: 478, output: "영화의 장면을 이야기할 때는 씬이라고 하는 거야."가 옳다.'scene'은 외래어 표기법에 따라 '씬'으로 적는다.
+[DBG] idx: 479, output: "허리를 꼿꼿하게 펴고 앉아라."가 옳다. '꼿꼿하다'는 한 단어이므로 붙여 쓴다.
+[DBG] idx: 480, output: "다희가 알았으면 엄청 화냈을걸?"이 옳다. '걸'은 '것'을 구어적으로 이르는 말로, '껄'이 아니라 '걸'로 적어야 한다.
+[DBG] idx: 481, output: "우리 동네까지 셔틀버스가 온다."가 옳다. '셔틀버스(shuttle bus)'는 외래어 표기법에 따라 '셔틀버스'로 적어야 한다.
+[DBG] idx: 482, output: "백스테이지에는 관계자만 들어갈 수 있다."가 옳다. 영어 'backstage'는 외래어 표기법에 따라 '백스테이지'로 적는다.
+[DBG] idx: 483, output: "하마터면 잘못 갈 뻔했다."가 옳다. '뻔하다'는 형용사 '뻔하다'의 어간 '뻔하-' 뒤에, '-지 않다'의 준말 '-잖다'를 붙여 '뻔잖다'로 쓰거나, '-지 못하다'의 준말 '-못하다'를 붙여 '뻔못하다'로 쓸 수 있다. 그러나 '뻔하다'의 어간 '뻔하-' 뒤에는 '-지 못하다'의 준말 '-못하다'를 붙여 '뻔못하다'로만 쓸 수 있고, '뻔하다'의 어간 뒤에 '-지 않다'의 준말 '-잖다'를 붙여 '뻔잖다'로는 쓸 수 없다. 따라서 '뻔하다'의 어간 뒤에 '-지 못하다'의 준말 '-못하다'를 붙여 '갈 뻔했다'로 써야 옳다.
+[DBG] idx: 484, output: "사람들은 예뻐지기 위해 입술 필러를 맞는다."가 옳다. 영어 'filler'는 외래어 표기법에 따라 '필러'로 적는다.
+[DBG] idx: 485, output: "친구랑 길을 걷다가 친구가 저에게 '너 너무 천천히 걸어. 나 한 걸음 걸을 때 너 다섯 걸음 걷는 것 같아.'라고 했습니다."가 옳다. 직접 인용할 때는 큰따옴표 대신 작은따옴표를 써야 한다.
+[DBG] idx: 486, output: "완전히 넋이 나간 얼굴이다."가 옳다. '넉씨'는 잘못된 표기이고, '넋'이 표준어이다.
+[DBG] idx: 487, output: "여기는 무엇 하러 왔니?"가 옳다. 의문문의 끝에는 물음표를 붙인다.
+[DBG] idx: 488, output: "금값이 역대 최고값을 경신하였다."가 옳다. '최고값'이 표준어이며, '최곳값'은 표준어가 아니다.
+[DBG] idx: 489, output: "스테이크를 굽기 전에 겉면을 잘 브라우닝하면 더 풍미가 좋아진다."가 옳다. 영어 단어 'browning'은 외래어 표기법에 따라 '브라우닝'으로 적는다.
+[DBG] idx: 490, output: "순영이는 집에서 무려 열둘째이다."가 옳다. 순서를 나타낼 때는 '둘째, 셋째, 넷째, 다섯째, 여섯째, 일곱째, 여덟째, 아홉째, 열둘째, 열셋째, 열넷째, 열다섯째, 열여섯째, 열일곱째, 열여덟째, 열아홉째, 스무째'와 같이 '째'를 붙여 쓴다.
+[DBG] idx: 491, output: "사실은 하나도 안 웃겨." 하고 속으로 생각했다."가 옳다. 인용된 말의 끝에는 큰따옴표를 붙인다.
+[DBG] idx: 492, output: "너한테는 식은 죽 먹기겠지만 나한테는 아니다."가 옳다. '먹다'의 어간 '먹-' 뒤에 '-겠-'이 붙으면 '먹겠-'이 되고, 여기에 '-지만'이 붙으면 '먹겠지만'이 된다. '겠지만서도'는 비표준어이다.
+[DBG] idx: 493, output: "ᅳ (윤석중, 『전집』(1988), 70쪽 참조)"가 옳다. 책 제목은 쉼표(,)가 아닌 큰따옴표(" ")로 묶어 표기하는 것이 어문 규범에 맞다.
+[DBG] idx: 494, output: "오고 가는 시간에는 영어 단어를 짬짬이 외운다."가 옳다. '짬짬이'가 표준어이며, '짬짬히'는 비표준어이다.
+[DBG] idx: 495, output: "퇴근하며 사무실 문을 잘 잠갔다."가 옳다. '잠그다'의 어간 '잠그-' 뒤에는 '-었다'가 붙으므로 '잠갔다'가 맞다.
+[DBG] idx: 496, output: "영어는 '잉글리시'라고 발음한다."가 옳다. 외래어 표기법에 따라 'English'는 '잉글리시'로 적는다.
+[DBG] idx: 497, output: "어머니를 도와드리려 설거지를 하다가 그릇을 두 개나 깨버렸다."가 옳다. '도와드리다'는 한 단어로 붙여 써야 한다.

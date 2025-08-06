@@ -1,0 +1,3730 @@
+nohup: ignoring input
+2025-07-30 12:49:15.367084: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-07-30 12:49:15.376655: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1753847355.387776 2654713 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1753847355.390707 2654713 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1753847355.399058 2654713 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753847355.399099 2654713 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753847355.399102 2654713 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1753847355.399103 2654713 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-07-30 12:49:15.401599: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/nlplab/anaconda3/envs/juhyng/lib/python3.12/site-packages/torch/nn/modules/module.py:1762: FutureWarning: `encoder_attention_mask` is deprecated and will be removed in version 4.55.0 for `BertSdpaSelfAttention.forward`.
+  return forward_call(*args, **kwargs)
+[DEBUG] ROUGE-1: [0.20512820512820512]
+[DEBUG] BERTscore reward: [0.6917638182640076]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(기르기)가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게스리 굴지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 루쉰이 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백 명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 귀 끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 디뎠다가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: 예문( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: ᅳ 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 힘겹게 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: ― 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜대상자로서뿐만 아니라 한 집안의 가장으로서 말씀드리고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: {과일(사과, 배)}가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니, 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 한 입거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 컬러 복사가 맞다가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 반 협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 아이, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A, 즉 B는이 옳다
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 진학률도 상승하고 있다.가 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 메론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 뱃멀미가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칠날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 릉묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초(初)·중(中)·고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어 내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 인턴십을 시행한다.가 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 떼려야 뗄 수 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 저기 서 있는 저 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에, 로, 까지 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10:1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 안심시켜주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 년월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 용납하지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통 난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250730_030609_epoch1.json
+   - ROUGE-1        : 0.2730
+   - BERTScore      : 0.6782
+   - EM             : 0.5197
+   - (ROUGE+BERT)/2 : 0.4756
+   - Final Mean     : 0.4977
+[DEBUG] ROUGE-1: [0.29370629370629375]
+[DEBUG] BERTscore reward: [0.692899763584137]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(기르기)가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게 하지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 루쉰은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건네주었지 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백 명(의) 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 추워서 귀끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 흙탕물이라 조심스럽게 발을 딛었다.가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: 예문( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다. (예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 힘겹게 몸을 움직이며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 과일(사과, 배)가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 이렇게 작은 과자는 한 입거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 칼라 복사가 맞나요?가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 아이, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A, 즉 B는이 옳다
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트 하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로써는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 릉묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초( )중( )고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지다가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 이른다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 뗄래야 뗄 수가 없는 관계다.에서 어문 규범에 부합하지 않는 부분은 뗄래야입니다. 뗄래야는 떼려야의 잘못된 표기이므로, 떼려야로 고쳐야 합니다. 떼려야는 떼려고의 준말로, 떼다의 어간 떼-에 연결어미 -려고가 결합한 형태입니다. 따라서 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳습니다.
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 저기 서 있는 저 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에, 로, 까지 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 양치질해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10:1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 안심시켜주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 용납하지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통 난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250728_173846_epoch5.json
+   - ROUGE-1        : 0.2917
+   - BERTScore      : 0.6679
+   - EM             : 0.5591
+   - (ROUGE+BERT)/2 : 0.4798
+   - Final Mean     : 0.5194
+[DEBUG] ROUGE-1: [0.36809815950920244]
+[DEBUG] BERTscore reward: [0.7071899771690369]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 기억해냈다가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(?) 기르기가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게시리 굴지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 노신은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 바니쉬를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백 명(의) 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 귀 끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 어르신의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 딛었다가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30 m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: 예문 ( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다(예: 전주, 원주, 제주).가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 초점이 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 정착시킴으로써가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한 번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 널찍하다가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상자로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 과일(사과, 배)가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 한 입거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 컬러 복사가 맞다.가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 아이, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A 즉, B는이 옳지 않다. 빗금(/)은 그리고, 또는의 뜻으로 두 개 이상의 어구를 열거할 때 쓰이므로, 즉 앞에는 쉼표(,)를 쓰는 것이 옳다
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 진학률이 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 메론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피여 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 뱃멀미가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초( ) 중학교( ) 고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지지 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 떼려야 떼려야 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10:1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허(면허가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 용납지 않았다가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통 난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250727_154421_epoch2.json
+   - ROUGE-1        : 0.2962
+   - BERTScore      : 0.6756
+   - EM             : 0.5197
+   - (ROUGE+BERT)/2 : 0.4859
+   - Final Mean     : 0.5028
+[DEBUG] ROUGE-1: [0.27906976744186046]
+[DEBUG] BERTscore reward: [0.7107692956924438]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기( ) 기르기가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든 지 책을 읽든 지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게스리 굴지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 루쉰은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백 명**여**의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 귀끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 흙탕물이라 조심스럽게 발을 딛었다.가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지? 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: 예문( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: ~ 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: ― 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 열어젖혔다가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 힘겹게 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 〈과일(사과, 배)〉가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니, 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 칼라 복사가 맞습니다.가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 얘, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A, 즉 B는이 옳다
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 진학률이 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼을 하다.가 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피여 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 뱃멀미가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 며칠날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로써는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 릉묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초( ) 중( ) 고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 달한다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 요즘에는 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 저기 서 있는 저 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에, 로, 까지 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 이를 닦아야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10 : 1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 불안해하는 친구를 안심시켜주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 년월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 용납하지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통 난 다음날이었다.가 옳다
+[DEBUG] EM: [1.0]
+
+ File: inference_result_20250727_154421_epoch3.json
+   - ROUGE-1        : 0.2677
+   - BERTScore      : 0.6673
+   - EM             : 0.5433
+   - (ROUGE+BERT)/2 : 0.4675
+   - Final Mean     : 0.5054
+[DEBUG] ROUGE-1: [0.3949044585987261]
+[DEBUG] BERTscore reward: [0.6956983804702759]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(기르기)가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게 하지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 노신은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건네주었다.가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백 명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지? 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: 예문) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 힘겹게 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 과일(사과, 배)가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니, 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 이렇게 작은 과자는 한 입거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 칼라 복사가 맞다.가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 아이, 예쁘네~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A, 즉 B는이 어문 규범에 부합한다. A 즉, B는은 어문 규범에 부합하지 않는다. 이유: 즉은 쉼표(,)와 함께 쓰는 것이 표준이다. 즉 앞에는 쉼표를 붙이고, 뒤에는 마침표나 쉼표 등 문장부호를 쓰지 않는 것이 원칙이다. 따라서 A, 즉 B는이 옳다
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 릉과 묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초( ) 중( ) 고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 닿는다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 요즘에는 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 뗄래야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 저기 서 있는 저 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 양치질해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10:1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 불안해하는 친구를 안심시켜주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허(면허가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 용납하지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통 난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250728_173846_epoch4.json
+   - ROUGE-1        : 0.2979
+   - BERTScore      : 0.6696
+   - EM             : 0.5984
+   - (ROUGE+BERT)/2 : 0.4838
+   - Final Mean     : 0.5411
+[DEBUG] ROUGE-1: [0.24806201550387597]
+[DEBUG] BERTscore reward: [0.6609289050102234]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: [답변] 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 {푹하다}가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(식물) 기르기가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 아무 일도 일어나지 않자 그는 {슬며시} 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다. 가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게스리 굴지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 루쉰은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 다행히도가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 윗방이 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건네주었지 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 흙탕물이라 조심스럽게 발을 딛었다가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: [초속 30m]가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: 예문( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 {숫개미}보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 진행하는 데가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: ― 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 정착시킴으로써가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라던가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 어문 규범에 부합한다. 이유는 한글맞춤법 제46항에 따라 합성어를 만들거나 단어의 의미를 명확히 하기 위하여 필요할 때에는 사이시옷을 받치어 적는다. 온라인(on-line)과 오프라인(off-line)이 결합하여 인터넷이나 컴퓨터 통신을 이용하는 방식과 직접 만나서 이루어지는 방식을 아울러 이르는 새로운 단어로 쓰일 때, 두 말 사이에 사이시옷을 넣어 온·오프라인으로 적는 것이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: [답변]그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허둥지둥거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: 우아, 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜자로서 뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 과일(사과, 배)가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니, 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 한 입거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: [답변]칼라 복사가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: [답변]간판은 따로 간판을 만드는 사람을 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 전환점으로서가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: (정답은 뒷장에 있습니다.)가 어문 규범에 맞지 않습니다. [답변] 협박이나 다름없는 말이다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 얘, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A 즉, B는이 어문 규범에 부합하지 않는다. 조사 즉은 앞말에 붙여 써야 하므로, A 즉, B는처럼 즉 앞뒤에 쉼표(,)를 쓰는 것은 맞춤법에 맞지 않다.
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: [답변] 실감났다를 실감이 났다로 고치는 것이 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 그리지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트 하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는이 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 릉묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초등학교, 중학교, 고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지[퍼람지]다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 닿는다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 인턴십이 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 한 그루가가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜. 또는 다행이다, 정말.이 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 러닝을이 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 양치질해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10 : 1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 새예요가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는이 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 불안해하는 친구를 안심시켜주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 용납하지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250727_001352_epoch4.json
+   - ROUGE-1        : 0.2848
+   - BERTScore      : 0.6797
+   - EM             : 0.4488
+   - (ROUGE+BERT)/2 : 0.4823
+   - Final Mean     : 0.4655
+[DEBUG] ROUGE-1: [0.5423728813559322]
+[DEBUG] BERTscore reward: [0.740077793598175]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 푹하다가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(기르기)가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든 지 책을 읽든 지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게스리 굴지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 루쉰은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 콤퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건네 버렸지 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백여명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 추워서 귀끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 디뎠다가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 {남이섬}에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: ―예문, 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: 1910~1950이 어문 규범에 부합한다. 이유는 숫자 사이에는 가운뎃점(‒) 대신 가운뎃점(~) 또는 물결표(~)를 써야 하기 때문이다. 1910‒1950처럼 가운뎃점(‒)을 쓰는 것은 잘못이다.
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.에서 어문 규범에 부합하지 않는 부분은 없습니다. 이유: 쿵쿵거리다는 표준어이고, 위층 역시 표준어입니다. 띄어쓰기나 맞춤법, 표준어 규정에 어긋난 곳이 없으므로 그대로 쓰는 것이 옳습니다.
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 열어젖혔다가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 정착시킴으로써가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 것일걸이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: [답변]보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾹새가 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한 번 {간/갈은} 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓이 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 허위적거리다가 옳지 않고, 허우적거리다로 고쳐야 한다. 이유는 허위적거리다는 표준어가 아니며, 허우적거리다가 힘겹게 팔다리를 놀리며 물 따위에서 헤어나려고 하다의 뜻으로 표준어이기 때문이다.
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: 우아, 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: [답변] 고백건대가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 챙겨 왔어요가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 과일(사과, 배)가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니 서둘러.가 어문 규범에 부합하지 않는다. 고쳐 쓰면 시간이 제한되어 있으니 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 이렇게 작은 과자는 한 입거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 칼라 복사가 맞다. color의 한글 표기로는 칼라가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: [답변] 전환점으로서가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 아이, 예쁘네~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A, 즉 B는이 옳다
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 진학률이 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: [답변]\고 홍길동 씨의 장례식을 시작하겠습니다.\가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급 상황 시에는 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 뱃멀미가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초(初)·중(中)·고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지다가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 도달한다.에서 어문 규범에 부합하지 않는 부분은 없습니다. 이유는 다음과 같습니다. 1. 윗턱은 합성어이므로 사이시옷을 붙여 쓰지 않습니다. 2. 도달하다는 곳이나 수준에 이르다의 뜻으로, 이 문맥에서 적절하게 사용되었습니다. 3. 나머지 단어와 조사의 쓰임도 모두 올바릅니다. 따라서 별도의 고침이 필요하지 않습니다.
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 인턴십이 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 뗄래야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 인센티브가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 한 그루가가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다. 진짜,.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 러닝을이 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾아보고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에, 로, 까지 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 이 닦기 해야 한다.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10∶1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: [답변]아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는이 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: [답변] {폐품/페품}으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 안심시켜주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: [답변]동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: ᅳ 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 {용납지} 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: [답변] 무면허자라는 게가 어문 규범에 부합하지 않는다. 자는 의존 명사로 앞말과 띄어 써야 하므로, 무면허 자라는 게로 고쳐야 옳다. 의존 명사는 앞에 오는 말과 띄어 쓰는 것이 어문 규범이다.
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250727_001352_epoch5.json
+   - ROUGE-1        : 0.2810
+   - BERTScore      : 0.6619
+   - EM             : 0.4252
+   - (ROUGE+BERT)/2 : 0.4714
+   - Final Mean     : 0.4483
+[DEBUG] ROUGE-1: [0.43312101910828027]
+[DEBUG] BERTscore reward: [0.6867429614067078]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(관찰일지) 쓰기가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게 하지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 노신은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 디뎠다가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: ―예문 ( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: ᅳ 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 열어젖혔다가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 좋아 보여서 따라 하는 것이 걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: ― 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상자로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 과일(사과, 배)가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 한 입거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 칼라 복사가 맞다.
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 아이, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A, 즉 B는이 옳다
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 진학률이 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: ― 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 하이라이트를 하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘져 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 뱃멀미가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 릉(陵)묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초등학교(초)·중학교(중)·고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지다가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 달한다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 떼려야 뗄 수 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다. 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에, 로, 까지 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 이 닦기 해야 지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10:1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 안심시켜 주었다가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 용납하지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250727_154421_epoch1.json
+   - ROUGE-1        : 0.2849
+   - BERTScore      : 0.6735
+   - EM             : 0.5512
+   - (ROUGE+BERT)/2 : 0.4792
+   - Final Mean     : 0.5152
+[DEBUG] ROUGE-1: [0.26086956521739135]
+[DEBUG] BERTscore reward: [0.6957613825798035]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기.기르기가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 똑딱똑딱이 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게스리 굴지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 루쉰은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 다행히도가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 웃방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지요 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백 명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 귀 끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 {윗옷}은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: [답변]밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: 예문: ( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 숫막새가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 진행하는 데 쓰려고 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형 만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: ― 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주).가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 초점이가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 정착시킴으로써가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다. 국어의 맞춤법 규정에 따르면, 합성어를 만들 때 각각의 단어를 띄어서 쓰고, 사이에 ·(하이픈)을 넣어 쓰기도 하나, 최근에는 주로 띄어쓰거나 붙여쓰기(온오프라인)를 사용한다. 그러나 두 단어의 결합임이 명확히 드러나야 할 경우에는 온·오프라인처럼 ·을 쓰는 것이 어문 규범에 부합한다.
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: [답변] 그까짓이 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상자로서뿐만 아니라 한 집안의 가장으로서 말씀드리고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: [과일(사과, 배)]가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니 서둘러라.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 한 입 거리도가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 칼라가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 반 협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 얘, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A, 즉 B는이 어문 규범에 부합하지 않는다. 쉼표(,) 뒤에는 바로 말머리(조사나 어미)가 올 수 없고, 쉼표 뒤에는 반드시 휴지(끊어 읽기)가 있어야 하므로 A, 즉 B는이 옳고, A 즉, B는은 쉼표와 조사 사이에 휴지가 없어 어문 규범에 맞지 않다.
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 진학률이 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: [답변]고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: [답변]매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급상황 시 비상대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓴다.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 며칠날이 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: [답변]조선 왕조의 릉묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: [답변]나의 곤란한 사정으로는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초(초등학교), 중(중학교), 고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 요즘에는 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 뗄래야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 저기 서 있는 저 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾아보고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: [답변]아이들이 학교에,로,까지 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 양치질해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10:1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: [답변] 저로서는이 옳습니다. 그 이유는 로서는은 지위나 신분 또는 자격을 나타내는 조사로, 앞말이 관형어 구실을 할 때 사용합니다. 예를 들어, 학생으로서는 할 수 없다, 의사로서는 지나칠 수 있다처럼 쓰입니다. 반면, 로써는 수단, 방법, 도구를 나타낼 때 사용하므로, 이 문맥에서는 적절하지 않습니다. 따라서 지위나 자격을 나타낼 때는 로서는이 옳습니다.
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 안심시켜주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: [답변]동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 년월일을 기입해 주세요.에서 어문 규범에 맞지 않는 부분은 없습니다. 기입은 글로 써서 넣다는 뜻의 표준어이고, 년월일도 연도·월·일을 줄여 쓴 표현으로 모두 올바르게 사용되었습니다.
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 용납하지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통 난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250727_001352_epoch3.json
+   - ROUGE-1        : 0.2884
+   - BERTScore      : 0.6749
+   - EM             : 0.4724
+   - (ROUGE+BERT)/2 : 0.4816
+   - Final Mean     : 0.4770
+[DEBUG] ROUGE-1: [0.29577464788732394]
+[DEBUG] BERTscore reward: [0.6803095936775208]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(기르기)가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게스리 굴지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 노신이 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백 명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 귀 끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 디뎠다가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: ―예문( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: ᅳ 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 힘겹게 몸을 움직이며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: ― 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜대상자로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 과일(사과, 배)가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니, 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 한 입거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 칼라 복사가 맞다.가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 아이, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: ― A, 즉 B는이 옳다
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 진학률도 상승하고 있다.가 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 메론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 뱃멀미가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 릉묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초(初)·중(中)·고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지다가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 요즘에는 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 뗄래야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 저기 서 있는 저 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10:1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 안심시켜 주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허(면허가) 년월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 용납하지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통 난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250728_173846_epoch1.json
+   - ROUGE-1        : 0.2940
+   - BERTScore      : 0.6728
+   - EM             : 0.5512
+   - (ROUGE+BERT)/2 : 0.4834
+   - Final Mean     : 0.5173
+[DEBUG] ROUGE-1: [0.41509433962264153]
+[DEBUG] BERTscore reward: [0.7121093273162842]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(식물 기르기)가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: [답변] 슬며시가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든 지 책을 읽든 지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게스리 굴지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 루쉰은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: [답변] 다행히도가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 조깅이 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 웃방이라 불린다가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건네주었다.가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백 명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 귀 끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: [답변]밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 흙탕물이라 조심스럽게 발을 딛었다.가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: [답변]그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 {남이 섬/남이섬}에 가려고. 중에서 남이섬이 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: ―예문( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: [답변] 옆차는 옆 차로 띄어 써야 옳다. 옆은 곳이나 방향을 나타내는 체언이고, 차는 자동차나 기차 따위를 통틀어 이르는 명사이므로, 두 단어가 이어져 의미를 이룰 때는 사이시옷 없이 각각 띄어서 쓰는 것이 맞다.
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.에서 어문 규범에 부합하지 않는 부분은 없습니다. 윗층이는 표준어이며, 쿵쿵거리다 역시 올바른 표기입니다.
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: [답변]형만한 아우 없다가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전주인이 죽어서 오갈 데 없는 처지가 되었다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 초점이가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 **거쳐** 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 {간} 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 힘겹게 몸을 움직이며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상자로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 과일(사과, 배)가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니 서둘러라.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: [답변]컬러가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 협박이나 다름없었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 얘, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A 즉, B는이 어문 규범에 부합하지 않는다. 즉, 앞에 쉼표(,)를 붙이는 것은 잘못된 표기이며, 즉 뒤에는 쉼표 없이 바로 다음 말을 써야 한다.
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: [답변] 스코틀랜드가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 진학률이 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급상황시를 긴급상황 시로 고쳐야 한다. 조사 시는 앞말과 띄어 써야 하므로, 긴급상황시처럼 붙여 쓰면 잘못이다.
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 하이라이트가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘져 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 뱃멀미가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: [답변]스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 달려갈게요가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: [답변]나의 곤란한 사정으로써는이 어문 규범에 부합하지 않는다. 으로써는 수단, 도구, 방법의 뜻을 나타낼 때 쓰이므로, 여기서는 이유, 근거, 원인의 뜻을 나타내는 조사 으로 말미암아, 때문에 등으로 바꾸거나, 사정 때문에와 같이 바꿔야 한다. 따라서 나의 곤란한 사정으로 인하여 이러한 조치가 마땅했다. 또는 나의 곤란한 사정 때문에 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초( ) 중( ) 고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지지 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 이른다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: [답변] 인턴십이 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 러닝이 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: [답변] 10 : 1 이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: [답변]안심시켜주었다가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 어문 규범에 부합한다. 이유는 ~ 앞뒤로 불필요한 쉼표(,)를 넣지 않는 것이 원칙이다. 날짜 표기 시 연도와 월·일 사이에만 쉼표를 쓰고, 범위 표시(~) 앞뒤에는 쉼표를 넣지 않는다.
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 용납하지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250727_001352_epoch1.json
+   - ROUGE-1        : 0.2710
+   - BERTScore      : 0.6603
+   - EM             : 0.4803
+   - (ROUGE+BERT)/2 : 0.4657
+   - Final Mean     : 0.4730
+[DEBUG] ROUGE-1: [0.44705882352941173]
+[DEBUG] BERTscore reward: [0.6683654189109802]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 {푹하다/푸카다}. 가운데 올바른 것은 **푹하다**가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기( ) 기르기가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게스리 굴지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 노신은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백 명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 귀 끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 딛었다가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: ―예문( ) 나의 죽음까지 남은 시간 동안에는 나, 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 초점이 맞다가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: {그까짓} 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허위적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 〈과일(사과, 배)〉가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 한 입거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 칼라 복사가 맞다.가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 반 협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 얘, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: ― A, 즉 B는이 어문 규범에 부합하지 않는다. 설명: 쉼표(,) 뒤에 바로 조사가 오는 것은 표준어 규정에 어긋난다. 올바른 표현은 A, 즉 B는 또는 A, 즉 B예요처럼 쉼표 뒤에 조사가 올 때는 쉼표를 찍고 조사를 붙여야 한다. 따라서 A 즉, B는은 쉼표 뒤에 조사가 바로 붙어 있으므로 어문 규범에 맞지 않다.
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트 하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 뱃멀미가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 릉묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초( )중( )고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지지 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 요즘에는 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 뗄래야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 저기 서 있는 저 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에, 로, 까지 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10 : 1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 용납지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통 난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250728_173846_epoch2.json
+   - ROUGE-1        : 0.2916
+   - BERTScore      : 0.6676
+   - EM             : 0.5591
+   - (ROUGE+BERT)/2 : 0.4796
+   - Final Mean     : 0.5193
+[DEBUG] ROUGE-1: [0.4918032786885246]
+[DEBUG] BERTscore reward: [0.7079154253005981]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(관찰일지) 쓰기가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게스리 굴지 마라.가 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 루쉰은 중국의 유명한 시인이다.가 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건네주었지 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백 명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 귀 끝이 빨개졌다.가 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 흙탕물이라 조심스럽게 발을 딛었다.가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m/s가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: 예문( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: 1910~1950이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 황톳길을 따라 걸었다.가 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다. (예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 **거쳐** 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 힘겹게 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: 우아! 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 과일(사과, 배)}가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니, 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 이렇게 작은 과자는 한 입거리도 안 되겠다.가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: 칼라 복사가 맞습니다.가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.가 옳다
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 아이, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A, 즉 B는이 옳다
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 진학률이 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼을 하다.가 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 중요한 부분을 하이라이트 하면 이해가 쉽다.가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 릉묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초( ) 중학교( ) 고등학교가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지다가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: 윗턱의 뒷부분은 눈 아래까지 이른다.가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 요즘에는 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 뗄래야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 저기 서 있는 저 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교에, 로, 까지 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: 자기 전에 양치해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10 : 1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 불안해하는 친구를 안심시켜주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 그는 누군가가 자신의 위에 있는 것을 용납하지 않았다.가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통 난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250728_173846_epoch3.json
+   - ROUGE-1        : 0.3006
+   - BERTScore      : 0.6792
+   - EM             : 0.5827
+   - (ROUGE+BERT)/2 : 0.4899
+   - Final Mean     : 0.5363
+[DEBUG] ROUGE-1: [0.4347826086956521]
+[DEBUG] BERTscore reward: [0.7218831777572632]
+[DEBUG] true_answer: 나는 그를 본 적이 있음을 기억해 냈다.가 옳다
+[DEBUG] pred_answer: 나는 그를 본 적이 있음을 기억해냈다.가 옳다
+[DEBUG] true_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] pred_answer: 오늘은 퍼즐 맞추기를 해 볼 거예요.가 옳다
+[DEBUG] true_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] pred_answer: 오늘은 날씨가 푹하다.가 옳다
+[DEBUG] true_answer: 식물 관찰하기·기르기 혹은 식물 관찰하기, 기르기가 옳다
+[DEBUG] pred_answer: 식물 관찰하기(화분) 기르기가 옳다
+[DEBUG] true_answer: 아무 일도 일어나지 않자 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] pred_answer: 그는 슬며시 고개를 들어 보았다.가 옳다
+[DEBUG] true_answer: 공부를 하든지 말든지 네 마음대로 해라.가 옳다
+[DEBUG] pred_answer: 공부를 하든지 책을 읽든지 하고 싶은 걸 해라.가 옳다
+[DEBUG] true_answer: 비즈니스가 옳다
+[DEBUG] pred_answer: 비즈니스가 옳다
+[DEBUG] true_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] pred_answer: 시계가 똑딱똑딱 돌아간다.가 옳다
+[DEBUG] true_answer: 헷갈리게끔 굴지 마라.가 옳다
+[DEBUG] pred_answer: 헷갈리게스리 굴지 마라.가 옳지 않다. 헷갈리게스리 굴지 마라.에서 헷갈리게스리는 헷갈리게스리가 아니라 헷갈리게스리로 적는 것이 맞다. 그러나 더 정확하게는 헷갈리게스리가 아니라 헷갈리게 하지 마라. 또는 헷갈리게 하지 마라.로 고치는 것이 옳다
+[DEBUG] true_answer: 루쉰은 중국의 유명한 시인이다. 가 옳다
+[DEBUG] pred_answer: 루쉰이 옳다
+[DEBUG] true_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] pred_answer: 채색을 한 뒤에는 바니시를 바르는 것이 좋다.가 옳다
+[DEBUG] true_answer: 그리고 임금님의 행차 앞에서 어려운 사정을 아뢰어 다행히도 주민들의 삶을 보전하는 혜택을 입었다.가 옳다
+[DEBUG] pred_answer: 다행히도가 옳다
+[DEBUG] true_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] pred_answer: 아침마다 공원에서 조깅을 한다.가 옳다
+[DEBUG] true_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] pred_answer: 나는 컴퍼스를 새로 샀다.가 옳다
+[DEBUG] true_answer: 부엌 옆으로 붙는 방이 안방 또는 큰방이 되고, 그 옆방은 윗방이라 불린다.가 옳다
+[DEBUG] pred_answer: 윗방이 옳다
+[DEBUG] true_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] pred_answer: 나는 이번 여름에 북 페어에 다녀왔다.가 옳다
+[DEBUG] true_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] pred_answer: 부득이하게 늦은 시간에 전화를 드렸습니다.가 옳다
+[DEBUG] true_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] pred_answer: 수호신인 제석천이 왕자에게 왕자의 부인을 달라고 하자 왕자는 부인마저 건넸지 뭐예요!가 옳다
+[DEBUG] true_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] pred_answer: 수백여 명의 군사들이 죽었다.가 옳다
+[DEBUG] true_answer: 생각보다 실력들이 만만찮다.가 옳다
+[DEBUG] pred_answer: 생각보다 실력들이 만만치 않다.가 옳다
+[DEBUG] true_answer: 추워서 귀 끝이 빨개졌다.가 옳다
+[DEBUG] pred_answer: 귀끝이 옳다
+[DEBUG] true_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] pred_answer: 예를 들면 키오스크 사용법을 몰라 주문을 포기하신 노인분의 사례가 있다.가 옳다
+[DEBUG] true_answer: 블라우스 같은 윗옷은 저쪽에 있습니다.가 옳다
+[DEBUG] pred_answer: 윗옷이 옳다
+[DEBUG] true_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] pred_answer: 강원도는 고랭지 배추가 유명하다.가 옳다
+[DEBUG] true_answer: 밭사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] pred_answer: 밖사돈께서 연락도 없이 찾아오셨다.가 옳다
+[DEBUG] true_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] pred_answer: 흙탕물이라 조심스럽게 발을 디뎠다.가 옳다
+[DEBUG] true_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] pred_answer: 그 아이는 예의가 발라서 참 보기가 좋다.가 옳다
+[DEBUG] true_answer: 아버지, 7시까지 가겠습니다.가 옳다
+[DEBUG] pred_answer: 아버지? 7시까지 가겠습니다.가 옳다
+[DEBUG] true_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] pred_answer: 가을에 남이섬에 가려고.가 옳다
+[DEBUG] true_answer: 30미터/초가 옳다
+[DEBUG] pred_answer: 초속 30m 또는 초속 30m/s가 옳다
+[DEBUG] true_answer: 예문: 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] pred_answer: 예문( ) 나의 죽음까지 남은 시간 동안에는 나 흡연하지 않을게.가 옳다
+[DEBUG] true_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] pred_answer: 도로에서 옆 차가 갑자기 끼어들었다.가 옳다
+[DEBUG] true_answer: 1910~1950가 옳다
+[DEBUG] pred_answer: ᅳ 1910~1950.이 옳다
+[DEBUG] true_answer: 여왕개미는 수개미보다 더 크다.가 옳다
+[DEBUG] pred_answer: 여왕개미는 숫개미보다 더 크다.가 옳다
+[DEBUG] true_answer: 위층이 어제부터 자꾸 쿵쿵거린다.가 옳다
+[DEBUG] pred_answer: 윗층이가 옳다
+[DEBUG] true_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] pred_answer: 이번 공사에는 암막새 302매와 수막새 302매가 쓰였다.가 옳다
+[DEBUG] true_answer: 학교 다녀올게.가 옳다
+[DEBUG] pred_answer: 학교 다녀올게.가 옳다
+[DEBUG] true_answer: 어머니와 함께 황톳길을 따라 걸었다.가 옳다
+[DEBUG] pred_answer: 황톳길이 옳다
+[DEBUG] true_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] pred_answer: 수업을 진행하는 데 쓰려고 마이크를 샀어요.가 옳다
+[DEBUG] true_answer: 형만 한 아우 없다.가 옳다
+[DEBUG] pred_answer: 형만한 아우 없다.가 옳다
+[DEBUG] true_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] pred_answer: 이 개는 전 주인이 죽어서 오갈 데 없는 처지가 됐다.가 옳다
+[DEBUG] true_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] pred_answer: 한국의 지명에는 주(州)로 끝나는 곳이 많다.(예: 전주, 원주, 제주)가 옳다
+[DEBUG] true_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] pred_answer: 안경의 초점이 맞지 않아 어지럽다.가 옳다
+[DEBUG] true_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] pred_answer: 《경국대전》은 조선 초기 《경제육전》과 그 뒤의 법령을 조합하여 여러 차례의 개정을 거쳐 만들어졌다.가 옳다
+[DEBUG] true_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] pred_answer: 누가 갑자기 문을 벌컥 열어젖혔다.가 옳다
+[DEBUG] true_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] pred_answer: 좋은 기업 문화를 확고히 정착시킴으로써 직원 만족도를 높이고자 하였다.가 옳다
+[DEBUG] true_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] pred_answer: 좋아 보여서 따라 하는 것일걸?이 옳다
+[DEBUG] true_answer: 필요한 거라든가 하여튼 그런 게 있으면 말해.가 옳다
+[DEBUG] pred_answer: 거라든가가 옳다
+[DEBUG] true_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] pred_answer: 보고 여부에 따라 앞으로의 계획이 달라진다.가 옳다
+[DEBUG] true_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] pred_answer: 어디서 자꾸 뻐꾸기 우는 소리가 난다.가 옳다
+[DEBUG] true_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] pred_answer: 칼을 한번 간 다음 다시 썰어 봐라.가 옳다
+[DEBUG] true_answer: 온오프라인으가 옳다
+[DEBUG] pred_answer: 온·오프라인이 어문 규범에 부합한다. 띄어쓰기에 관한 한글맞춤법 제43항에 따르면, 단어와 단어 사이에는 띄어 쓰는 것이 원칙이며, 합성어가 아닌 경우에는 각각의 단어를 띄어서 적어야 한다. 온라인과 오프라인은 각각 독립된 단어이므로, 둘 사이에는 반드시 띄어쓰기를 해야 하므로 온·오프라인이 옳다
+[DEBUG] true_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] pred_answer: 그까짓 인형 다시 사주면 되잖아.가 옳다
+[DEBUG] true_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 허우적거리며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] pred_answer: 갑자기 어지러워 정신을 차릴 수 없었으나 그래도 힘겹게 몸을 가누며 산골짜기 속으로 들어갔다.가 옳다
+[DEBUG] true_answer: 우아! 눈 온다.가 옳다
+[DEBUG] pred_answer: ― 우아(.) 눈 온다.가 옳다
+[DEBUG] true_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] pred_answer: 그렇게 덜덜 떨 거면 목도리라도 하고 나오든지 했어야지.가 옳다
+[DEBUG] true_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] pred_answer: 새로 이사한 집은 거실이 널찍하다.가 옳다
+[DEBUG] true_answer: 이제 와서 고백건대 나는 그날 동진이를 만나지 않았다.가 옳다
+[DEBUG] pred_answer: 고백컨대가 옳다
+[DEBUG] true_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] pred_answer: 오늘은 집에서 먹을 걸 챙겨 왔어요.가 옳다
+[DEBUG] true_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] pred_answer: 디렉터리 내 파일을 정리했다.가 옳다
+[DEBUG] true_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] pred_answer: 수혜 대상으로서뿐만 아니라 한 집안의 가장으로서 말하고 싶습니다.가 옳다
+[DEBUG] true_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] pred_answer: 그가 웃을 때 덧니가 살짝살짝 보였다.가 옳다
+[DEBUG] true_answer: [과일(사과, 배)]와 같이 써야 한다. 괄호 안에 또 괄호를 써야 할 때 대괄호를 바깥쪽의 괄호가 옳다
+[DEBUG] pred_answer: 과일(사과, 배)가 옳다
+[DEBUG] true_answer: 시간제한이 있으니 서둘러.가 옳다
+[DEBUG] pred_answer: 시간 제한이 있으니 서둘러.가 옳다
+[DEBUG] true_answer: 이렇게 작은 과자는 한 입 거리도 안 되겠다.가 옳다
+[DEBUG] pred_answer: 한 입 거리도가 옳다
+[DEBUG] true_answer: 컬러 복사가 맞나요?가 옳다
+[DEBUG] pred_answer: [답변]컬러 복사가 맞나요?가 옳다
+[DEBUG] true_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] pred_answer: 얼핏 보면 너구리 같기도 했다.가 옳다
+[DEBUG] true_answer: 간판은 따로 간판장이를 불러 만들 예정이다.가 옳다
+[DEBUG] pred_answer: 간판은 따로 간판쟁이를 불러 만들 예정이다.에서 어문 규범에 맞지 않는 부분은 없습니다. [답변] 이 문장은 표준어 규정, 띄어쓰기, 문장부호 등 어문 규범에 모두 맞게 작성되었으므로 바르게 쓴 문장입니다.
+[DEBUG] true_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] pred_answer: 그래도 서서히 나아지고 있다.가 옳다
+[DEBUG] true_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] pred_answer: 그 일은 과거에서 현재로의 전환점으로서 이해할 수 있다.가 옳다
+[DEBUG] true_answer: 반협박이나 다름없는 말이었다.가 옳다
+[DEBUG] pred_answer: 협박이나 다름없는 말이었다.가 옳다
+[DEBUG] true_answer: 우리 강아지, 아이, 예쁘다.가 옳다
+[DEBUG] pred_answer: 우리 강아지, 얘, 예쁘다~가 옳다
+[DEBUG] true_answer: 손잡아 줘.가 옳다
+[DEBUG] pred_answer: 손 잡아 줘.가 옳다
+[DEBUG] true_answer: A, 즉 B는가 옳다
+[DEBUG] pred_answer: A 즉, B는이 어문 규범에 부합하지 않는다. 즉은 곧바로 또는 다시 말해의 뜻을 나타내는 접속부사로, 문장 앞에 올 때는 쉼표(,)를 붙이는 것이 옳다
+[DEBUG] true_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] pred_answer: 스코틀랜드 지명인데 영어이다.가 옳다
+[DEBUG] true_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] pred_answer: 관내 고등학교 졸업생들의 대학 진학률도 상승하고 있다.가 옳다
+[DEBUG] true_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] pred_answer: 고 홍길동 씨의 장례식을 시작하겠습니다.가 옳다
+[DEBUG] true_answer: 멜론이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] pred_answer: [답변]{멜론}이 달고 맛있어서 사려고 해요.가 옳다
+[DEBUG] true_answer: 술을 마시니 비로소 성인이 된 것이 실감 났다.가 옳다
+[DEBUG] pred_answer: 술을 마시니 비로소 어른이 된 것이 실감났다.가 옳다
+[DEBUG] true_answer: 매뉴얼가 옳다
+[DEBUG] pred_answer: 매뉴얼이 옳다
+[DEBUG] true_answer: 너는 나를 무슨.... 억울해.가 옳다
+[DEBUG] pred_answer: 너는 나를 무슨... 억울해.가 옳다
+[DEBUG] true_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] pred_answer: 키가 채 자라지 않아서요.라고 하였다.가 옳다
+[DEBUG] true_answer: 지그시 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] pred_answer: 지긋이 감은 눈매에는 윤곽선을 새기지 않아 명상을 하는 듯 보여 신비롭습니다.가 옳다
+[DEBUG] true_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] pred_answer: 긴급 상황 시 비상 대책을 익혀야 한다.가 옳다
+[DEBUG] true_answer: 중요한 부분을 하이라이트하면 이해가 쉽다.가 옳다
+[DEBUG] pred_answer: 하이라이트가 옳다
+[DEBUG] true_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] pred_answer: 불빛은 도로 피어 붉고, 그늘지어 검다.가 옳다
+[DEBUG] true_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] pred_answer: 예, 잘 들었습니다.가 옳다
+[DEBUG] true_answer: 나는 뱃멀미가 심해서 배를 못 탄다.가 옳다
+[DEBUG] pred_answer: 뱃멀미가 옳다
+[DEBUG] true_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] pred_answer: 스튜디오, 드레스, 메이크업의 줄임말인 스드메란 단어를 요즘 많이 쓰잖아요.가 옳다
+[DEBUG] true_answer: 막걸리 몇 통 차고 달려갈게요.가 옳다
+[DEBUG] pred_answer: 달려갈게요.가 옳다
+[DEBUG] true_answer: 이십 며칟날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] pred_answer: 이십 며칠날에 지진 대피 훈련을 한다고 했다.가 옳다
+[DEBUG] true_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] pred_answer: 공염불에 불과한 말은 그만둬라.가 옳다
+[DEBUG] true_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] pred_answer: 김장할 때 쓸 무를 좀 사 와라.가 옳다
+[DEBUG] true_answer: 지금으로서는 그럴 가능성이 높다.가 옳다
+[DEBUG] pred_answer: [답변] \지금으로서는\이 옳다
+[DEBUG] true_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] pred_answer: 그 사건은 아직 미스터리예요.가 옳다
+[DEBUG] true_answer: 조선 왕조의 능묘는 어디에 있나요?가 옳다
+[DEBUG] pred_answer: 조선 왕조의 릉·묘는 어디에 있나요?가 옳다
+[DEBUG] true_answer: 나의 곤란한 사정으로서는 이러한 조치가 마땅했다.가 옳다
+[DEBUG] pred_answer: 나의 곤란한 사정으로써는이 어문 규범에 맞지 않으며, 나의 곤란한 사정으로는이 옳다
+[DEBUG] true_answer: 초·중·고등학교 혹은 초, 중, 고등학교가 옳다
+[DEBUG] pred_answer: 초·중·고등학교.가 옳다
+[DEBUG] true_answer: 동생의 손은 퍼레지다 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] pred_answer: 동생의 손은 퍼레지지 못해 퉁퉁 부어올랐다.가 옳다
+[DEBUG] true_answer: 이만큼만 덜어내라.가 옳다
+[DEBUG] pred_answer: [답변]이만큼만 덜어내라.가 옳다
+[DEBUG] true_answer: 위턱의 뒷부분은 눈 아래까지 도달한다.가 옳다
+[DEBUG] pred_answer: [답변] 눈 아래까지가 옳다
+[DEBUG] true_answer: 채용에 앞서 인턴십을 시행하는 회사들이 많다.가 옳다
+[DEBUG] pred_answer: 인턴십이 옳다
+[DEBUG] true_answer: 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳다
+[DEBUG] pred_answer: 나와 그 사람은 뗄래야 뗄 수가 없는 관계다.에서 어문 규범에 맞지 않는 부분은 뗄래야입니다. 고쳐 쓰면 나와 그 사람은 떼려야 뗄 수가 없는 관계다.가 옳습니다. 이유는 떼려가 표준어이고, 뗄래야는 떼려의 잘못된 표현이기 때문입니다. 떼려는 떼다의 어간 떼에 연결어미 -려가 붙은 형태이고, 떼래야처럼 발음되는 뗄래야는 표준어 규정에 어긋납니다.
+[DEBUG] true_answer: 특별한 인센티브가 없으니까 업소들 간에 열심히 해 보겠다는 의지들이 사라졌습니다.가 옳다
+[DEBUG] pred_answer: 인센티브가가 옳다
+[DEBUG] true_answer: 저기 서 있는 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] pred_answer: 저기 서 있는 저 나무 한 그루가 몹시 쓸쓸해 보였다.가 옳다
+[DEBUG] true_answer: 다행이다, 진짜.가 옳다
+[DEBUG] pred_answer: 다행이다, 진짜.가 옳다
+[DEBUG] true_answer: 주말 저녁에는 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] pred_answer: 러닝을 하면서 시간을 보낸다.가 옳다
+[DEBUG] true_answer: 임팩트가 있다.가 옳다
+[DEBUG] pred_answer: 임팩트가 있다.가 옳다
+[DEBUG] true_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] pred_answer: 내가 원하는 게 뭔지 찾고 싶어.가 옳다
+[DEBUG] true_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] pred_answer: 조선소 선박 전장 시운전 업무라는 낯선 업무를 여성들이 수행한다는 것은 쉬운 일이 아니었다.가 옳다
+[DEBUG] true_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] pred_answer: 아이들이 학교{에, 로, 까지} 갔다.가 옳다
+[DEBUG] true_answer: 훌륭한 어른이 돼라.가 옳다
+[DEBUG] pred_answer: 훌륭한 어른이 되라.가 옳다
+[DEBUG] true_answer: 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] pred_answer: [답변] 자기 전에 이 닦기 해야지.가 옳다
+[DEBUG] true_answer: 10:1가 옳다
+[DEBUG] pred_answer: 10:1이 옳다
+[DEBUG] true_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] pred_answer: 아마 종이에 코팅이 되어 있을 거예요.가 옳다
+[DEBUG] true_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] pred_answer: 다시 한 번 확인해 주세요.가 옳다
+[DEBUG] true_answer: 부모님과도 자주 연락하세요.가 옳다
+[DEBUG] pred_answer: 부모님께도 자주 연락하세요.가 옳다
+[DEBUG] true_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] pred_answer: 참새는 알을 낳는 새예요.가 옳다
+[DEBUG] true_answer: 저로서는 이게 최선입니다.가 옳다
+[DEBUG] pred_answer: {저로서는/저로써는} 이게 최선입니다. 둘 다 쓸 수 있지만, 맥락에 따라 의미가 다르다. 저로서는이 더 자연스럽다. ~로서는은 자격, 신분, 지위 등을 나타내는 격조사이고, 저로써는은 수단, 방법, 도구 등을 나타내는 격조사이다. 따라서 제 입장이나 자격에서는이라는 의미라면 저로서는이 옳고, 제가 가진 능력이나 수단으로는이라는 의미라면 저로써는도 쓸 수 있다.
+[DEBUG] true_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] pred_answer: 폐품으로 무언가를 만드는 게 방학 숙제야.가 옳다
+[DEBUG] true_answer: 불안해하는 친구를 안심시켜 주었다.가 옳다
+[DEBUG] pred_answer: 불안해하는 친구를 안심시켜주었다.가 옳다
+[DEBUG] true_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] pred_answer: 오늘은 화요일입니다.가 옳다
+[DEBUG] true_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] pred_answer: 동굴 속으로 들어가 숨어.가 옳다
+[DEBUG] true_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] pred_answer: 면허 연월일을 기입해 주세요.가 옳다
+[DEBUG] true_answer: 2023. 4. 8.~2024. 4. 7.가 옳다
+[DEBUG] pred_answer: 2023. 4. 8. ~ 2024. 4. 7.이 옳다
+[DEBUG] true_answer: 그는 누군가가 자신의 위에 있는 것을 용납지 않았다.가 옳다
+[DEBUG] pred_answer: 용납지가 옳다
+[DEBUG] true_answer: 그가 무면허자라는 게 들통난 다음 날이었다.가 옳다
+[DEBUG] pred_answer: 그가 무면허자라는 게 들통 난 다음날이었다.가 옳다
+[DEBUG] EM: [0.0]
+
+ File: inference_result_20250727_001352_epoch2.json
+   - ROUGE-1        : 0.2736
+   - BERTScore      : 0.6649
+   - EM             : 0.4961
+   - (ROUGE+BERT)/2 : 0.4692
+   - Final Mean     : 0.4826
+
+ Total Final Mean:
+   - inference_result_20250728_173846_epoch4.json: 0.5411
+   - inference_result_20250728_173846_epoch3.json: 0.5363
+   - inference_result_20250728_173846_epoch5.json: 0.5194
+   - inference_result_20250728_173846_epoch2.json: 0.5193
+   - inference_result_20250728_173846_epoch1.json: 0.5173
+   - inference_result_20250727_154421_epoch1.json: 0.5152
+   - inference_result_20250727_154421_epoch3.json: 0.5054
+   - inference_result_20250727_154421_epoch2.json: 0.5028
+   - inference_result_20250730_030609_epoch1.json: 0.4977
+   - inference_result_20250727_001352_epoch2.json: 0.4826
+   - inference_result_20250727_001352_epoch3.json: 0.4770
+   - inference_result_20250727_001352_epoch1.json: 0.4730
+   - inference_result_20250727_001352_epoch4.json: 0.4655
+   - inference_result_20250727_001352_epoch5.json: 0.4483
+
+ Best Final Mean:
+   File       : inference_result_20250728_173846_epoch4.json
+   Final Mean : 0.5411
