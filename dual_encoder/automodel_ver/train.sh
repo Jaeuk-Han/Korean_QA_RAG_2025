@@ -1,4 +1,4 @@
-wandb login 29eecad670264cabb466a26fd65dd9ddb23931ee
+wandb login "your_token"
 wandb online
 
 export CUDA_VISIBLE_DEVICES=0,1

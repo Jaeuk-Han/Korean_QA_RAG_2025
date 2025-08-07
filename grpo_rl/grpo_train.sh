@@ -1,6 +1,6 @@
 wandb online
 export WANDB_PROJECT=GRPO_Korean_QA_RAG_2025
-wandb login 74986650919155f3f2c91da9acedc4feeb7b63b2
+wandb login "your_token"
 
 export CUDA_VISIBLE_DEVICES=0,1
 
