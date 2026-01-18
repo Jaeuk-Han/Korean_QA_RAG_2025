@@ -183,21 +183,3 @@ In practice:
 bash <script>.sh
 ```
 
----
-
-## 7. What to Report (Recommended)
-
-If you write an experiment log / report, the most informative items are:
-
-- Retriever:
-  - Recall@K/Recall@N, mean rank
-  - ablations: random vs hard negatives, encoder choice, embedding dimension
-
-- Generator:
-  - EM / ROUGE / BERTScore
-  - format validity rate
-  - decoding parameter ablations (temperature/top-p/repetition penalty)
-
-- End-to-end:
-  - performance with/without retrieval evidence
-  - failure mode analysis: retrieval miss vs generation hallucination vs format break
