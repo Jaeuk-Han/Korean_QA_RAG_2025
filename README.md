@@ -11,6 +11,8 @@ The emphasis of this README is **methodology**, not command-level execution deta
 
 ## 1. High-level Goal
 
+![model structure](structure.png)
+
 The task requires generating **reliable Korean answers** (often with strict output style constraints) by grounding generation on **grammar-rule evidence**.  
 We therefore treat the system as a two-stage pipeline:
 
@@ -111,6 +113,8 @@ GRPO-based RL allows us to directly optimize **verifiable reward signals** that 
 ---
 
 ### 4.2 Reward Design (Multi-reward)
+
+![reward screenshot](reward.png)
 
 The generator reward is a weighted composition of signals such as:
 
